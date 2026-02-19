@@ -4,7 +4,7 @@ export default defineNuxtConfig({
     '@nuxt/eslint',
     '@nuxt/ui'
   ],
-
+  
   devtools: {
     enabled: true
   },
