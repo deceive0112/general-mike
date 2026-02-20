@@ -22,7 +22,7 @@ const isHovered = ref(false)
         <div class="flex items-center absolute transition-all duration-300 group-hover:-translate-y-full group-hover:opacity-0">
           <h2 class="text-md whitespace-nowrap">Available for work</h2>
         </div>
-        <div class="flex items-center absolute transition-all duration-300 translate-y-full opacity-0 group-hover:translate-y-0 group-hover:opacity-100">
+        <div class="flex items-center absolute px-2 transition-all duration-300 translate-y-full opacity-0 group-hover:translate-y-0 group-hover:opacity-100">
           <UIcon name="material-symbols:stacked-email-outline" class="size-5" />
           <h2 class="text-md whitespace-nowrap">Contact me!</h2>
         </div>
@@ -34,8 +34,7 @@ const isHovered = ref(false)
     </div>
 
       <p class="text-xl mt-5 backdrop-blur-lg rounded-xl">
-        I'm a developer who takes great care in crafting detailed, intuitive UI designs and engaging user experiences. 
-        Beyond software, I also bring hands-on experience in hardware projects, including IoT.
+        I'm a developer who takes great care in crafting detailed, intuitive UI designs and engaging user experiences. Beyond software, I also bring hands-on experience in hardware projects, including IoT.
       </p>
 
     <div class="flex flex-row mt-5 mb-25 gap-3 backdrop-blur-lg rounded-xl">
