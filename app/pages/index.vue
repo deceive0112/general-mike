@@ -14,10 +14,28 @@ const isHovered = ref(false)
         <a class="text-blue-500 cursor-pointer"  
           @mouseenter="isHovered = true"
           @mouseleave="isHovered = false">{{ title }}</a>
-      </h1> 
+      </h1>
+
+    <div class="group inline-flex flex-row mt-1 gap-1.5">
+      <UIcon name="svg-spinners:pulse" class="size-5 text-green-400" />
+      <div class="flex flex-row cursor-pointer overflow-hidden h-6 relative w-35">
+        <div class="flex items-center absolute transition-all duration-300 group-hover:-translate-y-full group-hover:opacity-0">
+          <h2 class="text-md whitespace-nowrap">Available for work</h2>
+        </div>
+        <div class="flex items-center absolute transition-all duration-300 translate-y-full opacity-0 group-hover:translate-y-0 group-hover:opacity-100">
+          <UIcon name="material-symbols:stacked-email-outline" class="size-5" />
+          <h2 class="text-md whitespace-nowrap">Contact me!</h2>
+        </div>
+      </div>
+      <div class="flex gap-3">
+        <span>|</span>
+        <h2 class="text-md">Based in Cagayan de Oro, Philippines.</h2> 
+      </div>
+    </div>
+
       <p class="text-xl mt-5 backdrop-blur-lg rounded-xl">
-        Flexbox is ideal for one-dimensional (linear) layouts, arranging items in a single row or column, while Grid is designed for two-dimensional (grid-based) layouts, 
-        managing both rows and columns simultaneously. Use Flexbox for component-level alignment and Grid for overall page structure. 
+        I'm a developer who takes great care in crafting detailed, intuitive UI designs and engaging user experiences. 
+        Beyond software, I also bring hands-on experience in hardware projects, including IoT.
       </p>
 
     <div class="flex flex-row mt-5 mb-25 gap-3 backdrop-blur-lg rounded-xl">
@@ -31,7 +49,7 @@ const isHovered = ref(false)
         <span class="text-lg font-bold font-mono text-subtext1 group-hover:text-blue-500 transition-colors duration-200">LinkedIn</span>
       </div>
         <span class="text-lg font-mono">|</span>
-        <span class="text-lg font-bold font-mono px-3 text-subtext1 hover:text-blue-500 transition-colors duration-200 cursor-pointer">More about me... -></span>
+        <span class="text-lg font-bold font-mono px-1 text-subtext1 hover:text-blue-500 transition-colors duration-200 cursor-pointer">More about me... -></span>
     </div>
 
     </div>
@@ -57,10 +75,10 @@ const isHovered = ref(false)
   </div>
 
   <div>
-    
+
   </div>
 
-  <div class="flex flex-row items-center mt-10">
+  <div class="inline-flex flex-row items-center mt-10">
     <UIcon name="material-symbols:star-outline" class="size-10"/>
     <h1 class="text-2xl font-bold p-2 gap-9">Featured Projects</h1>
     <span class="ml-auto">

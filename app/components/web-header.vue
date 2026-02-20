@@ -15,9 +15,9 @@ const showGif = useState('showGif', () => true)
             <span class="text-lg font-bold font-mono hover:text-blue-500 transition-colors duration-200 cursor-pointer">Blog</span>
             <span class="text-lg font-bold font-mono hover:text-blue-500 transition-colors duration-200 cursor-pointer">Contact</span>
             <span class="flex flex-row gap-2">
-                <UColorModeButton />
+                <UColorModeButton class="hover:text-blue-500 duration-200 cursor-pointer"/>
                 <UButton
-                    class="hover:text-blue-500 duration-200 cursor-pointer rounded-md font-medium inline-flex items-center disabled:cursor-not-allowed aria-disabled:cursor-not-allowed disabled:opacity-75 aria-disabled:opacity-75 transition-colors text-sm gap-1.5 text-default hover:bg-elevated active:bg-elevated focus:outline-none focus-visible:bg-elevated hover:disabled:bg-transparent dark:hover:disabled:bg-transparent hover:aria-disabled:bg-transparent dark:hover:aria-disabled:bg-transparent p-1.5"
+                    class="hover:text-blue-500 duration-200 cursor-pointer"
                     :icon="showGif ? 'i-heroicons-eye' : 'i-heroicons-eye-slash'" color="gray" variant="ghost"
                     @click="showGif = !showGif" />
             </span>
