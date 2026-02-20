@@ -3,7 +3,7 @@ const showGif = useState('showGif', () => true)
 </script>
 
 <template>
-    <div
+    <div id="home"
         class="flex flex-row justify-between sticky top-0 left-0 w-full z-50 bg-transparent items-center text-center backdrop-blur-sm">
         <a href="#home">
         <span class="inline-flex">

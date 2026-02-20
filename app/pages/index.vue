@@ -7,7 +7,7 @@ const isHovered = ref(false)
 </script>
 
 <template>
-<div id="home" class="flex flex-col min-h-screen px-10 md:px-20">
+<div class="flex flex-col min-h-screen px-10 md:px-20">
   <div class="flex flex-row gap-5">
     <div class="basis-3/5">
       <h1 class="text-4xl mt-20 font-bold backdrop-blur-lg rounded-xl">Hey! I'm 

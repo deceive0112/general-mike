@@ -1,5 +1,5 @@
 <template> 
-    <div class="flex flex-col min-h-screen px-25 md:px-40">
+    <div id="home" class="flex flex-col min-h-screen px-25 md:px-40">
         <web-header class="p-3 shadow-xl rounded-md mt-3"/>
         <div class="p-3">
             <AppBackground />
