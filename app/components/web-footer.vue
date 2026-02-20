@@ -1,5 +1,5 @@
 <template>
-    <div class="flex flex-row justify-between bottom-0 left-0 w-full items-center text-center">
+    <div class="flex flex-row justify-between bottom-0 left-0 w-full items-center text-center mt-20">
         <nav class="flex items-center gap-3 font-mono text-white">
             <span>General, Mike</span>
             <span>|</span>

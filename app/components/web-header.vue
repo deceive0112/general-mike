@@ -6,7 +6,7 @@ const showGif = useState('showGif', () => true)
     <div
         class="flex flex-row justify-between sticky top-0 left-0 w-full z-50 bg-transparent items-center text-center backdrop-blur-sm">
         <span class="inline-flex">
-            <UIcon name="arcticons:tildes" class="w-7 h-7 text-blue-300 hover:bg-sky-600 mt-0.5" />
+            <UIcon name="mdi:tilde" class="w-6 h-6 text-blue-300 hover:bg-sky-600 mt-0.5" />
         </span>
         <nav class="flex items-center gap-9">
             <span class="text-lg font-bold font-mono hover:text-blue-500 transition-colors duration-200 cursor-pointer">About</span>

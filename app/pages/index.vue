@@ -20,16 +20,16 @@ const isHovered = ref(false)
       <UIcon name="svg-spinners:pulse" class="size-5 text-green-400" />
       <div class="flex flex-row cursor-pointer overflow-hidden h-6 relative w-35">
         <div class="flex absolute transition-all duration-300 group-hover:-translate-y-full group-hover:opacity-0">
-          <h2 class="text-md whitespace-nowrap">Available for work</h2>
+          <span class="text-md whitespace-nowrap">Available for work</span>
         </div>
         <div class="flex absolute px-2 group-hover:text-blue-500 transition-all duration-300 translate-y-full opacity-0 group-hover:translate-y-0 group-hover:opacity-100">
           <UIcon name="material-symbols:stacked-email-outline" class="size-5" />
-          <h2 class="text-md whitespace-nowrap px-2">Contact me!</h2>
+          <span class="text-md whitespace-nowrap px-2">Contact me!</span>
         </div>
       </div>
       <div class="flex gap-3">
         <span>|</span>
-        <h2 class="text-md">Based in Cagayan de Oro City, Philippines.</h2> 
+        <span class="text-md">Based in Cagayan de Oro City, Philippines.</span> 
       </div>
     </div>
 
@@ -84,26 +84,37 @@ const isHovered = ref(false)
 
   <div class="inline-flex flex-row items-center mt-10">
     <UIcon name="material-symbols:star-outline" class="size-7"/>
-    <h1 class="text-2xl font-bold p-2 gap-9">Featured Projects</h1>
+    <h2 class="text-2xl font-bold p-2 gap-9">Featured Projects</h2>
     <span class="ml-auto">
-      <a class="text-blue-400 cursor-pointer hover:underline">View all -></a>
+      <a class="hover:text-blue-500 cursor-pointer hover:underline">View all -></a>
     </span>
   </div>
 
-  <div class="grid grid-cols-5 gap-x-7 gap-y-7 backdrop-blur-2xl rounded-xl">
+  <div class="grid grid-cols-3 gap-x-7 gap-y-7 backdrop-blur-2xl rounded-xl">
     <div class="bg-sky-400 flex items-center text-center justify-center col-span-1 p-4 basis-sm rounded-xl text-3xl">01</div>
     <div class="bg-sky-400 flex items-center text-center justify-center col-span-1 p-4 basis-sm rounded-xl text-3xl">
       02
     </div>
     <div class="bg-sky-400 flex items-center text-center justify-center col-span-1 p-4 basis-sm rounded-xl text-3xl">03</div>
     <div class="bg-sky-400 flex items-center text-center justify-center col-span-1 p-4 basis-sm rounded-xl text-3xl">04</div>
-    <div class="bg-sky-400 flex items-center text-center justify-center col-span-1 p-4 basis-sm rounded-xl text-3xl">05</div>
-    <div class="bg-sky-400 flex items-center text-center justify-center col-span-3 p-4 basis-sm rounded-xl text-3xl">06</div>
-    <div class="bg-sky-400 flex items-center text-center justify-center col-span-2 p-4 basis-sm rounded-xl text-3xl">07</div>
-    <div class="bg-sky-400 flex items-center text-center justify-center col-span-2 p-4 basis-sm rounded-xl text-3xl">
-      08
+    <div class="bg-sky-400 flex items-center text-center justify-center col-span-2 p-4 basis-sm rounded-xl text-3xl">05</div>
+    <div class="bg-sky-400 flex items-center text-center justify-center col-span-2 p-4 basis-sm rounded-xl text-3xl">06</div>
+    <div class="bg-sky-400 flex items-center text-center justify-center col-span-1 p-4 basis-sm rounded-xl text-3xl">07</div>
+  </div>
+
+  <div class="grid grid-cols-2 gap-x-9 gap-y-9 mt-30">
+    <div class="group flex-col p-4 basis-sm rounded-xl text-3xl backdrop-blur-2xl">
+      <h3 class="text-2xl font-bold">Let's Work Together</h3>
+      <p class="mt-3 text-lg">I'm currently open to new opportunities and collaborations. 
+        If you're interested in working together or just want to connect, feel free to reach out!</p>
+        <form action="https://formsubmit.co/mikegeneral21@gmail.com" method="POST">
+          <input type="name" placeholder="Jhon Doe" class="p-1 mt-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+          <input type="email" placeholder="Your email" class="p-1 mt-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+          <textarea placeholder="Your message" class="w-full p-2 mt-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+          <button type="submit" class="mt-3 px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition-colors duration-200">Send Message</button>
+        </form>
     </div>
-    <div class="bg-sky-400 flex items-center text-center justify-center col-span-3 p-4 basis-sm rounded-xl text-3xl">09</div>
+    <div class="bg-sky-500 flex items-center text-center justify-center col-span-1 p-4 basis-sm rounded-xl text-3xl">Test2</div>
   </div>
 </div>
 </template>
