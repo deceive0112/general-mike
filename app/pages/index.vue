@@ -190,6 +190,16 @@ definePageMeta({
             </div>
           </div>
 
+          <div class="ml-auto">
+            <a href="/school/General-Mike_CV.pdf" target="_blank">
+            <UButton 
+              icon="material-symbols:download-rounded"
+              class="mt-3 cursor-pointer bg-gradient-to-r from-sky-400 to-blue-500 hover:from-sky-500 hover:to-blue-600 transition-all duration-200 border-0">
+              View Full Resume
+            </UButton>
+            </a>
+          </div>
+
         </div>
       </div>
     </div>
