@@ -28,7 +28,7 @@ const isHovered = ref(false)
   <!-- Portfolio Overview   -->
   <div class="flex flex-row gap-5">
     <div class="basis-3/5">
-      <h1 class="text-4xl mt-20 font-bold backdrop-blur-lg rounded-xl">Hey! <span class="px-1">I'm</span>
+      <h1 class="text-4xl mt-20 font-bold backdrop-blur-lg rounded-xl w-117 p-2">Hey! <span class="px-1">I'm</span>
         <a class="text-blue-500 cursor-pointer px-1.5"  
           @mouseenter="isHovered = true"
           @mouseleave="isHovered = false">{{ title }}</a>
@@ -56,7 +56,7 @@ const isHovered = ref(false)
       </div>
     </div>
 
-      <p class="text-xl mt-5 backdrop-blur-lg rounded-xl cursor-pointer">
+      <p class="text-xl mt-5 backdrop-blur-lg rounded-xl cursor-pointer w-195 p-3">
         I'm a <span class="text-red-400 relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-current after:transition-all after:duration-300 hover:after:w-full cursor-pointer">developer</span> 
         who takes great care in crafting detailed, intuitive <span class="text-orange-400 relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-current after:transition-all after:duration-300 hover:after:w-full cursor-pointer">UI designs</span>  
         and engaging <span class="text-cyan-400 relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-current after:transition-all after:duration-300 hover:after:w-full cursor-pointer">user experiences</span> . 
@@ -65,7 +65,7 @@ const isHovered = ref(false)
         <span class="text-yellow-400 relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-current after:transition-all after:duration-300 hover:after:w-full cursor-pointer">IoT</span> .
       </p>
 
-    <div class="flex flex-row mt-5 mb-25 gap-3 backdrop-blur-lg rounded-xl">
+    <div class="flex flex-row mt-5 mb-25 gap-3 backdrop-blur-lg rounded-xl w-121 p-2">
       <div class="group inline-flex items-center gap-1.5 transition-colors duration-200 cursor-pointer">
         <a href="https://github.com/deceive0112" target="_blank" class="inline-flex">
           <UIcon name="mdi:github" class="size-6 text-subtext1 group-hover:text-blue-500 transition-colors duration-200"/>
@@ -109,7 +109,7 @@ const isHovered = ref(false)
   <div class="grid grid-cols-2 gap-x-9 gap-y-9 mt-15 mb-15">
     <div>
       <h2 class="flex text-2xl font-bold items-center text-center">Tech Stack & Tools</h2>
-      <div class="group flex-col p-4 basis-sm rounded-xl text-3xl backdrop-blur-2xl shadow-xl" id="form">
+      <div class="group flex-col p-4 basis-sm rounded-xl text-3xl backdrop-blur-2xl shadow-xl">
         <h3 class="text-2xl font-bold">Let's Work Together</h3>
         <p class="mt-3 text-lg">I'm currently open to new opportunities and collaborations. 
           If you're interested in working together or just want to connect, feel free to reach out!</p>
@@ -129,7 +129,7 @@ const isHovered = ref(false)
     </span>
   </div>
 
-  <div class="grid grid-cols-3 gap-x-7 gap-y-7 backdrop-blur-2xl rounded-xl">
+  <div class="grid grid-cols-3 gap-x-7 gap-y-7 backdrop-blur-2xl rounded-xl p-1.5">
     <div class="bg-sky-400 flex items-center text-center justify-center col-span-1 p-4 basis-sm rounded-xl text-3xl">01</div>
     <div class="bg-sky-400 flex items-center text-center justify-center col-span-1 p-4 basis-sm rounded-xl text-3xl">
       02
@@ -142,51 +142,14 @@ const isHovered = ref(false)
   </div>
 
 <!-- HTML to CSS to JS Showcase  --> 
-  <div class="bg-sky-400 flex items-center text-center justify-center p-4 basis-sm rounded-xl text-3xl gap-x-9 gap-y-9">
+  <div class="bg-sky-400 flex items-center text-center justify-center p-4 basis-sm rounded-xl text-3xl gap-x-3 gap-y-3">
       Test2
   </div>
 
-<!-- Randoms   -->
+<!-- Form & Randoms   -->
   <div class="grid grid-cols-2 gap-x-9 gap-y-9 mt-30">
-    <!-- Form   -->
-    <div class="group flex-col p-4 basis-sm rounded-xl text-3xl backdrop-blur-2xl shadow-xl" id="form">
-      <h3 class="text-2xl font-bold">Let's Work Together</h3>
-      <p class="mt-3 text-lg">I'm currently open to new opportunities and collaborations. 
-        If you're interested in working together or just want to connect, feel free to reach out!</p>
-        <form action="https://formsubmit.co/ajax/75a004e93226627edec82f72fb9af88e" method="POST">
-          <div class="flex flex-row gap-10 text-[1rem] mt-6">
-            <div class="flex flex-col w-full">
-              <span class="text-[1rem] mb-1">Name<span class="text-red-500">*</span></span>
-              <input type="text" maxlength="60" name="name" placeholder="John Doe" 
-              class="w-full px-3 py-2 rounded-md border-0 ring-1 ring-gray-300 focus:outline-none focus:ring-1 focus:ring-blue-500" />
-            </div>
-            <div class="flex flex-col w-full">
-              <span class="text-[1rem] mb-1">Email<span class="text-red-500">*</span></span>
-              <input type="email" maxlength="120"name="email" placeholder="johndoe@example.com" 
-              class="w-full px-3 py-2 rounded-md border-0 ring-1 ring-gray-300 focus:outline-none focus:ring-1 focus:ring-blue-500" />
-            </div>
-          </div>
-
-          <div class="flex flex-col text-[1rem] mt-5">
-            <span class="text-[1rem] mb-1">Subject<span class="text-red-500">*</span></span>
-            <textarea name="subject" maxlength="160" placeholder="Project Inquiry, collaboration, etc."
-            class="w-full px-3 py-2 rounded-md border-0 ring-1 ring-gray-300 focus:outline-none focus:ring-1 focus:ring-blue-500" rows="1"></textarea>
-          </div>
-
-          <div class="flex flex-col text-[1rem] mt-5">
-            <span class="text-[1rem] mb-1">Message<span class="text-red-500">*</span></span>
-            <textarea name="message" maxlength="600" placeholder="Tell me about your project, timeline, and requirements..." rows="6"
-            class="w-full px-3 py-2 rounded-md border-0 ring-1 ring-gray-300 focus:outline-none focus:ring-1 focus:ring-blue-500"></textarea>
-          </div>
-
-          <button type="submit" 
-            class="group flex items-center justify-center mt-6 px-4 py-2 text-[1.2rem] bg-blue-500 text-white rounded-md hover:bg-blue-600 transition-colors duration-200 cursor-pointer">
-            <UIcon name="prime:send" class="size-5 inline-flex mr-1" />
-            Send Message
-          </button>
-        </form>
-    </div>
-    <div class="bg-sky-500 flex items-center text-center justify-center col-span-1 p-4 basis-sm rounded-xl text-3xl">Test2</div>
+    <ContactForm />
+    <div class="bg-sky-500 flex items-center text-center justify-center col-span-1 p-4 basis-sm rounded-xl text-3xl">Test3</div>
   </div>
 </div>
 </template>
