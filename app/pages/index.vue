@@ -14,11 +14,11 @@ const isHovered = ref(false)
 
 @keyframes wave {
   0%   { transform: rotate(0deg); }
-  15%  { transform: rotate(14deg); }
-  30%  { transform: rotate(-8deg); }
-  45%  { transform: rotate(14deg); }
-  60%  { transform: rotate(-4deg); }
-  75%  { transform: rotate(10deg); }
+  15%  { transform: rotate(18deg); }
+  30%  { transform: rotate(-12deg); }
+  45%  { transform: rotate(18deg); }
+  60%  { transform: rotate(-8deg); }
+  75%  { transform: rotate(14deg); }
   100% { transform: rotate(0deg); }
 }
 </style>
@@ -56,9 +56,13 @@ const isHovered = ref(false)
       </div>
     </div>
 
-      <p class="text-xl mt-5 backdrop-blur-lg rounded-xl">
-        I'm a developer who takes great care in crafting detailed, intuitive UI designs and engaging user experiences. 
-        Beyond software, I also bring hands-on experience in hardware projects, such as IoT.
+      <p class="text-xl mt-5 backdrop-blur-lg rounded-xl cursor-pointer">
+        I'm a <span class="text-red-400 relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-current after:transition-all after:duration-300 hover:after:w-full cursor-pointer">developer</span> 
+        who takes great care in crafting detailed, intuitive <span class="text-orange-400 relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-current after:transition-all after:duration-300 hover:after:w-full cursor-pointer">UI designs</span>  
+        and engaging <span class="text-cyan-400 relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-current after:transition-all after:duration-300 hover:after:w-full cursor-pointer">user experiences</span> . 
+        Beyond <span class="text-violet-400 relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-current after:transition-all after:duration-300 hover:after:w-full cursor-pointer">software</span>, 
+        I also bring hands-on experience in <span class="text-emerald-400 relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-current after:transition-all after:duration-300 hover:after:w-full cursor-pointer">hardware</span> projects, such as
+        <span class="text-yellow-400 relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-current after:transition-all after:duration-300 hover:after:w-full cursor-pointer">IoT</span> .
       </p>
 
     <div class="flex flex-row mt-5 mb-25 gap-3 backdrop-blur-lg rounded-xl">
