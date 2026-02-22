@@ -1,0 +1,34 @@
+HTML:
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>To-Do List</title>
+  </head>
+  <body>
+    <center>
+      <h1>Notepad</h1>
+      <fieldset>
+        <h2>To-Do List</h2>
+        <input type="text" placeholder="Add a task"> &nbsp;<button>Add</button>
+        <h3>Tasks</h3>
+        <h4>Title 1:</h4>
+        <ul>
+          <li><input type="checkbox"> Buy groceries &nbsp;<button>Delete</button></li>
+        </ul>
+        <h4>Title 2:</h4>
+        <ul>
+          <li><input type="checkbox"> Complete project documentation &nbsp;<button>Delete</button></li>
+          <li><input type="checkbox"> Review code for bugs &nbsp;<button>Delete</button></li>
+          <li><input type="checkbox"> Prepare presentation slides &nbsp;<button>Delete</button></li>
+          <li><input type="checkbox"> Schedule team meeting &nbsp;<button>Delete</button></li>
+        </ul>
+      </fieldset>
+      <br>
+      <footer>
+        <b>General, Mike | © 2026 All rights reserved.</b>
+      </footer>
+    </center>
+  </body>
+</html>

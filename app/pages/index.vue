@@ -163,9 +163,9 @@ definePageMeta({
           <div class="flex items-center justify-between">
             <p class="text-md font-semibold uppercase tracking-widest text-orange-400">HTML</p>
             <div class="flex justify-end">
-              <a href="https://github.com/deceive0112/general-mike/blob/main/public/projects/to-do-list/index.html" target="_blank">
+              <a href="/projects/to-do-list/to-do-source-code/HTML.txt" target="_blank">
               <UButton icon="vscode-icons:folder-type-github-opened"
-                class="rounded-lg shadow-md cursor-pointer bg-linear-to-r from-sky-400 to-blue-500 hover:from-sky-500 hover:to-blue-600 transition-all duration-200 border-0 p-2">
+                class="rounded-lg shadow-2xl cursor-pointer bg-linear-to-r from-sky-400 to-blue-500 hover:from-sky-500 hover:to-blue-600 transition-all duration-200 border-0 p-2">
                 Open Source Code
               </UButton>
               </a>
