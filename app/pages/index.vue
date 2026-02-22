@@ -173,6 +173,7 @@ definePageMeta({
                 <p class="text-[13px] text-gray-400 mt-1">Science, Technology, Engineering, and Mathematics</p>
                 <p class="text-[13px] text-gray-400 mt-1 ml-auto">2018 - 2020</p>
               </div>
+              <p class="text-[13px] text-gray-400">(STEM)</p>
               <p class="text-[12px] mt-1">Research:</p>
               <ul class="list-disc ml-3 px-1">
                 <li class="text-[12px] mt-0.5">Designer of the building model's structure.</li>
@@ -185,7 +186,7 @@ definePageMeta({
           <div class="ml-auto">
             <a href="/school/General-Mike_CV.pdf" target="_blank">
               <UButton icon="material-symbols:download-rounded"
-                class="mt-3 cursor-pointer bg-linear-to-r from-sky-400 to-blue-500 hover:from-sky-500 hover:to-blue-600 transition-all duration-200 border-0">
+                class="rounded-lg shadow-md mt-3 cursor-pointer bg-linear-to-r from-sky-400 to-blue-500 hover:from-sky-500 hover:to-blue-600 transition-all duration-200 border-0">
                 View Full Resume
               </UButton>
             </a>
@@ -214,22 +215,54 @@ definePageMeta({
         04</div>
       <div class="bg-sky-400 flex items-center text-center justify-center col-span-2 p-4 basis-sm rounded-xl text-3xl">
         05</div>
-      <div class="bg-sky-400 flex items-center text-center justify-center col-span-2 p-4 basis-sm rounded-xl text-3xl">
-        06</div>
-      <div class="bg-sky-400 flex items-center text-center justify-center col-span-1 p-4 basis-sm rounded-xl text-3xl">
-        07</div>
     </div>
 
     <!-- HTML to CSS to JS Showcase -->
-    <div class="flex items-center text-center justify-center text-3xl bg-sky-400 rounded-xl p-2 mt-20">
-      Test2
+    <div class="flex backdrop-blur-2xl rounded-xl items-center text-center justify-center text-3xl p-5 mt-15">
+      <div class="grid grid-cols-3 gap-4 p-4 rounded-2xl backdrop-blur-sm shadow-2xl w-full">
+
+        <!-- HTML -->
+        <div
+          class="flex flex-col gap-4 p-4 rounded-xl shadow-md transition-all duration-300 hover:shadow-orange-500/50 hover:shadow-lg hover:bg-white/5">
+          <!-- CHANGED: replaced "1" with iframe -->
+          <div class="bg-white/50 rounded-lg overflow-hidden">
+            <iframe src="/projects/to-do-list/index.html" class="w-full h-120 rounded-lg" title="To-Do List Project" />
+          </div>
+          <p class="text-md font-semibold uppercase tracking-widest text-orange-400">HTML</p>
+        </div>
+
+        <!-- CSS -->
+        <div
+          class="flex flex-col gap-4 p-4 rounded-xl shadow-md transition-all duration-300 hover:shadow-purple-500/50 hover:shadow-lg hover:bg-white/5">
+          <!-- inner grid -->
+          <div class="bg-white/50 rounded-lg p-3">2</div>
+          <!-- title below -->
+          <p class="text-md font-semibold uppercase tracking-widest text-purple-400">CSS</p>
+        </div>
+
+        <!-- JavaScript -->
+        <div
+          class="flex flex-col gap-4 p-4 rounded-xl shadow-md transition-all duration-300 hover:shadow-blue-500/50 hover:shadow-lg hover:bg-white/5">
+          <!-- inner grid -->
+          <div class="bg-white/50 rounded-lg p-3">3</div>
+          <!-- title below -->
+          <p class="text-md font-semibold uppercase tracking-widest text-blue-400">JavaScript</p>
+        </div>
+
+      </div>
     </div>
 
     <!-- Form & Randoms -->
     <div class="grid grid-cols-2 gap-x-9 gap-y-9 mt-30">
       <ContactForm />
-      <div class="bg-sky-500 flex items-center text-center justify-center col-span-1 p-4 basis-sm rounded-xl text-3xl">
-        Test3</div>
+      <div class="grid grid-cols-2 grid-rows-1 gap-x-9 gap-y-9 bg-sky-500 items-center text-center justify-center col-span-1 p-4 basis-sm rounded-xl text-3xl">
+        <div class="bg-sky-400 flex items-center text-center justify-center col-span-1 p-30 basis-sm rounded-xl text-3xl">
+        01</div>
+        <div class="bg-sky-400 flex items-center text-center justify-center col-span-1 p-30 basis-sm rounded-xl text-3xl">
+        02</div>
+        <div class="bg-sky-400 flex items-center text-center justify-center col-span-2 p-30 basis-sm rounded-xl text-3xl">
+        03</div>
+      </div>
     </div>
   </div>
 </template>
