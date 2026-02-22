@@ -97,7 +97,7 @@ onUnmounted(() => {
   <div class="fixed inset-0 -z-10 overflow-hidden transition-colors duration-500"
     :class="colorMode.value === 'dark' ? 'bg-[#0f172a]' : 'bg-[#f8fafc]'">
 
-    <canvas ref="canvas" class="absolute inset-0 w-full h-full" />
+    <canvas ref="canvas" class="fixed inset-0 w-full h-full -z-10" />
 
     <img v-if="!showGif"
       :src="gifSrc" class="pointer-events-none absolute w-30 h-30"
