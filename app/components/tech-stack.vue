@@ -1,9 +1,9 @@
 <template>
     <div class="col-span-3">
         <h2 class="flex text-3xl font-bold items-center text-center justify-center mb-1">Tech Stack & Tools</h2>
-        <div class="grid grid-cols-3 gap-4 p-3 rounded-xl backdrop-blur-sm shadow-xl">
+        <div class="grid grid-cols-3 gap-4 p-3 rounded-xl backdrop-blur-sm shadow-2xl">
 
-          <!-- Languages -->
+          <!-- Programming Languages -->
           <div
             class="p-3 rounded-xl shadow-md transition-all duration-300 hover:shadow-sky-500/20 hover:shadow-lg hover:bg-white/5">
             <p class="text-sm text-gray-400 font-semibold mb-2 uppercase tracking-widest">Programming Languages</p>
@@ -65,6 +65,10 @@
             <p class="text-sm text-gray-400 font-semibold mb-2 uppercase tracking-widest">DevOps & Tools</p>
             <div class="flex flex-wrap gap-2">
               <div class="flex flex-col items-center gap-1">
+                <UIcon name="devicon:git" class="rounded-xl shadow-xl size-13 p-1" />
+                <span class="text-[10px] text-gray-400">Git</span>
+              </div>
+              <div class="flex flex-col items-center gap-1">
                 <UIcon name="devicon:github" class="rounded-xl shadow-xl size-13 p-1" />
                 <span class="text-[10px] text-gray-400">GitHub</span>
               </div>
@@ -98,7 +102,7 @@
           <!-- IDEs -->
           <div
             class="p-3 rounded-xl shadow-md transition-all duration-300 hover:shadow-sky-500/20 hover:shadow-lg hover:bg-white/5">
-            <p class="text-sm text-gray-400 font-semibold mb-2 uppercase tracking-widest">IDEs</p>
+            <p class="text-sm text-gray-400 font-semibold mb-2 uppercase tracking-widest">IDE<span class="lowercase">s</span></p>
             <div class="flex flex-wrap gap-2">
               <div class="flex flex-col items-center gap-1">
                 <UIcon name="devicon:vscode" class="rounded-xl shadow-xl size-13 p-1" />
@@ -112,15 +116,11 @@
                 <UIcon name="devicon:arduino" class="rounded-xl shadow-xl size-13 p-1" />
                 <span class="text-[10px] text-gray-400">Arduino</span>
               </div>
-              <div class="flex flex-col items-center gap-1">
-                <UIcon name="devicon:wordpress" class="rounded-xl shadow-xl size-13 p-1" />
-                <span class="text-[10px] text-gray-400">WordPress</span>
-              </div>
             </div>
           </div>
-          <div class="flex justify-end col-span-3 mt-8.5">
+          <div class="flex justify-end col-span-3 mt-12.5">
             <UButton icon="material-symbols:grid-view-outline-rounded"
-              class="cursor-pointer bg-linear-to-r from-sky-400 to-blue-500 hover:from-sky-500 hover:to-blue-600 transition-all duration-200 border-0">
+              class="rounded-lg shadow-md cursor-pointer bg-linear-to-r from-sky-400 to-blue-500 hover:from-sky-500 hover:to-blue-600 transition-all duration-200 border-0">
               View More
             </UButton>
           </div>

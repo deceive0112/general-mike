@@ -68,7 +68,7 @@ const submitForm = async () => {
     </div>
   </Transition>
 
-  <div class="flex-col p-4 rounded-xl backdrop-blur-3xl shadow-xl" id="form">
+  <div class="flex-col p-4 rounded-xl backdrop-blur-3xl shadow-2xl" id="form">
     <h3 class="text-2xl font-bold">Let's Work Together</h3>
     <p class="mt-3 text-lg">I'm currently open to new opportunities and collaborations. 
       If you're interested in working together or just want to connect, feel free to reach out!</p>
@@ -80,29 +80,29 @@ const submitForm = async () => {
         <div class="flex flex-col w-full">
           <span class="text-[1rem] mb-1">Name<span class="text-red-500">*</span></span>
           <input type="text" maxlength="60" name="name" v-model="formData.name" placeholder="John Doe" required
-            class="w-full px-3 py-2 rounded-md border-0 ring-1 ring-gray-300 focus:outline-none focus:ring-1 focus:ring-blue-500" />
+            class="w-full px-3 py-2 rounded-xl shadow-md border-0 ring-1 ring-gray-300 focus:outline-none focus:ring-1 focus:ring-blue-500" />
         </div>
         <div class="flex flex-col w-full">
           <span class="text-[1rem] mb-1">Email<span class="text-red-500">*</span></span>
           <input type="email" maxlength="120" name="email" v-model="formData.email" placeholder="johndoe@example.com" required
-            class="w-full px-3 py-2 rounded-md border-0 ring-1 ring-gray-300 focus:outline-none focus:ring-1 focus:ring-blue-500" />
+            class="w-full px-3 py-2 rounded-xl shadow-md border-0 ring-1 ring-gray-300 focus:outline-none focus:ring-1 focus:ring-blue-500" />
         </div>
       </div>
 
       <div class="flex flex-col text-[1rem] mt-5">
         <span class="text-[1rem] mb-1">Subject<span class="text-red-500">*</span></span>
         <textarea name="subject" maxlength="160" v-model="formData.subject" placeholder="Project Inquiry, collaboration, etc." required
-          class="w-full px-3 py-2 rounded-md border-0 ring-1 ring-gray-300 focus:outline-none focus:ring-1 focus:ring-blue-500" rows="1"></textarea>
+          class="w-full px-3 py-2 rounded-xl shadow-md border-0 ring-1 ring-gray-300 focus:outline-none focus:ring-1 focus:ring-blue-500" rows="1"></textarea>
       </div>
 
       <div class="flex flex-col text-[1rem] mt-5">
         <span class="text-[1rem] mb-1">Message<span class="text-red-500">*</span></span>
         <textarea name="message" maxlength="600" v-model="formData.message" placeholder="Tell me about your project, timeline, and requirements..." rows="6" required
-          class="w-full px-3 py-2 rounded-md border-0 ring-1 ring-gray-300 focus:outline-none focus:ring-1 focus:ring-blue-500"></textarea>
+          class="w-full px-3 py-2 rounded-xl shadow-md border-0 ring-1 ring-gray-300 focus:outline-none focus:ring-1 focus:ring-blue-500"></textarea>
       </div>
 
       <button type="submit" :disabled="isSubmitting"
-        class="flex items-center justify-center mt-6 px-4 py-2 text-[1.2rem] bg-blue-500 text-white rounded-md hover:bg-blue-600 transition-colors duration-200 cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed">
+        class="flex items-center justify-center mt-6 px-4 py-2 text-[1.2rem] bg-blue-500 text-white rounded-xl shadow-xl hover:bg-blue-600 transition-colors duration-200 cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed">
         <UIcon :name="isSubmitting ? 'svg-spinners:ring-resize' : 'prime:send'" class="size-5 inline-flex mr-1" />
         {{ isSubmitting ? 'Sending...' : 'Send Message' }}
       </button>
