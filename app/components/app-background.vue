@@ -2,7 +2,11 @@
 import * as THREE from 'three'
 
 const showGif = useState('showGif', () => true)
+
 const colorMode = useColorMode()
+const toggleTheme = () => {
+  colorMode.preference = colorMode.preference === 'dark' ? 'light' : 'dark'
+}
 
 const x = ref(0)
 const y = ref(0)
@@ -15,10 +19,6 @@ let animationFrame
 let renderer, stars, material
 
 const lerp = (start, end, speed) => start + (end - start) * speed
-
-const toggleTheme = () => {
-  colorMode.preference = colorMode.preference === 'dark' ? 'light' : 'dark'
-}
 
 const animate = () => {
   gifX.value = lerp(gifX.value, x.value, 0.03)
