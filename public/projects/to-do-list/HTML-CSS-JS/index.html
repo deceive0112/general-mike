@@ -8,65 +8,80 @@
 </head>
 
 <body>
-  <center>
-    <div class="phone">
-      <fieldset>
-        <div class="top-phone">
-          <p class="time">9:50</p>
-          <p class="cam">◉</p>
-          <p class="battery">67%</p>
-        </div>
-        <div class="phonescreen">
-          <div class="app">
-            <h1>Notepad</h1>
-            <h2>To-Do List</h2>
-            <div class="task-row">
-              <input type="text" placeholder="Title of the task">
-              <button>Add</button>
-            </div>
-            <h3>Tasks:</h3>
-            <h4>Title 1:</h4>
-            <div class="task-row">
-              <input type="text" placeholder="Add a subtask(s)">
-              <button>Add</button>
-              <button>Delete</button>
-            </div>
-            <ul>
-              <li class="li-row"><input type="checkbox"> Buy groceries <button>Delete</button></li>
-            </ul>
-            <h4>Title 2:</h4>
-            <div class="task-row">
-              <input type="text" placeholder="Add a subtask(s)">
-              <button>Add</button>
-              <button>Delete</button>
-            </div>
-            <ul>
-              <li class="li-row"><input type="checkbox"> Complete project documentation <button>Delete</button></li>
-              <li class="li-row"><input type="checkbox"> Review code for bugs <button>Delete</button></li>
-              <li class="li-row"><input type="checkbox"> Prepare presentation slides <button>Delete</button></li>
-            </ul>
-            <h4>Title 3:</h4>
-            <div class="task-row">
-              <input type="text" placeholder="Add a subtask(s)">
-              <button>Add</button>
-              <button>Delete</button>
-            </div>
-            <ul>
-              <li class="li-row"><input type="checkbox"> Lorem ipsum dolor sit amet <button>Delete</button></li>
-              <li class="li-row"><input type="checkbox"> Lorem ipsum dolor sit amet <button>Delete</button></li>
-              <li class="li-row"><input type="checkbox"> Lorem ipsum dolor sit amet <button>Delete</button></li>
-            </ul>
-            <footer>
-              <b>General, Mike | © 2026 All rights reserved.</b>
-            </footer>
-          </div>
-          <div class="bottom-phone">
-            <p>🔘</p>
-          </div>
-        </div>
-      </fieldset>
+
+  <div class="phone">
+
+    <div class="top-phone">
+      <p>9:50</p>
+      <p>◉</p>
+      <p>67%</p>
     </div>
-  </center>
+
+    <div class="screen">
+
+      <div class="app">
+        <h1>Notepad</h1>
+        <h2>To-Do List</h2>
+
+        <div class="task-row">
+          <input type="text" placeholder="Title of the task">
+          <button class="icon-btn">+</button>
+        </div>
+
+        <h3>Tasks:</h3>
+
+        <h4>Title 1</h4>
+        <div class="task-row">
+          <input type="text" placeholder="Add a subtask(s)">
+          <button class="icon-btn">+</button>
+          <button class="icon-btn">×</button>
+        </div>
+        <ul>
+          <li class="li-row">
+            <input type="checkbox">
+            <span>Buy groceries</span>
+            <button class="icon-btn">×</button>
+          </li>
+        </ul>
+
+        <h4>Title 2</h4>
+        <div class="task-row">
+          <input type="text" placeholder="Add a subtask(s)">
+          <button class="icon-btn">+</button>
+          <button class="icon-btn">×</button>
+        </div>
+        <ul>
+          <li class="li-row">
+            <input type="checkbox">
+            <span>Complete project documentation</span>
+            <button class="icon-btn">×</button>
+          </li>
+          <li class="li-row">
+            <input type="checkbox">
+            <span>Review code for bugs</span>
+            <button class="icon-btn">×</button>
+          </li>
+          <li class="li-row">
+            <input type="checkbox">
+            <span>Prepare presentation slides</span>
+            <button class="icon-btn">×</button>
+          </li>
+        </ul>
+
+      </div>
+
+      <footer>
+        <b>General, Mike | © 2026 All rights reserved.</b>
+      </footer>
+
+    </div>
+
+    <div class="bottom-phone">
+      🔘
+    </div>
+
+  </div>
+
 </body>
 
 </html>
