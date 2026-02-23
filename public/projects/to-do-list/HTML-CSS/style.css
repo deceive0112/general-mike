@@ -50,4 +50,12 @@ fieldset {
   align-items: center;
   font-weight: bold;
   margin: auto;
+  opacity: 1;
+}
+
+.bottom-phone:hover {
+  opacity: 0.5;
+  font-size: 41.5px;
+  color: gray;
+  cursor: pointer;
 }
