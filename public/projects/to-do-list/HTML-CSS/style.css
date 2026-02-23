@@ -8,11 +8,22 @@
   box-shadow: 0 0 15px black;
 }
 
-.top-phone{
-  padding: 1px 20px;
+.top-phone {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
   font-weight: bold;
-  text-align: left;
   margin: auto;
+}
+.time {
+  margin: 0;
+}
+.cam {
+  margin: 0;
+}
+.battery {
+  margin: 0;
 }
 
 fieldset {
