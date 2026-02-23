@@ -195,10 +195,20 @@ definePageMeta({
         <!-- JavaScript -->
         <div
           class="flex flex-col gap-4 p-4 rounded-xl shadow-md transition-all duration-300 hover:shadow-blue-500/50 hover:shadow-lg hover:bg-white/5">
-          <!-- inner grid -->
-          <div class="bg-white/50 rounded-lg p-3">3</div>
-          <!-- title below -->
-          <p class="text-md font-semibold uppercase tracking-widest text-blue-400">//JavaScript</p>
+          <div class="bg-white/50 rounded-lg overflow-hidden">
+            <iframe src="/projects/to-do-list/HTML-CSS-JS/index.html" class="w-full h-120 rounded-lg" title="To-Do List Project" />
+          </div>
+          <div class="flex items-center justify-between">
+            <p class="text-md font-semibold uppercase tracking-widest text-blue-400">//Javascript</p>
+            <div class="flex justify-end">
+              <a href="/projects/to-do-list/to-do-source-code/HTML-CSS-JS.txt" target="_blank">
+              <UButton icon="material-symbols:folder-open-rounded"
+                class="rounded-lg shadow-2xl cursor-pointer bg-linear-to-r from-sky-400 to-blue-500 hover:from-sky-500 hover:to-blue-600 transition-all duration-200 border-0 p-2">
+                Open Source Code
+              </UButton>
+              </a>
+            </div>
+          </div>
         </div>
 
       </div>
