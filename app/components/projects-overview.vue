@@ -1,3 +1,27 @@
+<script setup lang="ts">
+const scrollContainer = ref(null)
+let isDown = false
+let startX = 0
+let scrollLeft = 0
+
+const onMouseDown = (e) => {
+  isDown = true
+  startX = e.pageX - scrollContainer.value.offsetLeft
+  scrollLeft = scrollContainer.value.scrollLeft
+}
+
+const onMouseLeave = () => { isDown = false }
+const onMouseUp = () => { isDown = false }
+
+const onMouseMove = (e) => {
+  if (!isDown) return
+  e.preventDefault()
+  const x = e.pageX - scrollContainer.value.offsetLeft
+  const walk = (x - startX) * 2
+  scrollContainer.value.scrollLeft = scrollLeft - walk
+}
+</script>
+
 <template>
   <div class="col-span-3 mt-15">
     <h2 class="flex text-4xl uppercase font-bold items-center text-center justify-center mb-1">Projects</h2>
@@ -21,26 +45,58 @@
           </div>
         </a>
 
-        <div class="flex flex-wrap gap-2 mt-2.5">
-          <div class="flex flex-col items-center gap-1">
+        <div ref="scrollContainer"
+          class="flex gap-2 mt-2.5 overflow-x-auto cursor-grab active:cursor-grabbing select-none"
+          style="scrollbar-width: none;" @mousedown="onMouseDown" @mouseleave="onMouseLeave" @mouseup="onMouseUp"
+          @mousemove="onMouseMove">
+
+          <div class="flex flex-col items-center gap-1 shrink-0">
             <UIcon name="devicon:vuejs" class="rounded-xl shadow-xl size-10 p-1" />
             <span class="text-[7px] text-gray-400">Vue</span>
           </div>
-          <div class="flex flex-col items-center gap-1">
+          <div class="flex flex-col items-center gap-1 shrink-0">
             <UIcon name="devicon:css" class="rounded-xl shadow-xl size-10 p-1" />
             <span class="text-[7px] text-gray-400">CSS</span>
           </div>
-          <div class="flex flex-col items-center gap-1">
+          <div class="flex flex-col items-center gap-1 shrink-0">
             <UIcon name="devicon:html5" class="rounded-xl shadow-xl size-10 p-1" />
             <span class="text-[7px] text-gray-400">HTML</span>
           </div>
-          <div class="flex flex-col items-center gap-1">
+          <div class="flex flex-col items-center gap-1 shrink-0">
             <UIcon name="devicon:typescript" class="rounded-xl shadow-xl size-10 p-1" />
             <span class="text-[7px] text-gray-400">TypeScript</span>
           </div>
-          <div class="flex flex-col items-center gap-1">
+          <div class="flex flex-col items-center gap-1 shrink-0">
             <UIcon name="devicon:javascript" class="rounded-xl shadow-xl size-10 p-1" />
             <span class="text-[7px] text-gray-400">JavaScript</span>
+          </div>
+          <div class="flex flex-col items-center gap-1 shrink-0">
+            <UIcon name="devicon:nuxtjs" class="rounded-xl shadow-xl size-10 p-1" />
+            <span class="text-[7px] text-gray-400">Nuxt</span>
+          </div>
+          <div class="flex flex-col items-center gap-1 shrink-0">
+            <UIcon name="devicon:tailwindcss" class="rounded-xl shadow-xl size-10 p-1" />
+            <span class="text-[7px] text-gray-400">Tailwind CSS</span>
+          </div>
+          <div class="flex flex-col items-center gap-1 shrink-0">
+            <UIcon name="devicon:shadcnui" class="rounded-xl shadow-xl size-10 p-1" />
+            <span class="text-[7px] text-gray-400">Shadcn UI</span>
+          </div>
+          <div class="flex flex-col items-center gap-1 shrink-0">
+            <UIcon name="devicon:radixui" class="rounded-xl shadow-xl size-10 p-1" />
+            <span class="text-[7px] text-gray-400">Radix UI</span>
+          </div>
+          <div class="flex flex-col items-center gap-1 shrink-0">
+            <UIcon name="devicon:vercel" class="rounded-xl shadow-xl size-10 p-1" />
+            <span class="text-[7px] text-gray-400">Vercel</span>
+          </div>
+          <div class="flex flex-col items-center gap-1 shrink-0">
+            <UIcon name="devicon:threejs" class="rounded-xl shadow-xl size-10 p-1" />
+            <span class="text-[7px] text-gray-400">Three</span>
+          </div>
+          <div class="flex flex-col items-center gap-1 shrink-0">
+            <UIcon name="devicon:formsubmit" class="rounded-xl shadow-xl size-10 p-1" />
+            <span class="text-[7px] text-gray-400">Form Submit</span>
           </div>
         </div>
         <p class="gap-2 p-3 rounded-xl">Test test</p>
@@ -54,7 +110,8 @@
         <a href="https://github.com/deceive0112/Vanilla-Web-App-Notepad" target="_blank"
           class="flex flex-col rounded-xl overflow-hidden shadow-xl hover:scale-105 transition-all duration-300 cursor-pointer border border-white/10">
 
-          <img src="https://opengraph.githubassets.com/2/deceive0112/Vanilla-Web-App-Notepad" class="w-full object-cover" />
+          <img src="https://opengraph.githubassets.com/2/deceive0112/Vanilla-Web-App-Notepad"
+            class="w-full object-cover" />
 
           <div class="flex items-center gap-2 px-3 py-2 bg-white/5">
             <UIcon name="mdi:github" class="size-4 text-gray-400" />
