@@ -5,10 +5,11 @@
 }
 
 body {
+  margin-top: 10px;
+  margin-bottom: 10px;
   height: auto;
   display: flex;
   justify-content: center;
-  align-items: center;
   font-family: serif;
 }
 
@@ -69,19 +70,48 @@ footer {
   opacity: 0.8;
 }
 
-h1 { background: rgb(90, 89, 89); margin-bottom: 3px; }
-h2 { background: rgb(122, 116, 116); margin-bottom: 10px; }
-h3 { background: rgb(153, 149, 149); margin-top: 10px; margin-bottom: 5px; border-radius: 5px; padding-top: 3px; padding-bottom: 3px; }
-h4 { background: rgb(153, 149, 149); margin: 5px 0; border-top-right-radius: 20px; padding-top: 3px; padding-bottom: 3px; }
+h1 {
+  background: rgb(90, 89, 89);
+  margin-bottom: 3px;
+  padding-bottom: 3px;
+  padding-left: 3px;
+}
+
+h2 {
+  background: rgb(122, 116, 116);
+  margin-bottom: 10px;
+  padding-bottom: 3px;
+  padding-left: 3px;
+}
+
+h3 {
+  background: rgb(153, 149, 149);
+  margin-top: 10px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 3px;
+}
+
+h4 {
+  background: rgb(153, 149, 149);
+  margin: 5px 0;
+  border-top-right-radius: 20px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 3px;
+}
 
 .task-row {
-  height: 32px;
+  height: 25px;
 }
 
 .task-row input {
-  height: 25px;          
-  padding: 2px 30px;      
-  font-size: 13px;       
+  height: 25px;
+  width: 235px;
+  padding: 2px 6px;
+  font-size: 13px;
   border: 1px solid black;
   border-radius: 5px;
 }
@@ -92,6 +122,8 @@ h4 { background: rgb(153, 149, 149); margin: 5px 0; border-top-right-radius: 20p
   justify-content: space-between;
   margin-top: 5px;
   margin-bottom: 5px;
+  padding: 8px 6px;
+  border-bottom: 1px solid #ccc;
 }
 
 .li-row span {
@@ -122,4 +154,20 @@ button:hover {
   width: 32px;
   padding: 0;
   font-weight: bold;
+}
+
+.task-container {
+  background: #bdb9b9;
+  border-radius: 12px;
+  padding: 5px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  margin-top: 10px;
+  margin-bottom: 6px;
+}
+
+#taskList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }

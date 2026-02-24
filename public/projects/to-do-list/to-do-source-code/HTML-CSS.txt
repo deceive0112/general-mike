@@ -6,69 +6,87 @@ HTML:
 <head>
   <meta charset="UTF-8">
   <title>To-Do List</title>
-  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <center>
-    <div class="phone">
-      <fieldset>
-        <div class="top-phone">
-          <p class="time">9:50</p>
-          <p class="cam">◉</p>
-          <p class="battery">67%</p>
-        </div>
-        <div class="phonescreen">
-          <div class="app">
-            <h1>Notepad</h1>
-            <h2>To-Do List</h2>
-            <div class="task-row">
-              <input type="text" placeholder="Title of the task">
-              <button>Add</button>
-            </div>
-            <h3>Tasks:</h3>
-            <h4>Title 1:</h4>
-            <div class="task-row">
-              <input type="text" placeholder="Add a subtask(s)">
-              <button>Add</button>
-              <button>Delete</button>
-            </div>
-            <ul>
-              <li class="li-row"><input type="checkbox"> Buy groceries <button>Delete</button></li>
-            </ul>
-            <h4>Title 2:</h4>
-            <div class="task-row">
-              <input type="text" placeholder="Add a subtask(s)">
-              <button>Add</button>
-              <button>Delete</button>
-            </div>
-            <ul>
-              <li class="li-row"><input type="checkbox"> Complete project documentation <button>Delete</button></li>
-              <li class="li-row"><input type="checkbox"> Review code for bugs <button>Delete</button></li>
-              <li class="li-row"><input type="checkbox"> Prepare presentation slides <button>Delete</button></li>
-            </ul>
-            <h4>Title 3:</h4>
-            <div class="task-row">
-              <input type="text" placeholder="Add a subtask(s)">
-              <button>Add</button>
-              <button>Delete</button>
-            </div>
-            <ul>
-              <li class="li-row"><input type="checkbox"> Lorem ipsum dolor sit amet <button>Delete</button></li>
-              <li class="li-row"><input type="checkbox"> Lorem ipsum dolor sit amet <button>Delete</button></li>
-              <li class="li-row"><input type="checkbox"> Lorem ipsum dolor sit amet <button>Delete</button></li>
-            </ul>
-            <footer>
-              <b>General, Mike | © 2026 All rights reserved.</b>
-            </footer>
-          </div>
-          <div class="bottom-phone">
-            <p>🔘</p>
-          </div>
-        </div>
-      </fieldset>
+
+  <div class="phone">
+
+    <div class="top-phone">
+      <p>9:50</p>
+      <p>◉</p>
+      <p>67%</p>
     </div>
-  </center>
+
+    <div class="screen">
+
+      <div class="app">
+        <h1>Notepad</h1>
+        <h2>To-Do List</h2>
+
+        <div class="task-row">
+          <input type="text" placeholder="Title of the task">
+          <button class="icon-btn">+</button>
+        </div>
+
+        <h3>Tasks:</h3>
+
+        <h4>Title 1</h4>
+        <div class="task-row">
+          <input type="text" placeholder="Add a subtask(s)">
+          <button class="icon-btn">+</button>
+          <button class="icon-btn">×</button>
+        </div>
+        <div class="task-container">
+          <ul id="taskList">
+            <li class="li-row">
+              <input type="checkbox">
+              <span>Buy groceries</span>
+              <button class="icon-btn">×</button>
+            </li>
+          </ul>
+        </div>
+
+        <h4>Title 2</h4>
+        <div class="task-row">
+          <input type="text" placeholder="Add a subtask(s)">
+          <button class="icon-btn">+</button>
+          <button class="icon-btn">×</button>
+        </div>
+        <div class="task-container">
+          <ul id="taskList">
+            <li class="li-row">
+              <input type="checkbox">
+              <span>Complete project documentation</span>
+              <button class="icon-btn">×</button>
+            </li>
+            <li class="li-row">
+              <input type="checkbox">
+              <span>Review code for bugs</span>
+              <button class="icon-btn">×</button>
+            </li>
+            <li class="li-row">
+              <input type="checkbox">
+              <span>Prepare presentation slides</span>
+              <button class="icon-btn">×</button>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <footer>
+        <b>General, Mike | © 2026 All rights reserved.</b>
+      </footer>
+
+    </div>
+
+    <div class="bottom-phone">
+      🔘
+    </div>
+
+  </div>
+
 </body>
 
 </html>
@@ -77,124 +95,176 @@ HTML:
 
 CSS:
 
-fieldset {
-  width: 355px;
-  height: 640px;
-  border-radius: 30px;
-  border: 5px solid black;
-  padding: 0.5px;
-  background-color: white;
-  margin: 0 auto;
-}
-
-button:active {
-  background-color: darkgray;
-  transform: scale(0.95); 
-}
-
-h1 {
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color: rgb(90, 89, 89);
 }
-h2 {
-  margin-top: 3px;
-  margin-bottom: 10px;
-  padding: 0;
-  background-color: rgb(122, 116, 116);
-}
-h3 {
+
+body {
   margin-top: 10px;
-  margin-bottom: 5px;
-  padding: 0;
-  background-color: rgb(153, 149, 149);
-  border-radius: 5px;
-}
-h4 {
-  margin-top: 5px;
   margin-bottom: 10px;
-  padding: 0;
-  background-color: rgb(153, 149, 149);
-  border-start-end-radius: 90px
+  height: auto;
+  display: flex;
+  justify-content: center;
+  font-family: serif;
 }
 
 .phone {
-  margin: auto;
-  padding-right: 5px;
   width: 360px;
   height: 650px;
-  background-color: gray;
-  border-radius: 30px;
+  background: white;
+  border: 5px solid black;
+  border-radius: 25px;
   box-shadow: 0 0 20px black;
-}
-
-.app {
-  text-align: left;
-  background-color: rgb(212, 208, 208);
-  border-radius: 2px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 .top-phone {
+  height: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 15px;
-  padding-bottom: 17px;
-  padding-top: 8px;
+  padding: 0 10px 18px;
   font-weight: bold;
-  font-size: medium;
-  margin: auto;
-}
-.time {
-  margin: 0;
-}
-.cam {
-  margin: 0;
-}
-.battery {
-  margin: 0;
+  background: white;
 }
 
-.bottom-phone p{
-  font-size: 40px;
+.screen {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background: rgb(212, 208, 208);
+  overflow: hidden;
+}
+
+.app {
+  flex: 1;
+  overflow-y: auto;
+  padding: 5px;
+}
+
+footer {
+  text-align: center;
+  font-size: 12px;
+  padding: 5px 0;
+  background: rgb(219, 215, 215);
+}
+
+.bottom-phone {
+  height: 55px;
   display: flex;
   justify-content: center;
-  text-align: center;
   align-items: center;
-  font-weight: bold;
-  margin: 0;
-}
-
-.bottom-phone:hover {
-  opacity: 0.5;
-  color: rgb(161, 159, 159);
+  font-size: 40px;
   cursor: pointer;
 }
 
-.task-row {
-  display: flex;
-  align-items: center;
-  width: 100%;
+.bottom-phone:hover {
+  opacity: 0.8;
 }
-.task-row input {
+
+h1 {
+  background: rgb(90, 89, 89);
+  margin-bottom: 3px;
+  padding-bottom: 3px;
+  padding-left: 3px;
+}
+
+h2 {
+  background: rgb(122, 116, 116);
+  margin-bottom: 10px;
+  padding-bottom: 3px;
+  padding-left: 3px;
+}
+
+h3 {
+  background: rgb(153, 149, 149);
+  margin-top: 10px;
+  margin-bottom: 5px;
   border-radius: 5px;
-  margin-left: 3px;
-  flex: 5;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 3px;
 }
-.task-row button {
-  margin-left: 5px;
+
+h4 {
+  background: rgb(153, 149, 149);
+  margin: 5px 0;
+  border-top-right-radius: 20px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 3px;
 }
+
+.task-row {
+  height: 25px;
+}
+
+.task-row input {
+  height: 25px;
+  width: 235px;
+  padding: 2px 6px;
+  font-size: 13px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
 .li-row {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 8px 6px;
+  border-bottom: 1px solid #ccc;
 }
 
-footer {
-  font-size: smaller;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
+.li-row span {
+  flex: 1;
+  margin-left: 8px;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+button {
+  border: 1px solid black;
+  background: white;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background: #969393;
+}
+
+.icon-btn {
+  height: 23px;
+  width: 32px;
+  padding: 0;
+  font-weight: bold;
+}
+
+.task-container {
+  background: #bdb9b9;
+  border-radius: 12px;
+  padding: 5px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  margin-top: 10px;
+  margin-bottom: 6px;
+}
+
+#taskList {
+  list-style: none;
+  padding: 0;
   margin: 0;
 }
