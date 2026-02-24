@@ -24,53 +24,11 @@
         <h2>To-Do List</h2>
 
         <div class="task-row">
-          <input type="text" placeholder="Title of the task">
-          <button class="icon-btn">+</button>
+          <input type="text" id="input-box-title" placeholder="Title of the task">
+          <button class="icon-btn" onclick="addTitle()">+</button>
         </div>
 
         <h3>Tasks:</h3>
-
-        <h4>Title 1</h4>
-        <div class="task-row">
-          <input type="text" placeholder="Add a subtask(s)">
-          <button class="icon-btn">+</button>
-          <button class="icon-btn">×</button>
-        </div>
-        <div class="task-container">
-          <ul id="taskList">
-            <li class="li-row">
-              <input type="checkbox">
-              <span>Buy groceries</span>
-              <button class="icon-btn">×</button>
-            </li>
-          </ul>
-        </div>
-
-        <h4>Title 2</h4>
-        <div class="task-row">
-          <input type="text" placeholder="Add a subtask(s)">
-          <button class="icon-btn">+</button>
-          <button class="icon-btn">×</button>
-        </div>
-        <div class="task-container">
-          <ul id="taskList">
-            <li class="li-row">
-              <input type="checkbox">
-              <span>Complete project documentation</span>
-              <button class="icon-btn">×</button>
-            </li>
-            <li class="li-row">
-              <input type="checkbox">
-              <span>Review code for bugs</span>
-              <button class="icon-btn">×</button>
-            </li>
-            <li class="li-row">
-              <input type="checkbox">
-              <span>Prepare presentation slides</span>
-              <button class="icon-btn">×</button>
-            </li>
-          </ul>
-        </div>
 
       </div>
 
@@ -85,7 +43,7 @@
     </div>
 
   </div>
-
+<script src="script.js"></script>
 </body>
 
 </html>

@@ -104,12 +104,15 @@ h4 {
 }
 
 .task-row {
+  display: flex;
+  align-items: center;
+  gap: 5px;
   height: 25px;
 }
 
 .task-row input {
+  flex: 1;
   height: 25px;
-  width: 235px;
   padding: 2px 6px;
   font-size: 13px;
   border: 1px solid black;
