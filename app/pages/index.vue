@@ -42,6 +42,47 @@ definePageMeta({
     transform: rotate(0deg);
   }
 }
+
+.typing1, .typing2, .typing3 {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid currentColor;
+  width: 0;
+}
+
+.typing1 {
+  animation: typing1 5s steps(11) infinite, blink 0.6s step-end infinite;
+}
+.typing2 {
+  animation: typing2 5s steps(7) infinite, blink 0.6s step-end infinite;
+}
+.typing3 {
+  animation: typing3 5s steps(13) infinite, blink 0.6s step-end infinite;
+}
+
+@keyframes typing1 {
+  0%   { width: 0; }
+  50%  { width: 11ch; }
+  90%  { width: 11ch; }
+  100% { width: 0; }
+}
+@keyframes typing2 {
+  0%   { width: 0; }
+  50%  { width: 7ch; }
+  90%  { width: 7ch; }
+  100% { width: 0; }
+}
+@keyframes typing3 {
+  0%   { width: 0; }
+  50%  { width: 13ch; }
+  90%  { width: 13ch; }
+  100% { width: 0; }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
 </style>
 
 <template>
@@ -161,7 +202,7 @@ definePageMeta({
             <iframe src="/projects/to-do-list/HTML/index.html" class="w-full h-120 rounded-lg" title="To-Do List Project" />
           </div>
           <div class="flex items-center justify-between">
-            <p class="text-[28px] font-semibold uppercase tracking-widest text-orange-400">&lt;!--HTML--&gt;</p>
+            <p class="text-[28px] font-semibold uppercase tracking-widest text-orange-400 inline-block typing1">&lt;!--HTML--&gt;</p>
             <div class="flex justify-end">
               <a href="/projects/to-do-list/to-do-source-code/HTML.txt" target="_blank">
               <UButton icon="material-symbols:folder-open-rounded"
@@ -180,7 +221,7 @@ definePageMeta({
             <iframe src="/projects/to-do-list/HTML-CSS/index.html" class="w-full h-120 rounded-lg" title="To-Do List Project" />
           </div>
           <div class="flex items-center justify-between">
-            <p class="text-[28px] font-semibold uppercase tracking-widest text-purple-400">/*CSS*/</p>
+            <p class="text-[28px] font-semibold uppercase tracking-widest text-purple-400 inline-block typing2">/*CSS*/</p>
             <div class="flex justify-end">
               <a href="/projects/to-do-list/to-do-source-code/HTML-CSS.txt" target="_blank">
               <UButton icon="material-symbols:folder-open-rounded"
@@ -199,7 +240,7 @@ definePageMeta({
             <iframe src="/projects/to-do-list/HTML-CSS-JS/index.html" class="w-full h-120 rounded-lg" title="To-Do List Project" />
           </div>
           <div class="flex items-center justify-between">
-            <p class="text-[28px] font-semibold uppercase tracking-widest text-blue-400">//Javascript</p>
+            <p class="text-[28px] font-semibold uppercase tracking-widest text-blue-400 inline-block typing3">//Javascript</p>
             <div class="flex justify-end">
               <a href="/projects/to-do-list/to-do-source-code/HTML-CSS-JS.txt" target="_blank">
               <UButton icon="material-symbols:folder-open-rounded"
