@@ -67,15 +67,15 @@ onUnmounted(() => clearInterval(typingTimer))
 
     <div class="flex gap-6 text-sm">
       <div class="flex flex-col items-center">
-        <span class="text-white">Score</span>
+        <span>Score</span>
         <span class="text-lg font-bold text-green-400">{{ score }}</span>
       </div>
       <div class="flex flex-col items-center">
-        <span class="text-white">Time</span>
+        <span>Time</span>
         <span class="text-lg font-bold" :class="timeLeft <= 10 ? 'text-red-400' : 'text-green-400'">{{ timeLeft }}s</span>
       </div>
       <div class="flex flex-col items-center">
-        <span class="text-white">WPM</span>
+        <span>WPM</span>
         <span class="text-lg font-bold text-yellow-400">{{ wpm }}</span>
       </div>
     </div>
@@ -95,7 +95,7 @@ onUnmounted(() => clearInterval(typingTimer))
       enter-to-class="opacity-100 translate-y-0">
       <div v-if="gameOver" class="text-center">
         <p class="text-[20px] font-bold">Game Over!</p>
-        <p class="text-sm text-white mt-1">
+        <p class="text-sm mt-1">
           Words: <span class="text-blue-400 mr-2">{{ score }}</span>
           WPM: <span class="text-yellow-400">{{ wpm }}</span>
         </p>
