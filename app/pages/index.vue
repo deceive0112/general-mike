@@ -6,13 +6,14 @@ definePageMeta({
   layout: "default",
 });
 
-const iconScroll = ref(null)
+const iconScroll = ref<HTMLDivElement | null>(null)
 let isDown = false
 let startY = 0
 let scrollTop = 0
 
-const onMouseDown = (e) => {
+const onMouseDown = (e: MouseEvent) => {
   isDown = true
+  if (!iconScroll.value) return
   startY = e.pageY - iconScroll.value.offsetTop
   scrollTop = iconScroll.value.scrollTop
 }
@@ -20,9 +21,10 @@ const onMouseDown = (e) => {
 const onMouseLeave = () => { isDown = false }
 const onMouseUp = () => { isDown = false }
 
-const onMouseMove = (e) => {
+const onMouseMove = (e: MouseEvent) => {
   if (!isDown) return
   e.preventDefault()
+  if (!iconScroll.value) return
   const y = e.pageY - iconScroll.value.offsetTop
   const walk = (y - startY) * 2
   iconScroll.value.scrollTop = scrollTop - walk
@@ -369,7 +371,8 @@ const onMouseMove = (e) => {
         class="grid grid-cols-2 grid-rows-1 gap-x-9 gap-y-9 items-center text-center justify-center col-span-1 p-4 basis-sm rounded-xl text-3xl backdrop-blur-xl">
         <div
           class="flex items-center text-center justify-center col-span-1 p-2 basis-sm rounded-xl text-3xl backdrop-blur-sm">
-          <TicTacToe/></div>
+          <TicTacToe />
+        </div>
         <div
           class="bg-sky-400 flex items-center text-center justify-center col-span-1 p-30 basis-sm rounded-xl text-3xl">
           Test?</div>

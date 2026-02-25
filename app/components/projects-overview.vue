@@ -1,11 +1,12 @@
 <script setup lang="ts">
-const scrollContainer = ref(null)
+const scrollContainer = ref<HTMLDivElement | null>(null)
 let isDown = false
 let startX = 0
 let scrollLeft = 0
 
-const onMouseDown = (e) => {
+const onMouseDown = (e: MouseEvent) => {
   isDown = true
+  if (!scrollContainer.value) return
   startX = e.pageX - scrollContainer.value.offsetLeft
   scrollLeft = scrollContainer.value.scrollLeft
 }
@@ -13,9 +14,10 @@ const onMouseDown = (e) => {
 const onMouseLeave = () => { isDown = false }
 const onMouseUp = () => { isDown = false }
 
-const onMouseMove = (e) => {
+const onMouseMove = (e: MouseEvent) => {
   if (!isDown) return
   e.preventDefault()
+  if (!scrollContainer.value) return
   const x = e.pageX - scrollContainer.value.offsetLeft
   const walk = (x - startX) * 2
   scrollContainer.value.scrollLeft = scrollLeft - walk
@@ -145,8 +147,7 @@ const onMouseMove = (e) => {
         <a href="https://github.com/deceive0112/" target="_blank"
           class="flex flex-col rounded-xl overflow-hidden shadow-xl hover:scale-105 transition-all duration-300 cursor-pointer border border-white/10">
 
-          <img src="https://opengraph.githubassets.com/2/deceive0112/"
-            class="w-full object-cover" />
+          <img src="https://opengraph.githubassets.com/2/deceive0112/" class="w-full object-cover" />
 
           <div class="flex items-center gap-2 px-3 py-2 bg-white/5">
             <UIcon name="mdi:github" class="size-4 text-gray-400" />
