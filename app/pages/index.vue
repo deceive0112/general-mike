@@ -260,14 +260,17 @@ const onMouseMove = (e: MouseEvent) => {
                 <a href="https://github.com/deceive0112/" target="_blank"
                   class="flex items-center gap-2 px-3 py-2 bg-white/5">
                   <UIcon name="mdi:github" class="size-4 text-gray-400" />
-                  <span class="text-xs text-gray-400">github.com</span>
-                  <span class="text-xs font-bold ml-1">deceive0112/Vanilla-Web-App-Notedpad</span>
+                  <span class="text-md text-gray-400">github.com</span>
+                  <span class="text-md font-bold ml-1">deceive0112/Vanilla-Web-App-Notedpad</span>
                 </a>
               </div>
 
               <div ref="iconScroll"
                 class="flex flex-col gap-2 overflow-y-auto cursor-grab active:cursor-grabbing select-none self-stretch mt-1"
-                style="scrollbar-width: none;" @mousedown="onMouseDown" @mouseleave="onMouseLeave" @mouseup="onMouseUp"
+                style="scrollbar-width: none; max-height: 25.3rem;" 
+                @mousedown="onMouseDown" 
+                @mouseleave="onMouseLeave" 
+                @mouseup="onMouseUp"
                 @mousemove="onMouseMove">
                 <div class="flex flex-col items-center gap-1 shrink-0">
                   <UIcon name="devicon:html5" class="rounded-xl shadow-xl size-13 p-1" />
@@ -276,6 +279,18 @@ const onMouseMove = (e: MouseEvent) => {
                 <div class="flex flex-col items-center gap-1 shrink-0">
                   <UIcon name="devicon:css" class="rounded-xl shadow-xl size-13 p-1" />
                   <span class="text-[10px] text-gray-400">CSS</span>
+                </div>
+                <div class="flex flex-col items-center gap-1 shrink-0">
+                  <UIcon name="devicon:javascript" class="rounded-xl shadow-xl size-13 p-1" />
+                  <span class="text-[10px] text-gray-400">JavaScript</span>
+                </div>
+                <div class="flex flex-col items-center gap-1 shrink-0">
+                  <UIcon name="devicon:javascript" class="rounded-xl shadow-xl size-13 p-1" />
+                  <span class="text-[10px] text-gray-400">JavaScript</span>
+                </div>
+                <div class="flex flex-col items-center gap-1 shrink-0">
+                  <UIcon name="devicon:javascript" class="rounded-xl shadow-xl size-13 p-1" />
+                  <span class="text-[10px] text-gray-400">JavaScript</span>
                 </div>
                 <div class="flex flex-col items-center gap-1 shrink-0">
                   <UIcon name="devicon:javascript" class="rounded-xl shadow-xl size-13 p-1" />
@@ -378,8 +393,8 @@ const onMouseMove = (e: MouseEvent) => {
           class="bg-sky-400 flex items-center text-center justify-center col-span-1 p-30 basis-sm rounded-xl text-3xl">
           Test?</div>
         <div
-          class="bg-sky-400 flex items-center text-center justify-center col-span-2 p-25 basis-sm rounded-xl text-3xl">
-          Race</div>
+          class="col-span-2 p-1 basis-sm rounded-xl text-lg backdrop-blur-sm">
+          <RaceGame /></div>
       </div>
     </div>
   </div>
