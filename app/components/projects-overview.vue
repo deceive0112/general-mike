@@ -179,10 +179,12 @@ const onMouseMove = (e: MouseEvent) => {
 
       <!-- CHANGED: col-span-1 md:col-span-2 lg:col-span-3 for button row -->
       <div class="flex justify-end col-span-1 md:col-span-2 lg:col-span-3">
+        <a href="/projects">
         <UButton icon="material-symbols:grid-view-outline-rounded"
           class="rounded-lg shadow-md cursor-pointer bg-linear-to-r from-sky-400 to-blue-500 hover:from-sky-500 hover:to-blue-600 transition-all duration-200 border-0">
           View More
         </UButton>
+        </a>
       </div>
 
     </div>

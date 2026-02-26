@@ -112,9 +112,9 @@ definePageMeta({
             </a>
           </div>
           <span class="text-base md:text-lg font-mono">|</span>
-          <span
+          <a href="/about"
             class="text-base md:text-lg font-bold font-mono px-1 text-subtext1 hover:text-blue-500 transition-colors duration-200 cursor-pointer">More
-            about me... -></span>
+            about me... -></a>
         </div>
       </div>
 
