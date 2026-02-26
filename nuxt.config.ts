@@ -7,10 +7,7 @@ export default defineNuxtConfig({
     storageKey: 'nuxt-color-mode',      
   },
 
-  modules: [
-    '@nuxt/eslint',
-    '@nuxt/ui'
-  ],
+  modules: ['@nuxt/eslint', '@nuxt/ui', '@nuxt/image'],
 
   devtools: {
     enabled: true
