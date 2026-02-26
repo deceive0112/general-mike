@@ -37,8 +37,8 @@ const isHoveredEdu = ref(false)
       </div>
 
       <!-- LDCU -->
-      <Transition enter-active-class="transition-all duration-500" enter-from-class="opacity-0 -translate-y-3"
-        enter-to-class="opacity-100 translate-y-0" leave-active-class="transition-all duration-300"
+      <Transition enter-active-class="transition-all duration-600" enter-from-class="opacity-0 -translate-y-3"
+        enter-to-class="opacity-100 translate-y-0" leave-active-class="transition-all duration-600"
         leave-from-class="opacity-100 translate-y-0" leave-to-class="opacity-0 -translate-y-3">
         <div v-show="isHoveredEdu" class="flex items-start gap-2 md:gap-3">
           <a href="https://www.liceo.edu.ph/" target="_blank">
