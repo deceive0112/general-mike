@@ -1,6 +1,125 @@
 @import "tailwindcss";
 @import "@nuxt/ui";
 
+/*Emoji Wave*/
+.animate-wave {
+  animation: wave 1.5s ease-in-out infinite;
+  transform-origin: 70% 70%;
+}
+
+@keyframes wave {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  15% {
+    transform: rotate(18deg);
+  }
+
+  30% {
+    transform: rotate(-12deg);
+  }
+
+  45% {
+    transform: rotate(18deg);
+  }
+
+  60% {
+    transform: rotate(-8deg);
+  }
+
+  75% {
+    transform: rotate(14deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/*HTML, CSS, JS Typing Animation*/
+.typing1,
+.typing2,
+.typing3 {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid currentColor;
+  width: 0;
+}
+
+.typing1 {
+  animation: typing1 5s steps(11) infinite, blink 0.6s step-end infinite;
+}
+
+.typing2 {
+  animation: typing2 5s steps(7) infinite, blink 0.6s step-end infinite;
+}
+
+.typing3 {
+  animation: typing3 5s steps(13) infinite, blink 0.6s step-end infinite;
+}
+
+@keyframes typing1 {
+  0% {
+    width: 0;
+  }
+
+  50% {
+    width: 11ch;
+  }
+
+  90% {
+    width: 11ch;
+  }
+
+  100% {
+    width: 0;
+  }
+}
+
+@keyframes typing2 {
+  0% {
+    width: 0;
+  }
+
+  50% {
+    width: 7ch;
+  }
+
+  90% {
+    width: 7ch;
+  }
+
+  100% {
+    width: 0;
+  }
+}
+
+@keyframes typing3 {
+  0% {
+    width: 0;
+  }
+
+  50% {
+    width: 13ch;
+  }
+
+  90% {
+    width: 13ch;
+  }
+
+  100% {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+/**/
 @theme static {
   --font-sans: 'Public Sans', sans-serif;
 

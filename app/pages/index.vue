@@ -5,145 +5,9 @@ const isHovered = ref(false)
 definePageMeta({
   layout: "default",
 });
-
-const carouselRef = ref<HTMLDivElement | null>(null)
-const shouldAnimate = ref(false)
-
-const checkOverflow = () => {
-  if (carouselRef.value) {
-    const parent = carouselRef.value.parentElement
-    if (parent) {
-      shouldAnimate.value = carouselRef.value.scrollWidth / 2 > parent.clientWidth
-    }
-  }
-}
-
-onMounted(() => {
-  checkOverflow()
-  window.addEventListener('resize', checkOverflow)
-})
-
-onUnmounted(() => {
-  window.removeEventListener('resize', checkOverflow)
-})
 </script>
 
 <style>
-.animate-wave {
-  animation: wave 1.5s ease-in-out infinite;
-  transform-origin: 70% 70%;
-}
-
-@keyframes wave {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  15% {
-    transform: rotate(18deg);
-  }
-
-  30% {
-    transform: rotate(-12deg);
-  }
-
-  45% {
-    transform: rotate(18deg);
-  }
-
-  60% {
-    transform: rotate(-8deg);
-  }
-
-  75% {
-    transform: rotate(14deg);
-  }
-
-  100% {
-    transform: rotate(0deg);
-  }
-}
-
-.typing1,
-.typing2,
-.typing3 {
-  overflow: hidden;
-  white-space: nowrap;
-  border-right: 2px solid currentColor;
-  width: 0;
-}
-
-.typing1 {
-  animation: typing1 5s steps(11) infinite, blink 0.6s step-end infinite;
-}
-
-.typing2 {
-  animation: typing2 5s steps(7) infinite, blink 0.6s step-end infinite;
-}
-
-.typing3 {
-  animation: typing3 5s steps(13) infinite, blink 0.6s step-end infinite;
-}
-
-@keyframes typing1 {
-  0% {
-    width: 0;
-  }
-
-  50% {
-    width: 11ch;
-  }
-
-  90% {
-    width: 11ch;
-  }
-
-  100% {
-    width: 0;
-  }
-}
-
-@keyframes typing2 {
-  0% {
-    width: 0;
-  }
-
-  50% {
-    width: 7ch;
-  }
-
-  90% {
-    width: 7ch;
-  }
-
-  100% {
-    width: 0;
-  }
-}
-
-@keyframes typing3 {
-  0% {
-    width: 0;
-  }
-
-  50% {
-    width: 13ch;
-  }
-
-  90% {
-    width: 13ch;
-  }
-
-  100% {
-    width: 0;
-  }
-}
-
-@keyframes blink {
-  50% {
-    border-color: transparent;
-  }
-}
 
 .slide-in {
   animation: fadeUp 0.8s ease forwards;
@@ -281,14 +145,16 @@ onUnmounted(() => {
       <!-- CHANGED: photos show below text on lg and below, side by side centered -->
       <div class="flex xl:hidden flex-row items-center justify-center gap-4 mt-4 mb-10">
         <div class="backdrop-blur-lg rounded-xl p-3 shadow-xl">
-          <NuxtImg src="/gradpicprof2.jpg" loading="lazy" class="w-32 h-32 sm:w-40 sm:h-40 rounded-lg shadow-lg object-cover" />
+          <NuxtImg src="/gradpicprof2.jpg" loading="lazy"
+            class="w-32 h-32 sm:w-40 sm:h-40 rounded-lg shadow-lg object-cover" />
         </div>
         <Transition enter-active-class="transition-all duration-500 delay-300"
           enter-from-class="opacity-0 -translate-x-10" enter-to-class="opacity-100 translate-x-0"
           leave-active-class="transition-all duration-300" leave-from-class="opacity-100 translate-x-0"
           leave-to-class="opacity-0 -translate-x-10">
           <div v-show="isHovered" class="backdrop-blur-lg rounded-xl p-3 shadow-xl">
-            <NuxtImg src="/gradpic-prof.jpg" loading="lazy" class="w-32 h-32 sm:w-40 sm:h-40 rounded-lg shadow-lg object-cover" />
+            <NuxtImg src="/gradpic-prof.jpg" loading="lazy"
+              class="w-32 h-32 sm:w-40 sm:h-40 rounded-lg shadow-lg object-cover" />
           </div>
         </Transition>
       </div>
@@ -298,96 +164,7 @@ onUnmounted(() => {
     <!-- Featured Project & Educational Background -->
     <div
       class="grid grid-cols-1 lg:grid-cols-5 gap-6 lg:gap-x-15 lg:gap-y-15 mt-10 lg:mt-15 mb-10 lg:mb-15 justify-items-center lg:justify-items-stretch">
-
-      <div class="col-span-1 lg:col-span-3 lg:mr-10 w-full max-w-2xl lg:max-w-none">
-        <h2 class="flex text-2xl md:text-3xl uppercase font-bold items-center text-center justify-center mb-1">Featured
-          Project</h2>
-        <div class="p-3 rounded-xl backdrop-blur-sm shadow-2xl">
-          <div
-            class="flex flex-col rounded-xl overflow-hidden shadow-xl hover:scale-102 transition-all duration-300 cursor-pointer border border-white/10">
-            <a href="" target="_blank">
-              <img src="https://opengraph.githubassets.com/2/deceive0112/" class="w-full object-cover" />
-            </a>
-            <a href="https://github.com/deceive0112/" target="_blank"
-              class="flex items-center gap-2 px-3 py-2 bg-white/5">
-              <UIcon name="mdi:github" class="size-4 text-gray-400" />
-              <span class="text-2xs md:text-lg text-gray-400">github.com</span>
-              <span class="text-2xs md:text-lg font-bold ml-1 truncate">deceive0112/work in progress</span>
-            </a>
-          </div>
-
-          <div class="overflow-hidden mt-2.5 relative">
-            <template v-if="shouldAnimate">
-              <div
-                class="absolute left-0 top-0 bottom-0 w-8 bg-linear-to-r from-[#0f172a] to-transparent z-10 pointer-events-none" />
-              <div
-                class="absolute right-0 top-0 bottom-0 w-8 bg-linear-to-l from-[#0f172a] to-transparent z-10 pointer-events-none" />
-            </template>
-
-            <div ref="carouselRef" :class="shouldAnimate ? 'carousel-track w-max' : 'flex flex-wrap'"
-              class="text-[12px] flex gap-4">
-
-              <!-- original set -->
-              <div class="flex flex-col items-center gap-1 shrink-0">
-                <UIcon name="devicon:vuejs" class="rounded-xl shadow-xl size-8 md:size-10 p-1" />
-                <span class="text-gray-400">Vue</span>
-              </div>
-              <div class="flex flex-col items-center gap-1 shrink-0">
-                <UIcon name="devicon:css" class="rounded-xl shadow-xl size-8 md:size-10 p-1" />
-                <span class="text-gray-400">CSS</span>
-              </div>
-              <div class="flex flex-col items-center gap-1 shrink-0">
-                <UIcon name="devicon:html5" class="rounded-xl shadow-xl size-8 md:size-10 p-1" />
-                <span class="text-gray-400">HTML</span>
-              </div>
-              <div class="flex flex-col items-center gap-1 shrink-0">
-                <UIcon name="devicon:typescript" class="rounded-xl shadow-xl size-8 md:size-10 p-1" />
-                <span class="text-gray-400">TypeScript</span>
-              </div>
-              <div class="flex flex-col items-center gap-1 shrink-0">
-                <UIcon name="devicon:javascript" class="rounded-xl shadow-xl size-8 md:size-10 p-1" />
-                <span class="text-gray-400">JavaScript</span>
-              </div>
-              <div class="flex flex-col items-center gap-1 shrink-0">
-                <UIcon name="devicon:nuxtjs" class="rounded-xl shadow-xl size-8 md:size-10 p-1" />
-                <span class="text-gray-400">Nuxt</span>
-              </div>
-
-              <!-- duplicate set — only visible when animating -->
-              <template v-if="shouldAnimate">
-                <div class="flex flex-col items-center gap-1 shrink-0">
-                  <UIcon name="devicon:vuejs" class="rounded-xl shadow-xl size-8 md:size-10 p-1" />
-                  <span class="text-gray-400">Vue</span>
-                </div>
-                <div class="flex flex-col items-center gap-1 shrink-0">
-                  <UIcon name="devicon:css" class="rounded-xl shadow-xl size-8 md:size-10 p-1" />
-                  <span class="text-gray-400">CSS</span>
-                </div>
-                <div class="flex flex-col items-center gap-1 shrink-0">
-                  <UIcon name="devicon:html5" class="rounded-xl shadow-xl size-8 md:size-10 p-1" />
-                  <span class="text-gray-400">HTML</span>
-                </div>
-                <div class="flex flex-col items-center gap-1 shrink-0">
-                  <UIcon name="devicon:typescript" class="rounded-xl shadow-xl size-8 md:size-10 p-1" />
-                  <span class="text-gray-400">TypeScript</span>
-                </div>
-                <div class="flex flex-col items-center gap-1 shrink-0">
-                  <UIcon name="devicon:javascript" class="rounded-xl shadow-xl size-8 md:size-10 p-1" />
-                  <span class="text-gray-400">JavaScript</span>
-                </div>
-                <div class="flex flex-col items-center gap-1 shrink-0">
-                  <UIcon name="devicon:nuxtjs" class="rounded-xl shadow-xl size-8 md:size-10 p-1" />
-                  <span class="text-gray-400">Nuxt</span>
-                </div>
-              </template>
-
-            </div>
-          </div>
-
-          <p class="gap-2 p-1 rounded-xl text-sm md:text-lg mt-1 text-justify">Test test</p>
-        </div>
-      </div>
-
+      <FeaturedProject />
       <div class="w-full max-w-2xl lg:max-w-none lg:col-span-2">
         <EducationalBackground />
       </div>
