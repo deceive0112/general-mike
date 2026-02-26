@@ -3,7 +3,8 @@ const words = [
   'javascript', 'typescript', 'vue', 'nuxt', 'tailwind',
   'component', 'reactive', 'computed', 'template', 'frontend',
   'backend', 'database', 'firebase', 'docker', 'vercel',
-  'function', 'variable', 'boolean', 'interface', 'developer'
+  'function', 'variable', 'boolean', 'interface', 'developer',
+  'program', 'IoT', 'arduino', 'microprocessor', 'figma'
 ]
 
 const currentWord = ref('')

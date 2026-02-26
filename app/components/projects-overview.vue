@@ -33,7 +33,7 @@ const onMouseMove = (e: MouseEvent) => {
     <!-- CHANGED: grid-cols-1 on mobile, 2 on tablet, 3 on desktop -->
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-3 rounded-xl backdrop-blur-sm shadow-2xl">
 
-      <!-- Project 1 - Portfolio -->
+      <!-- Project 1 -->
       <div class="p-3 rounded-xl shadow-md transition-all duration-300 hover:shadow-sky-500/20 hover:shadow-lg hover:bg-white/5">
         <p class="text-sm md:text-lg text-gray-400 font-semibold mb-2 uppercase tracking-widest">Portfolio</p>
 
@@ -45,7 +45,7 @@ const onMouseMove = (e: MouseEvent) => {
             class="flex items-center gap-2 px-3 py-2 bg-white/5">
             <UIcon name="mdi:github" class="size-4 text-gray-400" />
             <span class="text-xs text-gray-400">github.com</span>
-            <span class="text-xs font-bold ml-1">deceive0112/general-mike</span>
+            <span class="text-xs font-bold ml-1 truncate">deceive0112/general-mike</span>
           </a>
         </div>
 
@@ -107,10 +107,10 @@ const onMouseMove = (e: MouseEvent) => {
             <span class="text-gray-400">Form Submit</span>
           </div>
         </div>
-        <p class="gap-2 p-3 rounded-xl text-xs md:text-sm">Test test</p>
+        <p class="gap-2 p-2 rounded-xl text-xs md:text-sm text-justify">Test test</p>
       </div>
 
-      <!-- Project 2 - Vanilla Notepad -->
+      <!-- Project 2 -->
       <div class="p-3 rounded-xl shadow-md transition-all duration-300 hover:shadow-sky-500/20 hover:shadow-lg hover:bg-white/5">
         <p class="text-sm md:text-lg text-gray-400 font-semibold mb-2 uppercase tracking-widest">Vanilla Web App Notepad</p>
 
@@ -141,10 +141,10 @@ const onMouseMove = (e: MouseEvent) => {
             <span class="text-gray-400">JavaScript</span>
           </div>
         </div>
-        <p class="gap-2 p-3 rounded-xl text-xs md:text-sm">Vanilla JS notepad web app with dynamic tasks and localStorage persistence, built using pure HTML, CSS, and JavaScript — no frameworks or libraries.</p>
+        <p class="gap-2 p-2 rounded-xl text-xs md:text-sm text-justify">Vanilla JS notepad web app with dynamic tasks and localStorage persistence, built using pure HTML, CSS, and JavaScript — no frameworks or libraries.</p>
       </div>
 
-      <!-- Project 3 - Work In Progress -->
+      <!-- Project 3 -->
       <div class="p-3 rounded-xl shadow-md transition-all duration-300 hover:shadow-sky-500/20 hover:shadow-lg hover:bg-white/5">
         <p class="text-sm md:text-lg text-gray-400 font-semibold mb-2 uppercase tracking-widest">Work In Progress</p>
 
@@ -156,7 +156,7 @@ const onMouseMove = (e: MouseEvent) => {
             class="flex items-center gap-2 px-3 py-2 bg-white/5">
             <UIcon name="mdi:github" class="size-4 text-gray-400" />
             <span class="text-xs text-gray-400">github.com</span>
-            <span class="text-xs font-bold ml-1">deceive0112/Work In Progress</span>
+            <span class="text-xs font-bold ml-1 truncate">deceive0112/Work In Progress</span>
           </a>
         </div>
 
@@ -174,7 +174,7 @@ const onMouseMove = (e: MouseEvent) => {
             <span class="text-gray-400">JavaScript</span>
           </div>
         </div>
-        <p class="gap-2 p-3 rounded-xl text-xs md:text-sm">Test test</p>
+        <p class="gap-2 p-2 rounded-xl text-xs md:text-sm text-justify">Test test</p>
       </div>
 
       <!-- CHANGED: col-span-1 md:col-span-2 lg:col-span-3 for button row -->

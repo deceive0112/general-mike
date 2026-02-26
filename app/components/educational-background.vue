@@ -31,12 +31,12 @@ const isHoveredEdu = ref(false)
           <p class="text-[11px] md:text-[12px] mt-1">Thesis:</p>
           <ul class="list-disc ml-3 px-1">
             <li class="text-[11px] md:text-[12px] mt-0.5">Specialization in IoT.</li>
-            <li class="text-[11px] md:text-[12px] mt-0.5">Thesis about a portable communication device for deaf-mute individuals using ensemble.</li>
+            <li class="text-[11px] md:text-[12px] mt-0.5 text-justify">Thesis about a portable communication device for deaf-mute individuals using ensemble.</li>
           </ul>
         </div>
       </div>
 
-      <!-- LDCU — hover reveal -->
+      <!-- LDCU -->
       <Transition enter-active-class="transition-all duration-500" enter-from-class="opacity-0 -translate-y-3"
         enter-to-class="opacity-100 translate-y-0" leave-active-class="transition-all duration-300"
         leave-from-class="opacity-100 translate-y-0" leave-to-class="opacity-0 -translate-y-3">
@@ -57,7 +57,7 @@ const isHoveredEdu = ref(false)
             <p class="text-[11px] md:text-[12px] mt-1">Research:</p>
             <ul class="list-disc ml-3 px-1">
               <li class="text-[11px] md:text-[12px] mt-0.5">Designer of the building model's structure.</li>
-              <li class="text-[11px] md:text-[12px] mt-0.5">Research about the importance of implementing of buoyancy and bearing systems on buildings.</li>
+              <li class="text-[11px] md:text-[12px] mt-0.5 text-justify">Research about the importance of implementing of buoyancy and bearing systems on buildings.</li>
             </ul>
           </div>
         </div>
