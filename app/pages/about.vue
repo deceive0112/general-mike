@@ -24,7 +24,7 @@
         </div> 
     </div>
     <div class="pr-25 pl-25 pt-5 pb-5 rounded-3xl">
-        <p class="text-2xl md:text-3xl mb-3 pl-20">Certificates:</p>
+        <p class="text-xl md:text-2xl mb-3 pl-20">Certificates:</p>
         <div class="grid grid-cols-3 text-center gap-4 pr-20 pl-20 backdrop-blur-md">
 
             <span
