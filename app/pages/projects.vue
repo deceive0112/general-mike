@@ -6,38 +6,32 @@
         <p class="text-xl md:text-3xl mb-3 pl-20">Software:</p>
         <div class="grid grid-cols-2 text-center gap-4 pr-20 pl-20 backdrop-blur-md">
 
-            <span
-                class="flex items-center gap-3 p-4 rounded-xl border bg-sky-500 border-white/10 hover:border-purple-500/50 hover:bg-white/5 hover:scale-102 
+            <span class="flex items-center gap-3 p-4 rounded-xl border bg-sky-500 border-white/10 hover:border-purple-500/50 hover:bg-white/5 hover:scale-102 
                 transition-all duration-300 backdrop-blur-xl shadow-lg">
                 <p class="text-xl text-left">Proj-1</p>
             </span>
 
-            <span
-                class="flex items-center gap-3 p-4 rounded-xl border bg-sky-500 border-white/10 hover:border-purple-500/50 hover:bg-white/5 hover:scale-102 
+            <span class="flex items-center gap-3 p-4 rounded-xl border bg-sky-500 border-white/10 hover:border-purple-500/50 hover:bg-white/5 hover:scale-102 
                 transition-all duration-300 backdrop-blur-xl shadow-lg">
                 <p class="text-xl text-left">Proj-2</p>
             </span>
 
-            <span
-                class="flex items-center gap-3 p-4 rounded-xl border bg-sky-500 border-white/10 hover:border-purple-500/50 hover:bg-white/5 hover:scale-102 
+            <span class="flex items-center gap-3 p-4 rounded-xl border bg-sky-500 border-white/10 hover:border-purple-500/50 hover:bg-white/5 hover:scale-102 
                 transition-all duration-300 backdrop-blur-xl shadow-lg">
                 <p class="text-xl text-left">Proj-3</p>
             </span>
 
-            <span
-                class="flex items-center gap-3 p-4 rounded-xl border bg-sky-500 border-white/10 hover:border-purple-500/50 hover:bg-white/5 hover:scale-105 
+            <span class="flex items-center gap-3 p-4 rounded-xl border bg-sky-500 border-white/10 hover:border-purple-500/50 hover:bg-white/5 hover:scale-105 
                 transition-all duration-300 backdrop-blur-xl shadow-lg">
                 <p class="text-xl text-left">Proj-4</p>
             </span>
 
-            <span
-                class="flex items-center gap-3 p-4 rounded-xl border bg-sky-500 border-white/10 hover:border-purple-500/50 hover:bg-white/5 hover:scale-105 
+            <span class="flex items-center gap-3 p-4 rounded-xl border bg-sky-500 border-white/10 hover:border-purple-500/50 hover:bg-white/5 hover:scale-105 
                 transition-all duration-300 backdrop-blur-xl shadow-lg">
                 <p class="text-xl text-left">Proj-5</p>
             </span>
 
-            <span
-                class="flex items-center gap-3 p-4 rounded-xl border bg-sky-500 border-white/10 hover:border-purple-500/50 hover:bg-white/5 hover:scale-105 
+            <span class="flex items-center gap-3 p-4 rounded-xl border bg-sky-500 border-white/10 hover:border-purple-500/50 hover:bg-white/5 hover:scale-105 
                 transition-all duration-300 backdrop-blur-xl shadow-lg">
                 <p class="text-xl text-left">Proj-6</p>
             </span>
@@ -48,38 +42,35 @@
         <p class="text-xl md:text-3xl mb-3 pl-20">Hardware:</p>
         <div class="grid grid-cols-2 text-center gap-4 pr-20 pl-20 backdrop-blur-md">
 
-            <span
-                class="flex items-center gap-3 p-4 rounded-xl border bg-sky-500 border-white/10 hover:border-purple-500/50 hover:bg-white/5 hover:scale-102 
-                transition-all duration-300 backdrop-blur-xl shadow-lg">
-                <p class="text-xl text-left">Proj-1</p>
-            </span>
+            <div
+                class="flex items-center gap-3 p-4 rounded-xl border bg-sky-500 border-white/10 hover:border-purple-500/50 hover:bg-white/5 hover:scale-102 transition-all duration-300 backdrop-blur-xl shadow-lg">
+                <a href="https://wokwi.com/projects/387820238754201601" target="_blank"
+                    class="flex items-center gap-2 px-3 py-2 bg-white/5">
+                    <img src="/projects/wokwi/wokwi-1.png" class="w-full object-cover rounded-lg" loading="lazy" />
+                </a>
+            </div>
 
-            <span
-                class="flex items-center gap-3 p-4 rounded-xl border bg-sky-500 border-white/10 hover:border-purple-500/50 hover:bg-white/5 hover:scale-102 
+            <span class="flex items-center gap-3 p-4 rounded-xl border bg-sky-500 border-white/10 hover:border-purple-500/50 hover:bg-white/5 hover:scale-102 
                 transition-all duration-300 backdrop-blur-xl shadow-lg">
                 <p class="text-xl text-left">Proj-2</p>
             </span>
 
-            <span
-                class="flex items-center gap-3 p-4 rounded-xl border bg-sky-500 border-white/10 hover:border-purple-500/50 hover:bg-white/5 hover:scale-102 
+            <span class="flex items-center gap-3 p-4 rounded-xl border bg-sky-500 border-white/10 hover:border-purple-500/50 hover:bg-white/5 hover:scale-102 
                 transition-all duration-300 backdrop-blur-xl shadow-lg">
                 <p class="text-xl text-left">Proj-3</p>
             </span>
 
-            <span
-                class="flex items-center gap-3 p-4 rounded-xl border bg-sky-500 border-white/10 hover:border-purple-500/50 hover:bg-white/5 hover:scale-105 
+            <span class="flex items-center gap-3 p-4 rounded-xl border bg-sky-500 border-white/10 hover:border-purple-500/50 hover:bg-white/5 hover:scale-105 
                 transition-all duration-300 backdrop-blur-xl shadow-lg">
                 <p class="text-xl text-left">Proj-4</p>
             </span>
 
-            <span
-                class="flex items-center gap-3 p-4 rounded-xl border bg-sky-500 border-white/10 hover:border-purple-500/50 hover:bg-white/5 hover:scale-105 
+            <span class="flex items-center gap-3 p-4 rounded-xl border bg-sky-500 border-white/10 hover:border-purple-500/50 hover:bg-white/5 hover:scale-105 
                 transition-all duration-300 backdrop-blur-xl shadow-lg">
                 <p class="text-xl text-left">Proj-5</p>
             </span>
 
-            <span
-                class="flex items-center gap-3 p-4 rounded-xl border bg-sky-500 border-white/10 hover:border-purple-500/50 hover:bg-white/5 hover:scale-105 
+            <span class="flex items-center gap-3 p-4 rounded-xl border bg-sky-500 border-white/10 hover:border-purple-500/50 hover:bg-white/5 hover:scale-105 
                 transition-all duration-300 backdrop-blur-xl shadow-lg">
                 <p class="text-xl text-left">Proj-6</p>
             </span>
