@@ -79,7 +79,7 @@ definePageMeta({
         <div class="grid grid-cols-2 text-center gap-4 backdrop-blur-md">
 
           <a href="" target="_blank"
-            class="flex items-center gap-3 p-3 rounded-xl border border-white/10 hover:border-blue-500/50 hover:bg-white/5 hover:scale-105 transition-all duration-300 backdrop-blur-xl shadow-lg">
+            class="flex items-center gap-3 p-3 rounded-xl border border-white/10 hover:border-pink-500/50 hover:bg-white/5 hover:scale-105 transition-all duration-300 backdrop-blur-xl shadow-lg">
             <div class="flex flex-col items-center gap-1 shrink-0">
               <UIcon name="devicon:vuejs" class="rounded-xl shadow-xl size-8 md:size-10 p-1" />
               <span class="text-[7px] text-gray-400">Vue</span>
@@ -88,7 +88,7 @@ definePageMeta({
           </a>
 
           <a href="" target="_blank"
-            class="flex items-center gap-3 p-3 rounded-xl border border-white/10 hover:border-blue-500/50 hover:bg-white/5 hover:scale-105 transition-all duration-300 backdrop-blur-xl shadow-lg">
+            class="flex items-center gap-3 p-3 rounded-xl border border-white/10 hover:border-pink-500/50 hover:bg-white/5 hover:scale-105 transition-all duration-300 backdrop-blur-xl shadow-lg">
             <div class="flex flex-col items-center gap-1 shrink-0">
               <UIcon name="devicon:nuxtjs" class="rounded-xl shadow-xl size-8 md:size-10 p-1" />
               <span class="text-[7px] text-gray-400">Nuxt</span>
@@ -97,7 +97,7 @@ definePageMeta({
           </a>
 
           <a href="" target="_blank"
-            class="flex items-center gap-3 p-3 rounded-xl border border-white/10 hover:border-blue-500/50 hover:bg-white/5 hover:scale-105 transition-all duration-300 backdrop-blur-xl shadow-lg">
+            class="flex items-center gap-3 p-3 rounded-xl border border-white/10 hover:border-pink-500/50 hover:bg-white/5 hover:scale-105 transition-all duration-300 backdrop-blur-xl shadow-lg">
             <div class="flex flex-col items-center gap-1 shrink-0">
               <UIcon name="devicon:tailwindcss" class="rounded-xl shadow-xl size-8 md:size-10 p-1" />
               <span class="text-[7px] text-gray-400">Tailwind</span>
@@ -106,7 +106,7 @@ definePageMeta({
           </a>
 
           <a href="" target="_blank"
-            class="flex items-center gap-3 p-3 rounded-xl border border-white/10 hover:border-blue-500/50 hover:bg-white/5 hover:scale-105 transition-all duration-300 backdrop-blur-xl shadow-lg">
+            class="flex items-center gap-3 p-3 rounded-xl border border-white/10 hover:border-pink-500/50 hover:bg-white/5 hover:scale-105 transition-all duration-300 backdrop-blur-xl shadow-lg">
             <div class="flex flex-col items-center gap-1 shrink-0">
               <UIcon name="vscode-icons:file-type-light-shadcn" class="rounded-xl shadow-xl size-8 md:size-10 p-1 dark:invert" />
               <span class="text-[7px] text-gray-400">Shadcn UI</span>
@@ -115,7 +115,7 @@ definePageMeta({
           </a>
 
           <a href="" target="_blank"
-            class="flex items-center gap-3 p-3 rounded-xl border border-white/10 hover:border-blue-500/50 hover:bg-white/5 hover:scale-105 transition-all duration-300 backdrop-blur-xl shadow-lg">
+            class="flex items-center gap-3 p-3 rounded-xl border border-white/10 hover:border-pink-500/50 hover:bg-white/5 hover:scale-105 transition-all duration-300 backdrop-blur-xl shadow-lg">
             <div class="flex flex-col items-center gap-1 shrink-0">
               <UIcon name="devicon:flutter" class="rounded-xl shadow-xl size-8 md:size-10 p-1" />
               <span class="text-[7px] text-gray-400">Flutter</span>
@@ -124,7 +124,7 @@ definePageMeta({
           </a>
 
           <a href="" target="_blank"
-            class="flex items-center gap-3 p-3 rounded-xl border border-white/10 hover:border-blue-500/50 hover:bg-white/5 hover:scale-105 transition-all duration-300 backdrop-blur-xl shadow-lg">
+            class="flex items-center gap-3 p-3 rounded-xl border border-white/10 hover:border-pink-500/50 hover:bg-white/5 hover:scale-105 transition-all duration-300 backdrop-blur-xl shadow-lg">
             <div class="flex flex-col items-center gap-1 shrink-0">
               <UIcon name="devicon:html5" class="rounded-xl shadow-xl size-8 md:size-10 p-1" />
               <span class="text-[7px] text-gray-400">HTML</span>
@@ -133,7 +133,7 @@ definePageMeta({
           </a>
 
           <a href="" target="_blank"
-            class="flex items-center gap-3 p-3 rounded-xl border border-white/10 hover:border-blue-500/50 hover:bg-white/5 hover:scale-105 transition-all duration-300 backdrop-blur-xl shadow-lg">
+            class="flex items-center gap-3 p-3 rounded-xl border border-white/10 hover:border-pink-500/50 hover:bg-white/5 hover:scale-105 transition-all duration-300 backdrop-blur-xl shadow-lg">
             <div class="flex flex-col items-center gap-1 shrink-0">
               <UIcon name="devicon:css" class="rounded-xl shadow-xl size-8 md:size-10 p-1" />
               <span class="text-[7px] text-gray-400">CSS</span>
@@ -150,7 +150,7 @@ definePageMeta({
         <div class="grid grid-cols-2 text-center gap-4 backdrop-blur-md">
 
           <a href="" target="_blank"
-            class="flex items-center gap-3 p-3 rounded-xl border border-white/10 hover:border-blue-500/50 hover:bg-white/5 hover:scale-105 transition-all duration-300 backdrop-blur-xl shadow-lg">
+            class="flex items-center gap-3 p-3 rounded-xl border border-white/10 hover:border-emerald-500/50 hover:bg-white/5 hover:scale-105 transition-all duration-300 backdrop-blur-xl shadow-lg">
             <div class="flex flex-col items-center gap-1 shrink-0">
               <UIcon name="devicon:firebase" class="rounded-xl shadow-xl size-8 md:size-10 p-1" />
               <span class="text-[7px] text-gray-400">Firebase</span>
@@ -159,7 +159,7 @@ definePageMeta({
           </a>
 
           <a href="" target="_blank"
-            class="flex items-center gap-3 p-3 rounded-xl border border-white/10 hover:border-blue-500/50 hover:bg-white/5 hover:scale-105 transition-all duration-300 backdrop-blur-xl shadow-lg">
+            class="flex items-center gap-3 p-3 rounded-xl border border-white/10 hover:border-emerald-500/50 hover:bg-white/5 hover:scale-105 transition-all duration-300 backdrop-blur-xl shadow-lg">
             <div class="flex flex-col items-center gap-1 shrink-0">
               <UIcon name="simple-icons:tanstack" class="rounded-xl shadow-xl size-8 md:size-10 p-1" />
               <span class="text-[7px] text-gray-400">TanStack Q</span>
@@ -168,7 +168,7 @@ definePageMeta({
           </a>
 
           <a href="" target="_blank"
-            class="flex items-center gap-3 p-3 rounded-xl border border-white/10 hover:border-blue-500/50 hover:bg-white/5 hover:scale-105 transition-all duration-300 backdrop-blur-xl shadow-lg">
+            class="flex items-center gap-3 p-3 rounded-xl border border-white/10 hover:border-emerald-500/50 hover:bg-white/5 hover:scale-105 transition-all duration-300 backdrop-blur-xl shadow-lg">
             <div class="flex flex-col items-center gap-1 shrink-0">
               <UIcon name="devicon:bun" class="rounded-xl shadow-xl size-8 md:size-10 p-1" />
               <span class="text-[7px] text-gray-400">Bun</span>
@@ -185,7 +185,7 @@ definePageMeta({
         <div class="grid grid-cols-2 text-center gap-4 backdrop-blur-md">
 
           <a href="" target="_blank"
-            class="flex items-center gap-3 p-3 rounded-xl border border-white/10 hover:border-blue-500/50 hover:bg-white/5 hover:scale-105 transition-all duration-300 backdrop-blur-xl shadow-lg">
+            class="flex items-center gap-3 p-3 rounded-xl border border-white/10 hover:border-yellow-500/50 hover:bg-white/5 hover:scale-105 transition-all duration-300 backdrop-blur-xl shadow-lg">
             <div class="flex flex-col items-center gap-1 shrink-0">
               <UIcon name="devicon:git" class="rounded-xl shadow-xl size-8 md:size-10 p-1" />
               <span class="text-[7px] text-gray-400">Git</span>
@@ -194,7 +194,7 @@ definePageMeta({
           </a>
 
           <a href="" target="_blank"
-            class="flex items-center gap-3 p-3 rounded-xl border border-white/10 hover:border-blue-500/50 hover:bg-white/5 hover:scale-105 transition-all duration-300 backdrop-blur-xl shadow-lg">
+            class="flex items-center gap-3 p-3 rounded-xl border border-white/10 hover:border-yellow-500/50 hover:bg-white/5 hover:scale-105 transition-all duration-300 backdrop-blur-xl shadow-lg">
             <div class="flex flex-col items-center gap-1 shrink-0">
               <UIcon name="devicon:github" class="rounded-xl shadow-xl size-8 md:size-10 p-1 dark:invert" />
               <span class="text-[7px] text-gray-400">GitHub</span>
@@ -203,7 +203,7 @@ definePageMeta({
           </a>
 
           <a href="" target="_blank"
-            class="flex items-center gap-3 p-3 rounded-xl border border-white/10 hover:border-blue-500/50 hover:bg-white/5 hover:scale-105 transition-all duration-300 backdrop-blur-xl shadow-lg">
+            class="flex items-center gap-3 p-3 rounded-xl border border-white/10 hover:border-yellow-500/50 hover:bg-white/5 hover:scale-105 transition-all duration-300 backdrop-blur-xl shadow-lg">
             <div class="flex flex-col items-center gap-1 shrink-0">
               <UIcon name="devicon:docker" class="rounded-xl shadow-xl size-8 md:size-10 p-1" />
               <span class="text-[7px] text-gray-400">Docker</span>
@@ -212,7 +212,7 @@ definePageMeta({
           </a>
 
           <a href="" target="_blank"
-            class="flex items-center gap-3 p-3 rounded-xl border border-white/10 hover:border-blue-500/50 hover:bg-white/5 hover:scale-105 transition-all duration-300 backdrop-blur-xl shadow-lg">
+            class="flex items-center gap-3 p-3 rounded-xl border border-white/10 hover:border-yellow-500/50 hover:bg-white/5 hover:scale-105 transition-all duration-300 backdrop-blur-xl shadow-lg">
             <div class="flex flex-col items-center gap-1 shrink-0">
               <UIcon name="devicon:vercel" class="rounded-xl shadow-xl size-8 md:size-10 p-1 dark:invert" />
               <span class="text-[7px] text-gray-400">Vercel</span>
@@ -229,7 +229,7 @@ definePageMeta({
         <div class="grid grid-cols-2 text-center gap-4 backdrop-blur-md">
 
           <a href="" target="_blank"
-            class="flex items-center gap-3 p-3 rounded-xl border border-white/10 hover:border-blue-500/50 hover:bg-white/5 hover:scale-105 transition-all duration-300 backdrop-blur-xl shadow-lg">
+            class="flex items-center gap-3 p-3 rounded-xl border border-white/10 hover:border-violet-500/50 hover:bg-white/5 hover:scale-105 transition-all duration-300 backdrop-blur-xl shadow-lg">
             <div class="flex flex-col items-center gap-1 shrink-0">
               <UIcon name="devicon:vscode" class="rounded-xl shadow-xl size-8 md:size-10 p-1" />
               <span class="text-[7px] text-gray-400">VS Code</span>
@@ -238,7 +238,7 @@ definePageMeta({
           </a>
 
           <a href="" target="_blank"
-            class="flex items-center gap-3 p-3 rounded-xl border border-white/10 hover:border-blue-500/50 hover:bg-white/5 hover:scale-105 transition-all duration-300 backdrop-blur-xl shadow-lg">
+            class="flex items-center gap-3 p-3 rounded-xl border border-white/10 hover:border-violet-500/50 hover:bg-white/5 hover:scale-105 transition-all duration-300 backdrop-blur-xl shadow-lg">
             <div class="flex flex-col items-center gap-1 shrink-0">
               <UIcon name="devicon:webstorm" class="rounded-xl shadow-xl size-8 md:size-10 p-1" />
               <span class="text-[7px] text-gray-400">WebStorm</span>
@@ -247,7 +247,7 @@ definePageMeta({
           </a>
 
           <a href="" target="_blank"
-            class="flex items-center gap-3 p-3 rounded-xl border border-white/10 hover:border-blue-500/50 hover:bg-white/5 hover:scale-105 transition-all duration-300 backdrop-blur-xl shadow-lg">
+            class="flex items-center gap-3 p-3 rounded-xl border border-white/10 hover:border-violet-500/50 hover:bg-white/5 hover:scale-105 transition-all duration-300 backdrop-blur-xl shadow-lg">
             <div class="flex flex-col items-center gap-1 shrink-0">
               <UIcon name="devicon:intellij" class="rounded-xl shadow-xl size-8 md:size-10 p-1" />
               <span class="text-[7px] text-gray-400">IntelliJ</span>
@@ -256,7 +256,7 @@ definePageMeta({
           </a>
 
           <a href="" target="_blank"
-            class="flex items-center gap-3 p-3 rounded-xl border border-white/10 hover:border-blue-500/50 hover:bg-white/5 hover:scale-105 transition-all duration-300 backdrop-blur-xl shadow-lg">
+            class="flex items-center gap-3 p-3 rounded-xl border border-white/10 hover:border-violet-500/50 hover:bg-white/5 hover:scale-105 transition-all duration-300 backdrop-blur-xl shadow-lg">
             <div class="flex flex-col items-center gap-1 shrink-0">
               <UIcon name="devicon:arduino" class="rounded-xl shadow-xl size-8 md:size-10 p-1" />
               <span class="text-[7px] text-gray-400">Arduino IDE</span>
@@ -265,7 +265,7 @@ definePageMeta({
           </a>
 
           <a href="" target="_blank"
-            class="flex items-center gap-3 p-3 rounded-xl border border-white/10 hover:border-blue-500/50 hover:bg-white/5 hover:scale-105 transition-all duration-300 backdrop-blur-xl shadow-lg">
+            class="flex items-center gap-3 p-3 rounded-xl border border-white/10 hover:border-violet-500/50 hover:bg-white/5 hover:scale-105 transition-all duration-300 backdrop-blur-xl shadow-lg">
             <div class="flex flex-col items-center gap-1 shrink-0">
               <UIcon name="devicon:arduino" class="rounded-xl shadow-xl size-8 md:size-10 p-1" />
               <span class="text-[7px] text-gray-400">Wokwi</span>
@@ -282,7 +282,7 @@ definePageMeta({
         <div class="grid grid-cols-2 text-center gap-4 backdrop-blur-md">
 
           <a href="" target="_blank"
-            class="flex items-center gap-3 p-3 rounded-xl border border-white/10 hover:border-blue-500/50 hover:bg-white/5 hover:scale-105 transition-all duration-300 backdrop-blur-xl shadow-lg">
+            class="flex items-center gap-3 p-3 rounded-xl border border-white/10 hover:border-orange-500/50 hover:bg-white/5 hover:scale-105 transition-all duration-300 backdrop-blur-xl shadow-lg">
             <div class="flex flex-col items-center gap-1 shrink-0">
               <UIcon name="devicon:arduino" class="rounded-xl shadow-xl size-8 md:size-10 p-1" />
               <span class="text-[7px] text-gray-400">Arduino</span>
@@ -291,7 +291,7 @@ definePageMeta({
           </a>
 
           <a href="" target="_blank"
-            class="flex items-center gap-3 p-3 rounded-xl border border-white/10 hover:border-blue-500/50 hover:bg-white/5 hover:scale-105 transition-all duration-300 backdrop-blur-xl shadow-lg">
+            class="flex items-center gap-3 p-3 rounded-xl border border-white/10 hover:border-orange-500/50 hover:bg-white/5 hover:scale-105 transition-all duration-300 backdrop-blur-xl shadow-lg">
             <div class="flex flex-col items-center gap-1 shrink-0">
               <UIcon name="bx:bxs-microchip" class="rounded-xl shadow-xl size-8 md:size-10 p-1 dark:invert" />
               <span class="text-[7px] text-gray-400">ESP-32</span>
@@ -300,7 +300,7 @@ definePageMeta({
           </a>
 
           <a href="" target="_blank"
-            class="flex items-center gap-3 p-3 rounded-xl border border-white/10 hover:border-blue-500/50 hover:bg-white/5 hover:scale-105 transition-all duration-300 backdrop-blur-xl shadow-lg">
+            class="flex items-center gap-3 p-3 rounded-xl border border-white/10 hover:border-orange-500/50 hover:bg-white/5 hover:scale-105 transition-all duration-300 backdrop-blur-xl shadow-lg">
             <div class="flex flex-col items-center gap-1 shrink-0">
               <UIcon name="devicon:raspberrypi" class="rounded-xl shadow-xl size-8 md:size-10 p-1" />
               <span class="text-[7px] text-gray-400">Raspberry Pi</span>
@@ -309,7 +309,7 @@ definePageMeta({
           </a>
 
           <a href="" target="_blank"
-            class="flex items-center gap-3 p-3 rounded-xl border border-white/10 hover:border-blue-500/50 hover:bg-white/5 hover:scale-105 transition-all duration-300 backdrop-blur-xl shadow-lg">
+            class="flex items-center gap-3 p-3 rounded-xl border border-white/10 hover:border-orange-500/50 hover:bg-white/5 hover:scale-105 transition-all duration-300 backdrop-blur-xl shadow-lg">
             <div class="flex flex-col items-center gap-1 shrink-0">
               <UIcon name="simple-icons:tinkercad" class="rounded-xl shadow-xl size-8 md:size-10 p-1 dark:invert" />
               <span class="text-[7px] text-gray-400">TinkerCAD</span>
@@ -318,7 +318,7 @@ definePageMeta({
           </a>
 
           <a href="" target="_blank"
-            class="flex items-center gap-3 p-3 rounded-xl border border-white/10 hover:border-blue-500/50 hover:bg-white/5 hover:scale-105 transition-all duration-300 backdrop-blur-xl shadow-lg">
+            class="flex items-center gap-3 p-3 rounded-xl border border-white/10 hover:border-orange-500/50 hover:bg-white/5 hover:scale-105 transition-all duration-300 backdrop-blur-xl shadow-lg">
             <div class="flex flex-col items-center gap-1 shrink-0">
               <UIcon name="simple-icons:autodesk" class="rounded-xl shadow-xl size-8 md:size-10 p-1" />
               <span class="text-[7px] text-gray-400">EAGLE</span>
@@ -327,7 +327,7 @@ definePageMeta({
           </a>
 
           <a href="" target="_blank"
-            class="flex items-center gap-3 p-3 rounded-xl border border-white/10 hover:border-blue-500/50 hover:bg-white/5 hover:scale-105 transition-all duration-300 backdrop-blur-xl shadow-lg">
+            class="flex items-center gap-3 p-3 rounded-xl border border-white/10 hover:border-orange-500/50 hover:bg-white/5 hover:scale-105 transition-all duration-300 backdrop-blur-xl shadow-lg">
             <div class="flex flex-col items-center gap-1 shrink-0">
               <UIcon name="skill-icons:autocad-dark" class="rounded-xl shadow-xl size-8 md:size-10 p-1" />
               <span class="text-[7px] text-gray-400">AutoCAD</span>
@@ -344,7 +344,7 @@ definePageMeta({
         <div class="grid grid-cols-2 text-center gap-4 backdrop-blur-md">
 
           <a href="" target="_blank"
-            class="flex items-center gap-3 p-3 rounded-xl border border-white/10 hover:border-blue-500/50 hover:bg-white/5 hover:scale-105 transition-all duration-300 backdrop-blur-xl shadow-lg">
+            class="flex items-center gap-3 p-3 rounded-xl border border-white/10 hover:border-purple-500/50 hover:bg-white/5 hover:scale-105 transition-all duration-300 backdrop-blur-xl shadow-lg">
             <div class="flex flex-col items-center gap-1 shrink-0">
               <UIcon name="devicon:wordpress" class="rounded-xl shadow-xl size-8 md:size-10 p-1" />
               <span class="text-[7px] text-gray-400">WordPress</span>
@@ -353,7 +353,7 @@ definePageMeta({
           </a>
 
           <a href="" target="_blank"
-            class="flex items-center gap-3 p-3 rounded-xl border border-white/10 hover:border-blue-500/50 hover:bg-white/5 hover:scale-105 transition-all duration-300 backdrop-blur-xl shadow-lg">
+            class="flex items-center gap-3 p-3 rounded-xl border border-white/10 hover:border-purple-500/50 hover:bg-white/5 hover:scale-105 transition-all duration-300 backdrop-blur-xl shadow-lg">
             <div class="flex flex-col items-center gap-1 shrink-0">
               <UIcon name="hugeicons:office-365" class="rounded-xl shadow-xl size-8 md:size-10 p-1" />
               <span class="text-[7px] text-gray-400">Office 365</span>
@@ -362,7 +362,7 @@ definePageMeta({
           </a>
 
           <a href="" target="_blank"
-            class="flex items-center gap-3 p-3 rounded-xl border border-white/10 hover:border-blue-500/50 hover:bg-white/5 hover:scale-105 transition-all duration-300 backdrop-blur-xl shadow-lg">
+            class="flex items-center gap-3 p-3 rounded-xl border border-white/10 hover:border-purple-500/50 hover:bg-white/5 hover:scale-105 transition-all duration-300 backdrop-blur-xl shadow-lg">
             <div class="flex flex-col items-center gap-1 shrink-0">
               <UIcon name="devicon:libgdx" class="rounded-xl shadow-xl size-8 md:size-10 p-1" />
               <span class="text-[7px] text-gray-400">libGDX</span>
@@ -371,7 +371,7 @@ definePageMeta({
           </a>
 
           <a href="" target="_blank"
-            class="flex items-center gap-3 p-3 rounded-xl border border-white/10 hover:border-blue-500/50 hover:bg-white/5 hover:scale-105 transition-all duration-300 backdrop-blur-xl shadow-lg">
+            class="flex items-center gap-3 p-3 rounded-xl border border-white/10 hover:border-purple-500/50 hover:bg-white/5 hover:scale-105 transition-all duration-300 backdrop-blur-xl shadow-lg">
             <div class="flex flex-col items-center gap-1 shrink-0">
               <UIcon name="simple-icons:tanstack" class="rounded-xl shadow-xl size-8 md:size-10 p-1" />
               <span class="text-[7px] text-gray-400">TanStack R</span>

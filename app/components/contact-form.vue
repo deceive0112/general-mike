@@ -55,7 +55,7 @@ const submitForm = async () => {
     leave-from-class="opacity-100 translate-y-0"
     leave-to-class="opacity-0 translate-y-4">
     <div v-if="showSuccess"
-      class="fixed bottom-4 right-4 md:bottom-6 md:right-6 z-50 flex items-center gap-3 px-4 md:px-5 py-3 md:py-4 bg-green-500 text-white rounded-xl shadow-xl">
+      class="fixed bottom-4 right-4 md:bottom-6 md:right-6 z-40 flex items-center gap-3 px-4 md:px-5 py-3 md:py-4 bg-green-500 text-white rounded-xl shadow-xl">
       <UIcon name="material-symbols:check-circle" class="size-5 md:size-6" />
       <div>
         <p class="font-bold text-sm md:text-base">Message Sent!</p>
