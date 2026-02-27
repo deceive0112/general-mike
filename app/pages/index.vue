@@ -121,7 +121,7 @@ definePageMeta({
       <!-- CHANGED: two separate columns side by side on xl -->
       <div class="hidden xl:flex xl:basis-1/5 items-center justify-center mt-20">
         <div class="backdrop-blur-lg rounded-xl p-3 mb-25 shadow-xl">
-          <img src="/gradpicprof2.jpg" class="w-40 h-40 xl:w-50 xl:h-50 rounded-lg shadow-lg object-cover" />
+          <NuxtImg src="/gradpicprof2.jpg" loading="lazy" class="w-40 h-40 xl:w-50 xl:h-50 rounded-lg shadow-lg object-cover" />
         </div>
       </div>
 
@@ -131,7 +131,7 @@ definePageMeta({
           leave-active-class="transition-all duration-600" leave-from-class="opacity-100 translate-x-0"
           leave-to-class="opacity-0 -translate-x-10">
           <div v-show="isHovered" class="backdrop-blur-lg rounded-xl p-3 mb-25 shadow-xl">
-            <img src="/gradpic-prof.jpg" class="w-40 h-40 xl:w-50 xl:h-50 rounded-lg shadow-lg object-cover" />
+            <NuxtImg src="/gradpic-prof.jpg" loading="lazy" class="w-40 h-40 xl:w-50 xl:h-50 rounded-lg shadow-lg object-cover" />
           </div>
         </Transition>
       </div>

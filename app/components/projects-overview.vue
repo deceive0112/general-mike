@@ -38,10 +38,10 @@ const onMouseMove = (e: MouseEvent) => {
         <p class="text-sm md:text-lg text-gray-400 font-semibold mb-2 uppercase tracking-widest">Portfolio</p>
 
         <div class="flex flex-col rounded-xl overflow-hidden shadow-xl hover:scale-105 transition-all duration-300 cursor-pointer border border-white/10">
-          <a href="https://general-mike.vercel.app/" target="_blank">
-            <img src="https://opengraph.githubassets.com/2/deceive0112/general-mike" class="w-full object-cover" />
+          <a href="https://general-mike.vercel.app/" target="_blank" loading="lazy">
+            <img src="https://opengraph.githubassets.com/2/deceive0112/general-mike" loading="lazy" class="w-full object-cover" />
           </a>
-          <a href="https://github.com/deceive0112/general-mike" target="_blank"
+          <a href="https://github.com/deceive0112/general-mike" target="_blank" loading="lazy"
             class="flex items-center gap-2 px-3 py-2 bg-white/5">
             <UIcon name="mdi:github" class="size-4 text-gray-400" />
             <span class="text-xs text-gray-400">github.com</span>
@@ -115,10 +115,10 @@ const onMouseMove = (e: MouseEvent) => {
         <p class="text-sm md:text-lg text-gray-400 font-semibold mb-2 uppercase tracking-widest">Vanilla Web App Notepad</p>
 
         <div class="flex flex-col rounded-xl overflow-hidden shadow-xl hover:scale-105 transition-all duration-300 cursor-pointer border border-white/10">
-          <a href="https://deceive0112.github.io/Vanilla-Web-App-Notepad/" target="_blank">
-            <img src="https://opengraph.githubassets.com/2/deceive0112/Vanilla-Web-App-Notepad" class="w-full object-cover" />
+          <a href="https://deceive0112.github.io/Vanilla-Web-App-Notepad/" target="_blank" loading="lazy">
+            <img src="https://opengraph.githubassets.com/2/deceive0112/Vanilla-Web-App-Notepad" loading="lazy" class="w-full object-cover" />
           </a>
-          <a href="https://github.com/deceive0112/Vanilla-Web-App-Notepad" target="_blank"
+          <a href="https://github.com/deceive0112/Vanilla-Web-App-Notepad" target="_blank" loading="lazy"
             class="flex items-center gap-2 px-3 py-2 bg-white/5">
             <UIcon name="mdi:github" class="size-4 text-gray-400" />
             <span class="text-xs text-gray-400">github.com</span>
@@ -149,10 +149,10 @@ const onMouseMove = (e: MouseEvent) => {
         <p class="text-sm md:text-lg text-gray-400 font-semibold mb-2 uppercase tracking-widest">Work In Progress</p>
 
         <div class="flex flex-col rounded-xl overflow-hidden shadow-xl hover:scale-105 transition-all duration-300 cursor-pointer border border-white/10">
-          <a href="https://deceive0112.github.io/" target="_blank">
-            <img src="https://opengraph.githubassets.com/2/deceive0112/" class="w-full object-cover" />
+          <a href="https://deceive0112.github.io/" target="_blank" loading="lazy">
+            <img src="https://opengraph.githubassets.com/2/deceive0112/" loading="lazy" class="w-full object-cover" />
           </a>
-          <a href="https://github.com/deceive0112/" target="_blank"
+          <a href="https://github.com/deceive0112/" target="_blank" loading="lazy"
             class="flex items-center gap-2 px-3 py-2 bg-white/5">
             <UIcon name="mdi:github" class="size-4 text-gray-400" />
             <span class="text-xs text-gray-400">github.com</span>
