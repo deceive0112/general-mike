@@ -76,7 +76,7 @@ const { scrollContainer, onMouseDown, onMouseLeave, onMouseUp, onMouseMove } = u
                 </div>
             </div>
 
-            <p class="gap-2 p-1 rounded-xl text-sm md:text-lg mt-1 text-justify">Test test</p>
+            <p class="gap-2 p-2 rounded-xl text-sm md:text-lg mt-1 text-justify">Test test</p>
         </div>
     </div>
 </template>
