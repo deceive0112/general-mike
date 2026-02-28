@@ -5,11 +5,11 @@ definePageMeta({
 </script>
 
 <template>
-    <div class="mt-15 mb-15">
+    <div class="mt-5 md:mt-20 md:mb-5">
 
         <!-- About Section -->
         <!-- CHANGED: mx-30 for left/right margin, but mx-4 on mobile so it doesn't overflow -->
-        <div class="mx-4 sm:mx-10 lg:mx-60 grid grid-cols-1 lg:grid-cols-3 gap-4 mb-10">
+        <div class="mx-4 sm:mx-10 lg:mx-45 grid grid-cols-1 lg:grid-cols-3 gap-4 mb-10">
 
             <div class="flex flex-col gap-4">
 
@@ -29,16 +29,16 @@ definePageMeta({
             </div>
 
             <div
-                class="lg:col-span-2 flex flex-col justify-start gap-3 p-4 rounded-xl backdrop-blur-xl shadow-lg text-gray-500">
+                class="lg:col-span-2 flex flex-col justify-start gap-3 md:p-4 rounded-xl backdrop-blur-xl shadow-lg text-gray-500">
 
-                <p class="text-base md:text-xl text-justify font-sans">
+                <p class="text-base md:text-2xl text-justify font-sans">
                     A <span class="underline decoration-dash decoration-rose-300">Computer Engineering</span> graduate
                     from the University of Science and Technology of the Southern
                     Philippines (USTP), with a thesis focused on IoT a portable communication device for deaf-mute
                     individuals using ensemble learning.
                 </p>
 
-                <p class="text-base md:text-xl text-justify font-sans">
+                <p class="text-base md:text-2xl text-justify font-sans">
                     I'm a <span class="underline decoration-dash decoration-red-300">developer</span> with a focus on
                     <span class="underline decoration-dash decoration-pink-300">frontend</span> and
                     <span class="underline decoration-dash decoration-fuchsia-300">embedded systems</span> , building
@@ -61,7 +61,7 @@ definePageMeta({
                     <span class="underline decoration-dash decoration-pink-200">writing firmware</span> .
                 </p>
 
-                <p class="text-base md:text-xl text-justify font-sans">
+                <p class="text-base md:text-2xl text-justify font-sans">
                     Beyond work, I love <span class="underline decoration-dash decoration-purple-200">exploring</span>
                     and <span class="underline decoration-dash decoration-blue-200">tinkering</span> with
                     <span class="underline decoration-dash decoration-cyan-200">new technologies</span> whether it's a
@@ -72,7 +72,7 @@ definePageMeta({
                     rock, J-rock, ballad, and pretty much anything that hits right.
                 </p>
 
-                <div class="flex flex-wrap mt-5 mb-4 xl:mb-8 gap-3 backdrop-blur-lg rounded-xl p-2 items-center">
+                <div class="flex flex-wrap gap-3 backdrop-blur-lg rounded-xl items-center">
                     <div class="group inline-flex items-center gap-1.5 transition-colors duration-200 cursor-pointer">
                         <a href="https://github.com/deceive0112" target="_blank" class="inline-flex items-center">
                             <UIcon name="mdi:github"

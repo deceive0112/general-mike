@@ -6,7 +6,7 @@ definePageMeta({
 
 <template>
   <!-- CHANGED: removed fixed pr-30 pl-30, added responsive padding and bottom margin -->
-  <div class="mt-10 md:mt-15 mb-15 lg:mb-20 lg:mx-30">
+  <div class="mt-10 md:mt-15 mb-10 lg:mb-10 lg:mx-30">
     <!-- CHANGED: grid-cols-1 on mobile, grid-cols-7 on xl only -->
     <div class="grid grid-cols-1 xl:grid-cols-7 gap-6">
 

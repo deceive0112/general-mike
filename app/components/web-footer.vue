@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col md:flex-row justify-between bottom-0 left-0 w-full items-center text-center mt-15 shadow-xl rounded-b-md gap-3 p-2">
+  <div class="flex flex-col md:flex-row justify-between bottom-0 left-0 w-full items-center text-center mt-10 md:mt-25 shadow-xl rounded-b-md gap-3 p-2">
     
     <nav class="flex flex-col sm:flex-row items-center gap-1 sm:gap-3 font-mono text-white text-sm">
       <span>General, Mike</span>
