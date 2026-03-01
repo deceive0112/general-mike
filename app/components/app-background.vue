@@ -48,7 +48,6 @@ const initThree = () => {
   renderer.setPixelRatio(window.devicePixelRatio)
 
   const geometry = new THREE.BufferGeometry()
-  // CHANGED: fewer stars on mobile for performance
   const isMobile = window.innerWidth < 768
   const count = isMobile ? 400 : 900
   const positions = new Float32Array(count * 3)
@@ -58,7 +57,7 @@ const initThree = () => {
   geometry.setAttribute('position', new THREE.BufferAttribute(positions, 3))
 
   material = new THREE.PointsMaterial({
-    color: colorMode.value === 'dark' ? 0xffffff : 0x1e293b,
+    color: document.documentElement.classList.contains('dark') ? 0xffffff : 0x1e293b,
     size: 0.7,
   })
 
@@ -80,7 +79,6 @@ watch(() => colorMode.value, (val) => {
 })
 
 onMounted(() => {
-  // CHANGED: only track mouse on non-touch devices
   if (window.matchMedia('(pointer: fine)').matches) {
     window.addEventListener('mousemove', handleMouse)
   }
@@ -96,12 +94,10 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <div class="fixed inset-0 -z-10 overflow-hidden transition-colors duration-500"
-    :class="colorMode.value === 'dark' ? 'bg-[#0f172a]' : 'bg-[#f8fafc]'">
+  <div class="fixed inset-0 -z-10 overflow-hidden transition-colors duration-500 bg-[#f8fafc] dark:bg-[#0f172a]">
 
-    <canvas ref="canvas" class="fixed inset-0 w-full h-full -z-10" />
+    <canvas ref="canvas" class="fixed inset-0 w-full h-full" />
 
-    <!-- CHANGED: smaller gif on mobile, hidden on touch devices -->
     <img v-if="!showGif"
       :src="gifSrc"
       class="pointer-events-none absolute w-20 h-20 md:w-30 md:h-30 hidden md:block"

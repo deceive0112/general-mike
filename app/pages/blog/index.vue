@@ -27,11 +27,11 @@ const posts = [
     <div class="mb-6">
       <div class="flex flex-wrap gap-3 p-4 rounded-xl border border-white/10 backdrop-blur-xl shadow-lg">
         <div
-          class="shrink-0 w-24 h-36 rounded-xl bg-sky-500/30 border border-white/10 flex items-end justify-center p-2 cursor-pointer hover:scale-105 transition-all duration-300">
+          class="shrink-0 w-24 h-36 rounded-xl bg-sky-500/30 border border-white/10 flex items-end justify-center p-2 cursor-pointer hover:scale-105 transition-all duration-300 shadow-lg">
           <span class="text-xs text-center font-semibold">My Day 01</span>
         </div>
         <div
-          class="shrink-0 w-24 h-36 rounded-xl bg-purple-500/30 border border-white/10 flex items-end justify-center p-2 cursor-pointer hover:scale-105 transition-all duration-300">
+          class="shrink-0 w-24 h-36 rounded-xl bg-purple-500/30 border border-white/10 flex items-end justify-center p-2 cursor-pointer hover:scale-105 transition-all duration-300 shadow-lg">
           <span class="text-xs text-center font-semibold">My Day 02</span>
         </div>
       </div>
@@ -53,13 +53,13 @@ const posts = [
         <div class="flex items-center px-4 py-2 gap-1">
 
           <NuxtLink :to="`/blog/${post.slug}`"
-            class="flex items-center gap-2 px-4 py-2 rounded-lg text-sm text-gray-400 hover:bg-white/10 hover:text-white transition-all duration-200 flex-1 justify-center">
+            class="flex items-center gap-2 px-4 py-2 rounded-lg text-sm text-gray-400 hover:bg-white/10 hover:text-white transition-all duration-200 flex-1 justify-center shadow-lg">
             <UIcon name="mdi:comment-outline" class="size-5" />
             <span>Comment</span>
           </NuxtLink>
 
           <button @click="share(post.title, post.slug)"
-            class="flex items-center gap-2 px-4 py-2 rounded-lg text-sm text-gray-400 hover:bg-white/10 hover:text-white transition-all duration-200 flex-1 justify-center">
+            class="flex items-center gap-2 px-4 py-2 rounded-lg text-sm text-gray-400 hover:bg-white/10 hover:text-white transition-all duration-200 flex-1 justify-center shadow-lg">
             <UIcon name="mdi:share-outline" class="size-5" />
             <span>Share</span>
           </button>
