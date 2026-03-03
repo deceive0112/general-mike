@@ -82,6 +82,10 @@ const drag4 = useDragScroll()
               <span class="text-gray-400">Bun</span>
             </div>
             <div class="flex flex-col items-center gap-1 shrink-0">
+              <UIcon name="simple-icons:umami" class="rounded-xl shadow-xl size-8 md:size-10 p-1" />
+              <span class="text-gray-400">Umami</span>
+            </div>
+            <div class="flex flex-col items-center gap-1 shrink-0">
               <UIcon name="" class="rounded-xl shadow-xl size-8 md:size-10 p-1" />
               <span class="text-gray-400">Form Submit</span>
             </div>
@@ -175,14 +179,14 @@ const drag4 = useDragScroll()
           class="p-3 rounded-xl shadow-md transition-all duration-300 hover:shadow-sky-500/20 hover:shadow-lg hover:bg-white/5">
           <div
             class="flex flex-col rounded-xl overflow-hidden shadow-xl hover:scale-105 transition-all duration-300 cursor-pointer border border-white/10">
-            <a href="https://deceive0112.github.io/" target="_blank">
-              <img src="https://opengraph.githubassets.com/2/deceive0112/" class="w-full object-cover" />
+            <a href="https://deceive0112.github.io/TindaTrack/" target="_blank">
+              <img src="https://opengraph.githubassets.com/2/deceive0112/TindaTrack/" class="w-full object-cover" />
             </a>
-            <a href="https://github.com/deceive0112/" target="_blank"
+            <a href="https://github.com/deceive0112/TindaTrack/" target="_blank"
               class="flex items-center gap-2 px-3 py-2 bg-white/5">
               <UIcon name="mdi:github" class="size-4 text-gray-400" />
               <span class="text-xs text-gray-400">github.com</span>
-              <span class="text-xs font-bold ml-1 truncate">deceive0112/work-in-progress</span>
+              <span class="text-xs font-bold ml-1 truncate">deceive0112/TindTrack</span>
             </a>
           </div>
           <div :ref="drag3.scrollContainer" @mousedown="drag3.onMouseDown" @mouseleave="drag3.onMouseLeave"
@@ -190,22 +194,21 @@ const drag4 = useDragScroll()
             class="text-[7px] flex gap-2 mt-2.5 overflow-x-auto cursor-grab active:cursor-grabbing select-none"
             style="scrollbar-width: none;">
             <div class="flex flex-col items-center gap-1 shrink-0">
-              <UIcon name="devicon:vuejs" class="rounded-xl shadow-xl size-8 md:size-10 p-1" />
-              <span class="text-gray-400">Vue</span>
-            </div>
-            <div class="flex flex-col items-center gap-1 shrink-0">
-              <UIcon name="devicon:nuxtjs" class="rounded-xl shadow-xl size-8 md:size-10 p-1" />
-              <span class="text-gray-400">Nuxt</span>
-            </div>
-            <div class="flex flex-col items-center gap-1 shrink-0">
-              <UIcon name="devicon:tailwindcss" class="rounded-xl shadow-xl size-8 md:size-10 p-1" />
-              <span class="text-gray-400">Tailwind CSS</span>
-            </div>
+            <UIcon name="devicon:typescript" class="rounded-xl shadow-xl size-8 md:size-10 p-1" />
+            <span class="text-gray-400">TypeScript</span>
+          </div>
+          <div class="flex flex-col items-center gap-1 shrink-0">
+            <UIcon name="devicon:css" class="rounded-xl shadow-xl size-8 md:size-10 p-1" />
+            <span class="text-gray-400">CSS</span>
+          </div>
+          <div class="flex flex-col items-center gap-1 shrink-0">
+            <UIcon name="devicon:javascript" class="rounded-xl shadow-xl size-8 md:size-10 p-1" />
+            <span class="text-gray-400">JavaScript</span>
+          </div>
           </div>
         </div>
         <div class="col-span-1 md:col-span-2">
-          <p class="text-md md:text-xl text-gray-400 font-semibold uppercase tracking-widest text-left mt-2">Work In
-            Progress</p>
+          <p class="text-md md:text-xl text-gray-400 font-semibold uppercase tracking-widest text-left mt-2">TindaTrack</p>
           <p class="gap-2 p-2 rounded-xl text-sm md:text-lg text-justify">Test test</p>
         </div>
       </div>

@@ -87,6 +87,10 @@ const drag3 = useDragScroll()
             <span class="text-gray-400">Bun</span>
           </div>
           <div class="flex flex-col items-center gap-1 shrink-0">
+            <UIcon name="simple-icons:umami" class="rounded-xl shadow-xl size-8 md:size-10 p-1" />
+            <span class="text-gray-400">Umami</span>
+          </div>
+          <div class="flex flex-col items-center gap-1 shrink-0">
             <UIcon name="" class="rounded-xl shadow-xl size-8 md:size-10 p-1" />
             <span class="text-gray-400">Form Submit</span>
           </div>
@@ -144,18 +148,18 @@ const drag3 = useDragScroll()
       <!-- Project 3 -->
       <div
         class="p-3 rounded-xl shadow-md transition-all duration-300 hover:shadow-sky-500/20 hover:shadow-lg hover:bg-white/5">
-        <p class="text-sm md:text-lg text-gray-400 font-semibold mb-2 uppercase tracking-widest">Work In Progress</p>
+        <p class="text-sm md:text-lg text-gray-400 font-semibold mb-2 uppercase tracking-widest">TindaTrack</p>
 
         <div
           class="flex flex-col rounded-xl overflow-hidden shadow-xl hover:scale-105 transition-all duration-300 cursor-pointer border border-white/10">
-          <a href="https://deceive0112.github.io/" target="_blank">
-            <img src="https://opengraph.githubassets.com/2/deceive0112/" class="w-full object-cover" />
+          <a href="https://deceive0112.github.io/TindaTrack/" target="_blank">
+            <img src="https://opengraph.githubassets.com/2/deceive0112/TindaTrack/" class="w-full object-cover" />
           </a>
-          <a href="https://github.com/deceive0112/" target="_blank"
+          <a href="https://github.com/deceive0112/TindaTrack/" target="_blank"
             class="flex items-center gap-2 px-3 py-2 bg-white/5">
             <UIcon name="mdi:github" class="size-4 text-gray-400" />
             <span class="text-xs text-gray-400">github.com</span>
-            <span class="text-xs font-bold ml-1 truncate">deceive0112/Work In Progress</span>
+            <span class="text-xs font-bold ml-1 truncate">deceive0112/TindaTrack</span>
           </a>
         </div>
 
@@ -164,8 +168,8 @@ const drag3 = useDragScroll()
           class="text-[7px] flex gap-2 mt-2.5 overflow-x-auto cursor-grab active:cursor-grabbing select-none"
           style="scrollbar-width: none;">
           <div class="flex flex-col items-center gap-1 shrink-0">
-            <UIcon name="devicon:html5" class="rounded-xl shadow-xl size-8 md:size-10 p-1" />
-            <span class="text-gray-400">HTML</span>
+            <UIcon name="devicon:typescript" class="rounded-xl shadow-xl size-8 md:size-10 p-1" />
+            <span class="text-gray-400">TypeScript</span>
           </div>
           <div class="flex flex-col items-center gap-1 shrink-0">
             <UIcon name="devicon:css" class="rounded-xl shadow-xl size-8 md:size-10 p-1" />
