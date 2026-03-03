@@ -1,32 +1,37 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   colorMode: {
-    preference: 'dark',   
-    fallback: 'dark',     
-    classSuffix: '',
-    storageKey: 'nuxt-color-mode',      
+    preference: "dark",
+    fallback: "dark",
+    classSuffix: "",
+    storageKey: "nuxt-color-mode",
   },
 
-  modules: ['@nuxt/eslint', '@nuxt/ui', '@nuxt/image'],
+  modules: ["@nuxt/eslint", "@nuxt/ui", "@nuxt/image", "nuxt-umami"],
 
   devtools: {
-    enabled: true
+    enabled: true,
   },
 
-  css: ['~/assets/css/main.css'],
+  css: ["~/assets/css/main.css"],
 
   routeRules: {
-    '/': { prerender: true }
+    "/": { prerender: true },
   },
 
-  compatibilityDate: '2025-07-15',
+  compatibilityDate: "2025-07-15",
 
   eslint: {
     config: {
       stylistic: {
-        commaDangle: 'never',
-        braceStyle: '1tbs'
-      }
-    }
-  }
-})
+        commaDangle: "never",
+        braceStyle: "1tbs",
+      },
+    },
+  },
+
+  umami: {
+    autoTrack: true,
+    ignoreLocalhost: true,
+  },
+});
