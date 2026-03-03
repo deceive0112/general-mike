@@ -129,16 +129,16 @@ const drag3 = useDragScroll()
           class="text-[7px] flex gap-2 mt-2.5 overflow-x-auto cursor-grab active:cursor-grabbing select-none"
           style="scrollbar-width: none;">
           <div class="flex flex-col items-center gap-1 shrink-0">
-            <UIcon name="devicon:html5" class="rounded-xl shadow-xl size-8 md:size-10 p-1" />
-            <span class="text-gray-400">HTML</span>
+            <UIcon name="devicon:javascript" class="rounded-xl shadow-xl size-8 md:size-10 p-1" />
+            <span class="text-gray-400">JavaScript</span>
           </div>
           <div class="flex flex-col items-center gap-1 shrink-0">
             <UIcon name="devicon:css" class="rounded-xl shadow-xl size-8 md:size-10 p-1" />
             <span class="text-gray-400">CSS</span>
           </div>
           <div class="flex flex-col items-center gap-1 shrink-0">
-            <UIcon name="devicon:javascript" class="rounded-xl shadow-xl size-8 md:size-10 p-1" />
-            <span class="text-gray-400">JavaScript</span>
+            <UIcon name="devicon:html5" class="rounded-xl shadow-xl size-8 md:size-10 p-1" />
+            <span class="text-gray-400">HTML</span>
           </div>
         </div>
         <p class="gap-2 p-2 rounded-xl text-xs md:text-sm text-justify">Vanilla JS notepad web app with dynamic tasks
@@ -172,12 +172,28 @@ const drag3 = useDragScroll()
             <span class="text-gray-400">TypeScript</span>
           </div>
           <div class="flex flex-col items-center gap-1 shrink-0">
+            <UIcon name="devicon:javascript" class="rounded-xl shadow-xl size-8 md:size-10 p-1" />
+            <span class="text-gray-400">JavaScript</span>
+          </div>
+          <div class="flex flex-col items-center gap-1 shrink-0">
             <UIcon name="devicon:css" class="rounded-xl shadow-xl size-8 md:size-10 p-1" />
             <span class="text-gray-400">CSS</span>
           </div>
           <div class="flex flex-col items-center gap-1 shrink-0">
-            <UIcon name="devicon:javascript" class="rounded-xl shadow-xl size-8 md:size-10 p-1" />
-            <span class="text-gray-400">JavaScript</span>
+            <UIcon name="logos:expo-icon" class="rounded-xl shadow-xl size-8 md:size-10 p-1" />
+            <span class="text-gray-400">Expo</span>
+          </div>
+          <div class="flex flex-col items-center gap-1 shrink-0">
+            <UIcon name="" class="rounded-xl shadow-xl size-8 md:size-10 p-1" />
+            <span class="text-gray-400">NativeWind</span>
+          </div>
+          <div class="flex flex-col items-center gap-1 shrink-0">
+            <UIcon name="devicon:reactnative" class="rounded-xl shadow-xl size-8 md:size-10 p-1" />
+            <span class="text-gray-400">React Native</span>
+          </div>
+          <div class="flex flex-col items-center gap-1 shrink-0">
+            <UIcon name="devicon:supabase" class="rounded-xl shadow-xl size-8 md:size-10 p-1" />
+            <span class="text-gray-400">Supabase</span>
           </div>
         </div>
         <p class="gap-2 p-2 rounded-xl text-xs md:text-sm text-justify">Test test</p>
