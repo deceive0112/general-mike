@@ -10,7 +10,7 @@ const { scrollContainer, onMouseDown, onMouseLeave, onMouseUp, onMouseMove } = u
             <div
                 class="flex flex-col rounded-xl overflow-hidden shadow-xl hover:scale-102 transition-all duration-300 cursor-pointer border border-white/10">
                 <a href="" target="_blank">
-                    <img src="https://opengraph.githubassets.com/2/deceive0112/" class="w-full object-cover" />
+                    <NuxtImg src="https://opengraph.githubassets.com/2/deceive0112/" class="w-full object-cover" preload/>
                 </a>
                 <a href="https://github.com/deceive0112/" target="_blank"
                     class="flex items-center gap-2 px-3 py-2 bg-white/5">
