@@ -182,7 +182,7 @@ const drag4 = useDragScroll()
           class="p-3 rounded-xl shadow-md transition-all duration-300 hover:shadow-sky-500/20 hover:shadow-lg hover:bg-white/5">
           <div
             class="flex flex-col rounded-xl overflow-hidden shadow-xl hover:scale-105 transition-all duration-300 cursor-pointer border border-white/10">
-            <a href="https://deceive0112.github.io/TindaTrack/" target="_blank">
+            <a href="/projects/TindaTrack/TindaTrack_Mock-up.pdf" target="_blank">
               <NuxtImg src="https://opengraph.githubassets.com/2/deceive0112/TindaTrack/" class="w-full object-cover"
                 preload />
             </a>
