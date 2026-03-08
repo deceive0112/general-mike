@@ -2,7 +2,7 @@
 
 A serverless personal portfolio built with **Nuxt 3** and **Vue**, showcasing software and hardware projects, a blog, and interactive mini-games. Deployed on Vercel.
 
-🔗 **Live site:** [general-mike.vercel.app](https://general-mike.vercel.app)
+**Live site:** [general-mike.vercel.app](https://general-mike.vercel.app)
 
 ---
 
