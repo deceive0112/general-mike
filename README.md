@@ -22,7 +22,7 @@ A serverless personal portfolio built with **Nuxt 3** and **Vue**, showcasing so
 | Category | Technologies |
 |---|---|
 | Framework | Nuxt 3, Vue 3 |
-| Styling | Tailwind CSS, shadcn/ui, Radix UI |
+| Styling | Tailwind CSS |
 | 3D / Canvas | Three.js |
 | Package Manager | Bun |
 | Deployment | Vercel |
