@@ -61,16 +61,6 @@ const drag4 = useDragScroll()
               <span class="text-gray-400">Tailwind CSS</span>
             </div>
             <div class="flex flex-col items-center gap-1 shrink-0">
-              <UIcon name="vscode-icons:file-type-light-shadcn"
-                class="rounded-xl shadow-xl size-8 md:size-10 p-1 dark:invert" />
-              <span class="text-gray-400">Shadcn UI</span>
-            </div>
-            <div class="flex flex-col items-center gap-1 shrink-0">
-              <UIcon name="simple-icons:radixui"
-                class="rounded-xl shadow-xl size-8 md:size-10 p-1 dark:text-white text-black" />
-              <span class="text-gray-400">Radix UI</span>
-            </div>
-            <div class="flex flex-col items-center gap-1 shrink-0">
               <UIcon name="devicon:vercel" class="rounded-xl shadow-xl size-8 md:size-10 p-1 dark:invert" />
               <span class="text-gray-400">Vercel</span>
             </div>
