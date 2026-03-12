@@ -323,6 +323,54 @@ const drag4 = useDragScroll()
         </div>
       </div>
 
+      <!--Project-5-->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 backdrop-blur-xl rounded-3xl">
+        <div
+          class="p-3 rounded-xl shadow-md transition-all duration-300 hover:shadow-sky-500/20 hover:shadow-lg hover:bg-white/5">
+          <div
+            class="flex flex-col rounded-xl overflow-hidden shadow-xl hover:scale-105 transition-all duration-300 cursor-pointer border border-white/10">
+            <a href="" target="_blank">
+              <NuxtImg src="https://opengraph.githubassets.com/2/deceive0112/" class="w-full object-cover" preload />
+            </a>
+            <a href="https://github.com/deceive0112/" target="_blank"
+              class="flex items-center gap-2 px-3 py-2 bg-white/5">
+              <UIcon name="mdi:github" class="size-4 text-gray-400" />
+              <span class="text-xs text-gray-400">github.com</span>
+              <span class="text-xs font-bold ml-1 truncate">deceive0112/Test</span>
+            </a>
+          </div>
+          <div :ref="drag4.scrollContainer" @mousedown="drag4.onMouseDown" @mouseleave="drag4.onMouseLeave"
+            @mouseup="drag4.onMouseUp" @mousemove="drag4.onMouseMove"
+            class="text-[7px] flex gap-2 mt-2.5 overflow-x-auto cursor-grab active:cursor-grabbing select-none"
+            style="scrollbar-width: none;">
+            <div class="flex flex-col items-center gap-1 shrink-0">
+              <UIcon name="devicon:vuejs" class="rounded-xl shadow-xl size-8 md:size-10 p-1" />
+              <span class="text-gray-400">Vue</span>
+            </div>
+            <div class="flex flex-col items-center gap-1 shrink-0">
+              <UIcon name="devicon:css" class="rounded-xl shadow-xl size-8 md:size-10 p-1" />
+              <span class="text-gray-400">CSS</span>
+            </div>
+            <div class="flex flex-col items-center gap-1 shrink-0">
+              <UIcon name="devicon:html5" class="rounded-xl shadow-xl size-8 md:size-10 p-1" />
+              <span class="text-gray-400">HTML</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-1 md:col-span-2">
+          <p class="text-md md:text-xl text-gray-400 font-semibold uppercase tracking-widest text-left mt-2">Hubspot</p>
+          <p class="p-2 rounded-xl text-sm md:text-base text-justify mb-2">
+            Test
+          </p>
+          <ul class="list-disc ml-5 text-sm md:text-base space-y-1">
+            <li>Test</li>
+          </ul>
+          <p class="p-2 rounded-xl text-sm md:text-base text-justify mt-2">
+            This project.
+          </p>
+        </div>
+      </div>
+
     </div>
   </div>
 
