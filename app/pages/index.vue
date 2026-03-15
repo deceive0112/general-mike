@@ -136,7 +136,7 @@ definePageMeta({
       </div>
 
       <div class="hidden xl:flex xl:basis-1/5 items-center justify-center mt-20">
-        <Transition enter-active-class="transition-all duration-500 delay-300"
+        <Transition enter-active-class="transition-all duration-100 delay-300"
           enter-from-class="opacity-0 -translate-x-10" enter-to-class="opacity-100 translate-x-0"
           leave-active-class="transition-all duration-600" leave-from-class="opacity-100 translate-x-0"
           leave-to-class="opacity-0 -translate-x-10">
