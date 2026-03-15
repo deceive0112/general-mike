@@ -366,7 +366,7 @@ const drag4 = useDragScroll()
             <li>Test</li>
           </ul>
           <p class="p-2 rounded-xl text-sm md:text-base text-justify mt-2">
-            This project.
+            This project is about hubspot.
           </p>
         </div>
       </div>
