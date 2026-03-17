@@ -49,7 +49,7 @@ definePageMeta({
       <div class="w-full xl:basis-3/5">
         <h1 class="text-2xl sm:text-3xl md:text-4xl mt-10 md:mt-20 font-bold backdrop-blur-lg rounded-xl p-2">
           Hey! <span class="px-1">I'm</span>
-          <a class="text-blue-500 cursor-pointer px-1.5" @mouseenter="isHovered = true" @mouseleave="isHovered = false"
+          <a class="text-blue-500 cursor-default px-1.5" @mouseenter="isHovered = true" @mouseleave="isHovered = false"
             @touchstart="isHovered = true" @touchend="isHovered = false">
             {{ title }}</a>
           <span class="px-2 md:px-3 inline-block animate-wave">
@@ -81,19 +81,19 @@ definePageMeta({
 
         <p class="text-base md:text-2xl mt-5 backdrop-blur-lg rounded-xl w-full p-3 text-justify">
           I'm a <span
-            class="text-red-400 relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-current after:transition-all after:duration-300 hover:after:w-full cursor-pointer">developer</span>
+            class="text-red-400 relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-current after:transition-all after:duration-300 hover:after:w-full cursor-default">developer</span>
           who takes great care in crafting detailed, intuitive <span
-            class="text-orange-400 relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-current after:transition-all after:duration-300 hover:after:w-full cursor-pointer">UI
+            class="text-orange-400 relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-current after:transition-all after:duration-300 hover:after:w-full cursor-default">UI
             designs</span>
           and engaging <span
-            class="text-cyan-400 relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-current after:transition-all after:duration-300 hover:after:w-full cursor-pointer">user
+            class="text-cyan-400 relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-current after:transition-all after:duration-300 hover:after:w-full cursor-default">user
             experiences</span>.
           Beyond <span
-            class="text-violet-400 relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-current after:transition-all after:duration-300 hover:after:w-full cursor-pointer">software</span>,
+            class="text-violet-400 relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-current after:transition-all after:duration-300 hover:after:w-full cursor-default">software</span>,
           I also bring hands-on experience in <span
-            class="text-emerald-400 relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-current after:transition-all after:duration-300 hover:after:w-full cursor-pointer">hardware</span>
+            class="text-emerald-400 relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-current after:transition-all after:duration-300 hover:after:w-full cursor-default">hardware</span>
           projects, such as <span
-            class="text-yellow-400 relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-current after:transition-all after:duration-300 hover:after:w-full cursor-pointer">IoT</span>.
+            class="text-yellow-400 relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-current after:transition-all after:duration-300 hover:after:w-full cursor-default">IoT</span>.
         </p>
 
         <div class="flex flex-wrap mt-5 mb-5 xl:mb-25 gap-1 md:gap-3 backdrop-blur-lg rounded-xl p-2 items-center">
