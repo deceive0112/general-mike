@@ -344,16 +344,16 @@ const drag4 = useDragScroll()
             class="text-[7px] flex gap-2 mt-2.5 overflow-x-auto cursor-grab active:cursor-grabbing select-none"
             style="scrollbar-width: none;">
             <div class="flex flex-col items-center gap-1 shrink-0">
-              <UIcon name="devicon:vuejs" class="rounded-xl shadow-xl size-8 md:size-10 p-1" />
-              <span class="text-gray-400">Vue</span>
+              <UIcon name="devicon:html5" class="rounded-xl shadow-xl size-8 md:size-10 p-1" />
+              <span class="text-gray-400">HTML</span>
             </div>
             <div class="flex flex-col items-center gap-1 shrink-0">
               <UIcon name="devicon:css" class="rounded-xl shadow-xl size-8 md:size-10 p-1" />
               <span class="text-gray-400">CSS</span>
             </div>
             <div class="flex flex-col items-center gap-1 shrink-0">
-              <UIcon name="devicon:html5" class="rounded-xl shadow-xl size-8 md:size-10 p-1" />
-              <span class="text-gray-400">HTML</span>
+              <UIcon name="devicon:javascript" class="rounded-xl shadow-xl size-8 md:size-10 p-1" />
+              <span class="text-gray-400">JavaScript</span>
             </div>
           </div>
         </div>
