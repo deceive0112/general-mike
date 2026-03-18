@@ -329,14 +329,14 @@ const drag4 = useDragScroll()
           class="p-3 rounded-xl shadow-md transition-all duration-300 hover:shadow-sky-500/20 hover:shadow-lg hover:bg-white/5">
           <div
             class="flex flex-col rounded-xl overflow-hidden shadow-xl hover:scale-105 transition-all duration-300 cursor-pointer border border-white/10">
-            <a href="" target="_blank">
-              <NuxtImg src="https://opengraph.githubassets.com/2/deceive0112/" class="w-full object-cover" preload />
+            <a href="https://245531884.hs-sites-na2.com/test-page" target="_blank">
+              <NuxtImg src="https://opengraph.githubassets.com/2/deceive0112/hubspot-project-1" class="w-full object-cover" preload />
             </a>
-            <a href="https://github.com/deceive0112/" target="_blank"
+            <a href="https://github.com/deceive0112/hubspot-project-1" target="_blank"
               class="flex items-center gap-2 px-3 py-2 bg-white/5">
               <UIcon name="mdi:github" class="size-4 text-gray-400" />
               <span class="text-xs text-gray-400">github.com</span>
-              <span class="text-xs font-bold ml-1 truncate">deceive0112/Test</span>
+              <span class="text-xs font-bold ml-1 truncate">deceive0112/hubspot-project-1</span>
             </a>
           </div>
           <div :ref="drag4.scrollContainer" @mousedown="drag4.onMouseDown" @mouseleave="drag4.onMouseLeave"
