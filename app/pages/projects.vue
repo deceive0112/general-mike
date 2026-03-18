@@ -25,7 +25,7 @@ const drag4 = useDragScroll()
               class="flex items-center gap-2 px-3 py-2 bg-white/5">
               <UIcon name="mdi:github" class="size-4 text-gray-400" />
               <span class="text-xs text-gray-400">github.com</span>
-              <span class="text-xs font-bold ml-1 truncate">deceive0112/general-mike</span>
+              <span class="text-xs font-bold ml-1 truncate relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-current after:transition-all after:duration-300 hover:after:w-full cursor-pointer">deceive0112/general-mike</span>
             </a>
           </div>
           <div :ref="drag1.scrollContainer" @mousedown="drag1.onMouseDown" @mouseleave="drag1.onMouseLeave"
@@ -125,7 +125,7 @@ const drag4 = useDragScroll()
               class="flex items-center gap-2 px-3 py-2 bg-white/5">
               <UIcon name="mdi:github" class="size-4 text-gray-400" />
               <span class="text-xs text-gray-400">github.com</span>
-              <span class="text-xs font-bold ml-1 truncate">deceive0112/Vanilla-Web-App-Notepad</span>
+              <span class="text-xs font-bold ml-1 truncate relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-current after:transition-all after:duration-300 hover:after:w-full cursor-pointer">deceive0112/Vanilla-Web-App-Notepad</span>
             </a>
           </div>
           <div :ref="drag2.scrollContainer" @mousedown="drag2.onMouseDown" @mouseleave="drag2.onMouseLeave"
@@ -180,7 +180,7 @@ const drag4 = useDragScroll()
               class="flex items-center gap-2 px-3 py-2 bg-white/5">
               <UIcon name="mdi:github" class="size-4 text-gray-400" />
               <span class="text-xs text-gray-400">github.com</span>
-              <span class="text-xs font-bold ml-1 truncate">deceive0112/TindaTrack</span>
+              <span class="text-xs font-bold ml-1 truncate relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-current after:transition-all after:duration-300 hover:after:w-full cursor-pointer">deceive0112/TindaTrack</span>
             </a>
           </div>
           <div :ref="drag3.scrollContainer" @mousedown="drag3.onMouseDown" @mouseleave="drag3.onMouseLeave"
@@ -255,7 +255,7 @@ const drag4 = useDragScroll()
               class="flex items-center gap-2 px-3 py-2 bg-white/5">
               <UIcon name="mdi:github" class="size-4 text-gray-400" />
               <span class="text-xs text-gray-400">github.com</span>
-              <span class="text-xs font-bold ml-1 truncate">deceive0112/Groupad</span>
+              <span class="text-xs font-bold ml-1 truncate relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-current after:transition-all after:duration-300 hover:after:w-full cursor-pointer">deceive0112/Groupad</span>
             </a>
           </div>
           <div :ref="drag4.scrollContainer" @mousedown="drag4.onMouseDown" @mouseleave="drag4.onMouseLeave"
@@ -336,7 +336,7 @@ const drag4 = useDragScroll()
               class="flex items-center gap-2 px-3 py-2 bg-white/5">
               <UIcon name="mdi:github" class="size-4 text-gray-400" />
               <span class="text-xs text-gray-400">github.com</span>
-              <span class="text-xs font-bold ml-1 truncate">deceive0112/hubspot-project-1</span>
+              <span class="text-xs font-bold ml-1 truncate relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-current after:transition-all after:duration-300 hover:after:w-full cursor-pointer">deceive0112/hubspot-project-1</span>
             </a>
           </div>
           <div :ref="drag4.scrollContainer" @mousedown="drag4.onMouseDown" @mouseleave="drag4.onMouseLeave"

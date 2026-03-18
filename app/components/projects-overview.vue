@@ -29,7 +29,7 @@ const drag3 = useDragScroll()
             class="flex items-center gap-2 px-3 py-2 bg-white/5">
             <UIcon name="mdi:github" class="size-4 text-gray-400" />
             <span class="text-xs text-gray-400">github.com</span>
-            <span class="text-xs font-bold ml-1 truncate">deceive0112/general-mike</span>
+            <span class="text-xs font-bold ml-1 truncate relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-current after:transition-all after:duration-300 hover:after:w-full cursor-pointer">deceive0112/general-mike</span>
           </a>
         </div>
 
@@ -113,7 +113,7 @@ const drag3 = useDragScroll()
             class="flex items-center gap-2 px-3 py-2 bg-white/5">
             <UIcon name="mdi:github" class="size-4 text-gray-400" />
             <span class="text-xs text-gray-400">github.com</span>
-            <span class="text-xs font-bold ml-1 truncate">deceive0112/Vanilla-Web-App-Notepad</span>
+            <span class="text-xs font-bold ml-1 truncate relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-current after:transition-all after:duration-300 hover:after:w-full cursor-pointer">deceive0112/Vanilla-Web-App-Notepad</span>
           </a>
         </div>
 
@@ -153,7 +153,7 @@ const drag3 = useDragScroll()
             class="flex items-center gap-2 px-3 py-2 bg-white/5">
             <UIcon name="mdi:github" class="size-4 text-gray-400" />
             <span class="text-xs text-gray-400">github.com</span>
-            <span class="text-xs font-bold ml-1 truncate">deceive0112/TindaTrack</span>
+            <span class="text-xs font-bold ml-1 truncate relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-current after:transition-all after:duration-300 hover:after:w-full cursor-pointer">deceive0112/TindaTrack</span>
           </a>
         </div>
 

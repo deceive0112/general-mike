@@ -16,7 +16,7 @@ const { scrollContainer, onMouseDown, onMouseLeave, onMouseUp, onMouseMove } = u
                     class="flex items-center gap-2 px-3 py-2 bg-white/5">
                     <UIcon name="mdi:github" class="size-4 text-gray-400" />
                     <span class="text-2xs md:text-lg text-gray-400">github.com</span>
-                    <span class="text-2xs md:text-lg font-bold ml-1 truncate">deceive0112/Groupad</span>
+                    <span class="text-2xs md:text-lg font-bold ml-1 truncate relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-current after:transition-all after:duration-300 hover:after:w-full cursor-pointer">deceive0112/Groupad</span>
                 </a>
             </div>
 
