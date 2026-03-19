@@ -16,17 +16,27 @@ const drag4 = useDragScroll()
         <div
           class="p-3 rounded-xl shadow-md transition-all duration-300 hover:shadow-sky-500/20 hover:shadow-lg hover:bg-white/5">
           <div
-            class="flex flex-col rounded-xl overflow-hidden shadow-xl hover:scale-105 transition-all duration-300 cursor-pointer border border-white/10">
-            <a href="https://general-mike.vercel.app/" target="_blank">
-              <NuxtImg src="https://opengraph.githubassets.com/2/deceive0112/general-mike" class="w-full object-cover"
-                preload />
+            class="group flex flex-col rounded-xl overflow-hidden shadow-xl hover:scale-105 transition-all duration-300 cursor-pointer border border-white/10">
+
+            <a href="https://general-mike.vercel.app/" target="_blank" class="relative block w-full"
+              style="padding-top: 50%">
+              <NuxtImg src="https://opengraph.githubassets.com/2/deceive0112/general-mike"
+                class="absolute inset-0 w-full h-full object-cover" preload
+                @error="(e) => (e as Event & { target: HTMLImageElement }).target.src = '/fallback-thumbnail/project1-fallback.png'" />
+              <NuxtImg
+                src="https://api.microlink.io/?url=https://general-mike.vercel.app&screenshot=true&meta=false&embed=screenshot.url"
+                class="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                style="object-position: top" />
             </a>
+
             <a href="https://github.com/deceive0112/general-mike" target="_blank"
               class="flex items-center gap-2 px-3 py-2 bg-white/5">
               <UIcon name="mdi:github" class="size-4 text-gray-400" />
               <span class="text-xs text-gray-400">github.com</span>
-              <span class="text-xs font-bold ml-1 truncate relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-current after:transition-all after:duration-300 hover:after:w-full cursor-pointer">deceive0112/general-mike</span>
+              <span
+                class="text-xs font-bold ml-1 truncate relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-current after:transition-all after:duration-300 hover:after:w-full cursor-pointer">deceive0112/general-mike</span>
             </a>
+
           </div>
           <div :ref="drag1.scrollContainer" @mousedown="drag1.onMouseDown" @mouseleave="drag1.onMouseLeave"
             @mouseup="drag1.onMouseUp" @mousemove="drag1.onMouseMove"
@@ -116,18 +126,26 @@ const drag4 = useDragScroll()
         <div
           class="p-3 rounded-xl shadow-md transition-all duration-300 hover:shadow-sky-500/20 hover:shadow-lg hover:bg-white/5">
           <div
-            class="flex flex-col rounded-xl overflow-hidden shadow-xl hover:scale-105 transition-all duration-300 cursor-pointer border border-white/10">
-            <a href="https://deceive0112.github.io/Vanilla-Web-App-Notepad/" target="_blank">
+            class="group flex flex-col rounded-xl overflow-hidden shadow-xl hover:scale-105 transition-all duration-300 cursor-pointer border border-white/10">
+            <a href="https://deceive0112.github.io/Vanilla-Web-App-Notepad/" target="_blank"
+              class="relative block w-full" style="padding-top: 50%">
               <NuxtImg src="https://opengraph.githubassets.com/2/deceive0112/Vanilla-Web-App-Notepad"
-                class="w-full object-cover" preload />
+                class="absolute inset-0 w-full h-full object-cover" preload
+                @error="(e) => (e as Event & { target: HTMLImageElement }).target.src = '/fallback-thumbnail/project2-fallback.png'" />
+              <NuxtImg
+                src="https://api.microlink.io/?url=https://deceive0112.github.io/Vanilla-Web-App-Notepad&screenshot=true&meta=false&embed=screenshot.url"
+                class="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                style="object-position: top" />
             </a>
             <a href="https://github.com/deceive0112/Vanilla-Web-App-Notepad" target="_blank"
               class="flex items-center gap-2 px-3 py-2 bg-white/5">
               <UIcon name="mdi:github" class="size-4 text-gray-400" />
               <span class="text-xs text-gray-400">github.com</span>
-              <span class="text-xs font-bold ml-1 truncate relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-current after:transition-all after:duration-300 hover:after:w-full cursor-pointer">deceive0112/Vanilla-Web-App-Notepad</span>
+              <span
+                class="text-xs font-bold ml-1 truncate relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-current after:transition-all after:duration-300 hover:after:w-full cursor-pointer">deceive0112/Vanilla-Web-App-Notepad</span>
             </a>
           </div>
+
           <div :ref="drag2.scrollContainer" @mousedown="drag2.onMouseDown" @mouseleave="drag2.onMouseLeave"
             @mouseup="drag2.onMouseUp" @mousemove="drag2.onMouseMove"
             class="text-[7px] flex gap-2 mt-2.5 overflow-x-auto cursor-grab active:cursor-grabbing select-none"
@@ -171,16 +189,21 @@ const drag4 = useDragScroll()
         <div
           class="p-3 rounded-xl shadow-md transition-all duration-300 hover:shadow-sky-500/20 hover:shadow-lg hover:bg-white/5">
           <div
-            class="flex flex-col rounded-xl overflow-hidden shadow-xl hover:scale-105 transition-all duration-300 cursor-pointer border border-white/10">
-            <a href="/projects/TindaTrack/TindaTrack_Mock-up.pdf" target="_blank">
-              <NuxtImg src="https://opengraph.githubassets.com/2/deceive0112/TindaTrack/" class="w-full object-cover"
-                preload />
+            class="group flex flex-col rounded-xl overflow-hidden shadow-xl hover:scale-105 transition-all duration-300 cursor-pointer border border-white/10">
+            <a href="/projects/TindaTrack/TindaTrack_Mock-up.pdf" target="_blank" class="relative block w-full"
+              style="padding-top: 50%">
+              <NuxtImg src="https://opengraph.githubassets.com/2/deceive0112/TindaTrack"
+                class="absolute inset-0 w-full h-full object-cover" preload
+                @error="(e) => (e as Event & { target: HTMLImageElement }).target.src = '/fallback-thumbnail/project3-fallback.png'" />
+              <NuxtImg src="/fallback-thumbnail/tindatrack-thumbnail.png"
+                class="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             </a>
-            <a href="https://github.com/deceive0112/TindaTrack/" target="_blank"
+            <a href="https://github.com/deceive0112/TindaTrack" target="_blank"
               class="flex items-center gap-2 px-3 py-2 bg-white/5">
               <UIcon name="mdi:github" class="size-4 text-gray-400" />
               <span class="text-xs text-gray-400">github.com</span>
-              <span class="text-xs font-bold ml-1 truncate relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-current after:transition-all after:duration-300 hover:after:w-full cursor-pointer">deceive0112/TindaTrack</span>
+              <span
+                class="text-xs font-bold ml-1 truncate relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-current after:transition-all after:duration-300 hover:after:w-full cursor-pointer">deceive0112/TindaTrack</span>
             </a>
           </div>
           <div :ref="drag3.scrollContainer" @mousedown="drag3.onMouseDown" @mouseleave="drag3.onMouseLeave"
@@ -243,21 +266,33 @@ const drag4 = useDragScroll()
       </div>
 
       <!--Project-4-->
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 backdrop-blur-xl rounded-3xl">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 backdrop-blur-xl rounded-3xl mb-10">
         <div
           class="p-3 rounded-xl shadow-md transition-all duration-300 hover:shadow-sky-500/20 hover:shadow-lg hover:bg-white/5">
           <div
-            class="flex flex-col rounded-xl overflow-hidden shadow-xl hover:scale-105 transition-all duration-300 cursor-pointer border border-white/10">
-            <a href="https://groupad.vercel.app/" target="_blank">
-              <NuxtImg src="https://opengraph.githubassets.com/2/deceive0112/Groupad" class="w-full object-cover" preload />
+            class="group flex flex-col rounded-xl overflow-hidden shadow-xl hover:scale-105 transition-all duration-300 cursor-pointer border border-white/10">
+
+            <a href="https://groupad.vercel.app/" target="_blank" class="relative block w-full"
+              style="padding-top: 50%">
+              <NuxtImg src="https://opengraph.githubassets.com/2/deceive0112/Groupad"
+                class="absolute inset-0 w-full h-full object-cover" preload
+                @error="(e) => (e as Event & { target: HTMLImageElement }).target.src = '/fallback-thumbnail/featured-fallback.png'" />
+              <NuxtImg
+                src="https://api.microlink.io/?url=https://groupad.vercel.app&screenshot=true&meta=false&embed=screenshot.url"
+                class="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                style="object-position: top" />
             </a>
+
             <a href="https://github.com/deceive0112/Groupad" target="_blank"
               class="flex items-center gap-2 px-3 py-2 bg-white/5">
               <UIcon name="mdi:github" class="size-4 text-gray-400" />
               <span class="text-xs text-gray-400">github.com</span>
-              <span class="text-xs font-bold ml-1 truncate relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-current after:transition-all after:duration-300 hover:after:w-full cursor-pointer">deceive0112/Groupad</span>
+              <span
+                class="text-xs font-bold ml-1 truncate relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-current after:transition-all after:duration-300 hover:after:w-full cursor-pointer">deceive0112/Groupad</span>
             </a>
+
           </div>
+
           <div :ref="drag4.scrollContainer" @mousedown="drag4.onMouseDown" @mouseleave="drag4.onMouseLeave"
             @mouseup="drag4.onMouseUp" @mousemove="drag4.onMouseMove"
             class="text-[7px] flex gap-2 mt-2.5 overflow-x-auto cursor-grab active:cursor-grabbing select-none"
@@ -298,17 +333,19 @@ const drag4 = useDragScroll()
               <UIcon name="devicon:bun" class="rounded-xl shadow-xl size-8 md:size-10 p-1" />
               <span class="text-gray-400">Bun</span>
             </div>
-            
+
           </div>
         </div>
         <div class="col-span-1 md:col-span-2">
-          <p class="text-md md:text-xl text-gray-400 font-semibold uppercase tracking-widest text-left mt-2">Group+pad (WIP)</p>
+          <p class="text-md md:text-xl text-gray-400 font-semibold uppercase tracking-widest text-left mt-2">Group+pad
+            (WIP)</p>
           <p class="p-2 rounded-xl text-sm md:text-base text-justify mb-2">
-            A collaborative note-taking and planning app for groups of all sizes, designed to explore a structured yet flexible approach 
+            A collaborative note-taking and planning app for groups of all sizes, designed to explore a structured yet
+            flexible approach
             to group coordination and shared productivity. Features include:
           </p>
           <ul class="list-disc ml-5 text-sm md:text-base space-y-1">
-            <li>Shared group notepads with real-time collaboration and role-based interaction across two modes — 
+            <li>Shared group notepads with real-time collaboration and role-based interaction across two modes —
               Professional (admin-controlled) and Group (open peer collaboration)</li>
             <li>Shared calendar for planning events and trips with reactions, pins, and proximity notifications</li>
             <li>Public post sharing where users can share notes and calendar plans for others to react to</li>
@@ -317,7 +354,8 @@ const drag4 = useDragScroll()
             <li>Text-and-link-only design to keep communities focused and healthy</li>
           </ul>
           <p class="p-2 rounded-xl text-sm md:text-base text-justify mt-2">
-            This project demonstrates group-based collaboration with role management, a shared calendar with notification support, 
+            This project demonstrates group-based collaboration with role management, a shared calendar with
+            notification support,
             and a lightweight social layer built around a text-first content policy.
           </p>
         </div>
@@ -328,16 +366,27 @@ const drag4 = useDragScroll()
         <div
           class="p-3 rounded-xl shadow-md transition-all duration-300 hover:shadow-sky-500/20 hover:shadow-lg hover:bg-white/5">
           <div
-            class="flex flex-col rounded-xl overflow-hidden shadow-xl hover:scale-105 transition-all duration-300 cursor-pointer border border-white/10">
-            <a href="https://245531884.hs-sites-na2.com/test-page" target="_blank">
-              <NuxtImg src="https://opengraph.githubassets.com/2/deceive0112/hubspot-project-1" class="w-full object-cover" preload />
+            class="group flex flex-col rounded-xl overflow-hidden shadow-xl hover:scale-105 transition-all duration-300 cursor-pointer border border-white/10">
+
+            <a href="https://245531884.hs-sites-na2.com/test-page" target="_blank" class="relative block w-full"
+              style="padding-top: 52.5%">
+              <NuxtImg src="https://opengraph.githubassets.com/2/deceive0112/hubspot-project-1"
+                class="absolute inset-0 w-full h-full object-cover" preload
+                @error="(e) => (e as Event & { target: HTMLImageElement }).target.src = '/fallback-thumbnail/project4-fallback.png'" />
+              <NuxtImg
+                src="https://api.microlink.io/?url=https://245531884.hs-sites-na2.com/test-page&screenshot=true&meta=false&embed=screenshot.url"
+                class="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                style="object-position: top" />
             </a>
+
             <a href="https://github.com/deceive0112/hubspot-project-1" target="_blank"
               class="flex items-center gap-2 px-3 py-2 bg-white/5">
               <UIcon name="mdi:github" class="size-4 text-gray-400" />
               <span class="text-xs text-gray-400">github.com</span>
-              <span class="text-xs font-bold ml-1 truncate relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-current after:transition-all after:duration-300 hover:after:w-full cursor-pointer">deceive0112/hubspot-project-1</span>
+              <span
+                class="text-xs font-bold ml-1 truncate relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-current after:transition-all after:duration-300 hover:after:w-full cursor-pointer">deceive0112/hubspot-project-1</span>
             </a>
+
           </div>
           <div :ref="drag4.scrollContainer" @mousedown="drag4.onMouseDown" @mouseleave="drag4.onMouseLeave"
             @mouseup="drag4.onMouseUp" @mousemove="drag4.onMouseMove"

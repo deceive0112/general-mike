@@ -8,25 +8,31 @@ const { scrollContainer, onMouseDown, onMouseLeave, onMouseUp, onMouseMove } = u
             Project (WIP)</h2>
         <div class="p-3 rounded-xl backdrop-blur-sm shadow-xl hover:shadow-gray-300/10">
             <div
-                class="flex flex-col rounded-xl overflow-hidden shadow-xl hover:scale-102 transition-all duration-300 cursor-pointer border border-white/10">
-                <a href="https://groupad.vercel.app/" target="_blank">
-                    <NuxtImg src="https://opengraph.githubassets.com/2/deceive0112/Groupad" class="w-full object-cover" preload/>
+                class="group flex flex-col rounded-xl overflow-hidden shadow-xl hover:scale-102 transition-all duration-300 cursor-pointer border border-white/10">
+
+                <a href="https://groupad.vercel.app/" target="_blank" class="relative block w-full"
+                    style="padding-top: 50%">
+                    <NuxtImg src="https://opengraph.githubassets.com/2/deceive0112/Groupad"
+                        class="absolute inset-0 w-full h-full object-cover" preload
+                        @error="(e) => (e as Event & { target: HTMLImageElement }).target.src = '/fallback-thumbnail/featured-fallback.png'" />
+                    <NuxtImg
+                        src="https://api.microlink.io/?url=https://groupad.vercel.app&screenshot=true&meta=false&embed=screenshot.url"
+                        class="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 transition-opacity duration-300" 
+                        style="object-position: top" />
                 </a>
+
                 <a href="https://github.com/deceive0112/Groupad" target="_blank"
                     class="flex items-center gap-2 px-3 py-2 bg-white/5">
                     <UIcon name="mdi:github" class="size-4 text-gray-400" />
                     <span class="text-2xs md:text-lg text-gray-400">github.com</span>
-                    <span class="text-2xs md:text-lg font-bold ml-1 truncate relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-current after:transition-all after:duration-300 hover:after:w-full cursor-pointer">deceive0112/Groupad</span>
+                    <span
+                        class="text-2xs md:text-lg font-bold ml-1 truncate relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-current after:transition-all after:duration-300 hover:after:w-full cursor-pointer">deceive0112/Groupad</span>
                 </a>
+
             </div>
 
-            <div
-                ref="scrollContainer"
-                @mousedown="onMouseDown"
-                @mouseleave="onMouseLeave"
-                @mouseup="onMouseUp"
-                @mousemove="onMouseMove"
-                class="overflow-x-auto mt-2.5 cursor-grab active:cursor-grabbing select-none"
+            <div ref="scrollContainer" @mousedown="onMouseDown" @mouseleave="onMouseLeave" @mouseup="onMouseUp"
+                @mousemove="onMouseMove" class="overflow-x-auto mt-2.5 cursor-grab active:cursor-grabbing select-none"
                 style="scrollbar-width: none;">
 
                 <div class="text-[10px] flex gap-2 w-max cursor-grab">
@@ -96,8 +102,10 @@ const { scrollContainer, onMouseDown, onMouseLeave, onMouseUp, onMouseMove } = u
                 </div>
             </div>
             <p class="p-2 rounded-xl text-sm md:text-xl mt-1">Work In Progress</p>
-            <p class="gap-2 p-2 rounded-xl text-sm md:text-lg mt-1 text-justify">Group+pad brings your people together in one shared space, 
-                collaborate on notes, assign and track tasks, plan upcoming events, and follow creators you love. Built for everything from 
+            <p class="gap-2 p-2 rounded-xl text-sm md:text-lg mt-1 text-justify">Group+pad brings your people together
+                in one shared space,
+                collaborate on notes, assign and track tasks, plan upcoming events, and follow creators you love. Built
+                for everything from
                 casual friend groups to structured teams and classrooms.</p>
         </div>
     </div>
