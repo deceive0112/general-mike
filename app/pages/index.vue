@@ -185,7 +185,7 @@ definePageMeta({
     <!-- Form & Mini Games -->
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-x-9 mt-15 lg:mt-30">
       <ContactForm />
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 col-span-1 p-4 rounded-xl backdrop-blur-xl">
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 col-span-1 p-4 rounded-xl backdrop-blur-3xl shadow-2xl">
         <div class="flex items-center justify-center col-span-1 p-2 rounded-xl backdrop-blur-sm shadow-sm">
           <LazyTicTacToe />
         </div>

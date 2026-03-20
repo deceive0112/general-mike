@@ -4,6 +4,20 @@ definePageMeta({
 });
 
 const flipped = ref(false)
+const showSpotify = ref(false)
+const spotifyRef = ref<HTMLElement | null>(null)
+
+onMounted(() => {
+  const observer = new IntersectionObserver((entries) => {
+    const entry = entries[0]
+    if (entry?.isIntersecting) {
+      showSpotify.value = true
+      observer.disconnect()
+    }
+  }, { threshold: 0.1 })
+
+  if (spotifyRef.value) observer.observe(spotifyRef.value)
+})
 </script>
 
 <template>
@@ -17,7 +31,7 @@ const flipped = ref(false)
 
                 <div class="flex items-center justify-center p-4">
                     <!-- flip container -->
-                    <div class="w-60 h-70 sm:w-70 sm:h-80 xl:w-80 xl:h-90 cursor-pointer" style="perspective: 1000px;"
+                    <div class="w-60 h-70 sm:w-70 sm:h-80 xl:w-80 xl:h-90 cursor-pointer p-3 rounded-2xl backdrop-blur-xl shadow-lg" style="perspective: 1000px;"
                         @click="flipped = !flipped" @touchstart="flipped = !flipped">
 
                         <!-- inner — rotates -->
@@ -44,8 +58,8 @@ const flipped = ref(false)
                 </div>
 
                 <!-- CHANGED: spotify height reduced to 80 -->
-                <div class="p-3 rounded-xl backdrop-blur-xl shadow-lg">
-                    <iframe src="https://open.spotify.com/embed/artist/58oPVy7oihAEXE0Ott6JOf" loading="lazy"
+                <div ref="spotifyRef" class="p-3 rounded-xl backdrop-blur-xl shadow-lg">
+                    <iframe v-if="showSpotify" src="https://open.spotify.com/embed/artist/58oPVy7oihAEXE0Ott6JOf"
                         width="100%" height="152" frameborder="0"
                         allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                         class="rounded-xl" />
@@ -147,32 +161,32 @@ const flipped = ref(false)
 
                 <div class="flex items-center p-4 rounded-xl border border-white/10 hover:border-gray-500/50 hover:bg-white/5 hover:scale-102
           transition-all duration-300 backdrop-blur-xl shadow-lg">
-                    <NuxtImg src="/school/js-1-cert.jpg" loading="lazy"
-                        class="w-full h-auto rounded-2xl shadow-lg object-cover" />
+                    <NuxtImg src="/school/js-1-cert.jpg" loading="lazy" quality="80" format="webp"
+                        sizes="sm:100vw md:50vw" class="w-full h-auto rounded-2xl shadow-lg object-cover" />
                 </div>
 
                 <div class="flex items-center p-4 rounded-xl border border-white/10 hover:border-gray-500/50 hover:bg-white/5 hover:scale-102
           transition-all duration-300 backdrop-blur-xl shadow-lg">
-                    <NuxtImg src="/school/js-2-cert.jpg" loading="lazy"
-                        class="w-full h-auto rounded-2xl shadow-lg object-cover" />
+                    <NuxtImg src="/school/js-2-cert.jpg" loading="lazy" quality="80" format="webp"
+                        sizes="sm:100vw md:50vw" class="w-full h-auto rounded-2xl shadow-lg object-cover" />
                 </div>
 
                 <div class="flex items-center p-4 rounded-xl border border-white/10 hover:border-gray-500/50 hover:bg-white/5 hover:scale-102
           transition-all duration-300 backdrop-blur-xl shadow-lg">
-                    <NuxtImg src="/school/IC-cert.jpg" loading="lazy"
-                        class="w-full h-auto rounded-2xl shadow-lg object-cover" />
+                    <NuxtImg src="/school/IC-cert.jpg" loading="lazy" quality="80" format="webp"
+                        sizes="sm:100vw md:50vw" class="w-full h-auto rounded-2xl shadow-lg object-cover" />
                 </div>
 
                 <div class="flex items-center p-4 rounded-xl border border-white/10 hover:border-gray-500/50 hover:bg-white/5 hover:scale-102
           transition-all duration-300 backdrop-blur-xl shadow-lg">
-                    <NuxtImg src="/school/start-up-cert.jpg" loading="lazy"
-                        class="w-full h-auto rounded-2xl shadow-lg object-cover" />
+                    <NuxtImg src="/school/start-up-cert.jpg" loading="lazy" quality="80" format="webp"
+                        sizes="sm:100vw md:50vw" class="w-full h-auto rounded-2xl shadow-lg object-cover" />
                 </div>
 
                 <div class="flex items-center p-4 rounded-xl border border-white/10 hover:border-gray-500/50 hover:bg-white/5 hover:scale-102
           transition-all duration-300 backdrop-blur-xl shadow-lg">
-                    <NuxtImg src="/school/OJT-cert.jpg" loading="lazy"
-                        class="w-full h-auto rounded-2xl shadow-lg object-cover" />
+                    <NuxtImg src="/school/OJT-cert.jpg" loading="lazy" quality="80" format="webp"
+                        sizes="sm:100vw md:50vw" class="w-full h-auto rounded-2xl shadow-lg object-cover" />
                 </div>
 
             </div>
