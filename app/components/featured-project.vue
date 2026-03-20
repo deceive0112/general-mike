@@ -15,7 +15,7 @@ const { scrollContainer, onMouseDown, onMouseLeave, onMouseUp, onMouseMove } = u
                     <NuxtImg src="https://opengraph.githubassets.com/2/deceive0112/Groupad"
                         class="absolute inset-0 w-full h-full object-cover transition-opacity duration-300 group-hover:opacity-0" preload
                         @error="(e) => (e as Event & { target: HTMLImageElement }).target.src = '/fallback-thumbnail/featured-fallback.png'" />
-                    <NuxtImg
+                    <img
                         src="https://api.microlink.io/?url=https://groupad.vercel.app&screenshot=true&meta=false&embed=screenshot.url"
                         class="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 transition-opacity duration-300" 
                         style="object-position: top" />
