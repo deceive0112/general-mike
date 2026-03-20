@@ -25,7 +25,7 @@ const drag3 = useDragScroll()
           <a href="https://general-mike.vercel.app/" target="_blank" class="relative block w-full"
             style="padding-top: 50%">
             <NuxtImg src="https://opengraph.githubassets.com/2/deceive0112/general-mike"
-              class="absolute inset-0 w-full h-full object-cover" preload
+              class="absolute inset-0 w-full h-full object-cover transition-opacity duration-300 group-hover:opacity-0" preload
               @error="(e) => (e as Event & { target: HTMLImageElement }).target.src = '/fallback-thumbnail/project1-fallback.png'" />
             <NuxtImg
               src="https://api.microlink.io/?url=https://general-mike.vercel.app&screenshot=true&meta=false&embed=screenshot.url"
@@ -118,7 +118,7 @@ const drag3 = useDragScroll()
           <a href="https://deceive0112.github.io/Vanilla-Web-App-Notepad/" target="_blank" class="relative block w-full"
             style="padding-top: 50%">
             <NuxtImg src="https://opengraph.githubassets.com/2/deceive0112/Vanilla-Web-App-Notepad"
-              class="absolute inset-0 w-full h-full object-cover" preload
+              class="absolute inset-0 w-full h-full object-cover transition-opacity duration-300 group-hover:opacity-0" preload
               @error="(e) => (e as Event & { target: HTMLImageElement }).target.src = '/fallback-thumbnail/project2-fallback.png'" />
             <NuxtImg
               src="https://api.microlink.io/?url=https://deceive0112.github.io/Vanilla-Web-App-Notepad&screenshot=true&meta=false&embed=screenshot.url"
@@ -165,7 +165,7 @@ const drag3 = useDragScroll()
           <a href="/projects/TindaTrack/TindaTrack_Mock-up.pdf" target="_blank" class="relative block w-full"
             style="padding-top: 50%">
             <NuxtImg src="https://opengraph.githubassets.com/2/deceive0112/TindaTrack"
-              class="absolute inset-0 w-full h-full object-cover" preload
+              class="absolute inset-0 w-full h-full object-cover transition-opacity duration-300 group-hover:opacity-0" preload
               @error="(e) => (e as Event & { target: HTMLImageElement }).target.src = '/fallback-thumbnail/project3-fallback.png'" />
             <NuxtImg
               src="/fallback-thumbnail/tindatrack-thumbnail.png"
