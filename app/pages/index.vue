@@ -47,7 +47,7 @@ definePageMeta({
     <div class="flex flex-col xl:flex-row gap-5">
 
       <div class="w-full xl:basis-3/5">
-        <h1 class="text-2xl sm:text-3xl md:text-4xl mt-10 md:mt-20 font-bold backdrop-blur-lg rounded-xl p-2">
+        <h1 class="text-2xl sm:text-3xl md:text-4xl mt-10 md:mt-20 font-bold backdrop-blur-lg rounded-xl px-2 py-1">
           Hey! <span class="px-1">I'm</span>
           <a class="text-blue-500 cursor-default px-1.5" @mouseenter="isHovered = true" @mouseleave="isHovered = false"
             @touchstart="isHovered = true" @touchend="isHovered = false">
@@ -80,7 +80,7 @@ definePageMeta({
           <span class="text-xs md:text-[17px] truncate leading-none">Based in Cagayan de Oro City, Philippines.</span>
         </div>
 
-        <p class="text-base md:text-2xl mt-4 backdrop-blur-lg rounded-xl w-full p-2 text-justify">
+        <p class="text-base md:text-2xl mt-4 backdrop-blur-lg rounded-xl w-full px-2 py-1 text-justify">
           I'm a <span
             class="text-red-400 relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-current after:transition-all after:duration-300 hover:after:w-full cursor-default">developer</span>
           who takes great care in crafting detailed, intuitive <span
@@ -97,7 +97,7 @@ definePageMeta({
             class="text-yellow-400 relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-current after:transition-all after:duration-300 hover:after:w-full cursor-default">IoT</span>.
         </p>
 
-        <div class="flex flex-wrap mt-5 mb-5 xl:mb-25 gap-1 md:gap-3 backdrop-blur-lg rounded-xl p-2 items-center">
+        <div class="flex flex-wrap mt-5 mb-5 xl:mb-25 gap-1 md:gap-3 backdrop-blur-lg rounded-xl px-2 py-1 items-center">
           <div class="group inline-flex items-center gap-1.5 transition-colors duration-200 cursor-pointer">
             <a href="https://github.com/deceive0112" target="_blank" class="inline-flex items-center">
               <UIcon name="mdi:github"
