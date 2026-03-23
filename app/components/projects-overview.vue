@@ -110,7 +110,7 @@ const drag3 = useDragScroll()
       <!-- Project 2 -->
       <div
         class="p-3 rounded-xl shadow-md transition-all duration-300 hover:shadow-sky-500/20 hover:shadow-lg hover:bg-white/5">
-        <p class="text-sm md:text-lg text-gray-400 font-semibold mb-2 uppercase tracking-widest">Vanilla Web App Notepad
+        <p class="text-sm md:text-lg text-gray-400 font-semibold mb-2 uppercase tracking-widest truncate">Vanilla Web App Notepad
         </p>
 
         <div
