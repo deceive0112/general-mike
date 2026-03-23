@@ -407,15 +407,22 @@ const drag4 = useDragScroll()
           </div>
         </div>
         <div class="col-span-1 md:col-span-2">
-          <p class="text-md md:text-xl text-gray-400 font-semibold uppercase tracking-widest text-left mt-2">Hubspot</p>
+          <p class="text-md md:text-xl text-gray-400 font-semibold uppercase tracking-widest text-left mt-2">Hubspot Project-1</p>
           <p class="p-2 rounded-xl text-sm md:text-base text-justify mb-2">
-            Test
+            A custom HubSpot CMS theme built for local Philippine businesses, designed to explore a structured and scalable 
+            approach to professional web development on the HubSpot platform. Features include:
           </p>
           <ul class="list-disc ml-5 text-sm md:text-base space-y-1">
-            <li>Test</li>
+            <li>Custom page templates and module system built with HubL, HTML, CSS, and JavaScript — structured for reuse across multiple client builds</li>
+            <li>Drag-and-drop area configuration with editable fields, giving non-technical clients full control over content without breaking layout</li>
+            <li>Contact forms connected to HubSpot CRM — leads captured automatically into the client's contact database</li>
+            <li>Mobile-first responsive design optimized for local business audiences on both desktop and mobile</li>
+            <li>HubSpot sandbox environment used for development and testing before deploying to live portals</li>
+            <li>Clean theme architecture following HubSpot CLI conventions — built to scale into a multi-client agency template</li>
           </ul>
           <p class="p-2 rounded-xl text-sm md:text-base text-justify mt-2">
-            This project is about hubspot.
+            This project demonstrates HubSpot CMS theme development with reusable module design, CRM-connected lead capture, 
+            and a client-ready content management structure built for small to medium local businesses.
           </p>
         </div>
       </div>
