@@ -62,66 +62,66 @@ onMounted(async () => {
                 <div ref="scrollContainerVertical"
                     @mousedown="onMouseDownV" @mouseleave="onMouseLeaveV"
                     @mouseup="onMouseUpV" @mousemove="onMouseMoveV"
-                    class="flex flex-col gap-2 overflow-y-auto cursor-grab active:cursor-grabbing select-none"
+                    class="flex flex-col overflow-y-auto cursor-grab active:cursor-grabbing select-none"
                     :style="{ scrollbarWidth: 'none', maxHeight: iconsHeight + 'px' }">
 
-                    <div class="flex flex-col items-center gap-1 shrink-0 w-12">
+                    <div class="flex flex-col items-center gap-0.5 shrink-0 w-12">
                         <div class="flex items-center justify-center w-10 md:w-15 h-10 md:h-15">
                             <UIcon name="devicon:vuejs" class="size-8 md:size-12 rounded-xl md:rounded-2xl" />
                         </div>
                         <span class="text-gray-400 text-center text-[8px] md:text-[10px]">Vue</span>
                     </div>
 
-                    <div class="flex flex-col items-center gap-1 shrink-0 w-12">
+                    <div class="flex flex-col items-center gap-0.5 shrink-0 w-12">
                         <div class="flex items-center justify-center w-10 md:w-15 h-10 md:h-15">
                             <UIcon name="devicon:css" class="size-8 md:size-12 rounded-xl md:rounded-2xl" />
                         </div>
                         <span class="text-gray-400 text-center text-[8px] md:text-[10px]">CSS</span>
                     </div>
 
-                    <div class="flex flex-col items-center gap-1 shrink-0 w-12">
+                    <div class="flex flex-col items-center gap-0.5 shrink-0 w-12">
                         <div class="flex items-center justify-center w-10 md:w-15 h-10 md:h-15">
                             <UIcon name="devicon:html5" class="size-8 md:size-12 rounded-xl md:rounded-2xl" />
                         </div>
                         <span class="text-gray-400 text-center text-[8px] md:text-[10px]">HTML</span>
                     </div>
 
-                    <div class="flex flex-col items-center gap-1 shrink-0 w-12">
+                    <div class="flex flex-col items-center gap-0.5 shrink-0 w-12">
                         <div class="flex items-center justify-center w-10 md:w-15 h-10 md:h-15">
                             <UIcon name="devicon:typescript" class="size-8 md:size-12 rounded-xl md:rounded-2xl" />
                         </div>
                         <span class="text-gray-400 text-center text-[8px] md:text-[10px]">TypeScript</span>
                     </div>
 
-                    <div class="flex flex-col items-center gap-1 shrink-0 w-12">
+                    <div class="flex flex-col items-center gap-0.5 shrink-0 w-12">
                         <div class="flex items-center justify-center w-10 md:w-15 h-10 md:h-15">
                             <UIcon name="devicon:javascript" class="size-8 md:size-12 rounded-xl md:rounded-2xl" />
                         </div>
                         <span class="text-gray-400 text-center text-[8px] md:text-[10px]">JavaScript</span>
                     </div>
 
-                    <div class="flex flex-col items-center gap-1 shrink-0 w-12">
+                    <div class="flex flex-col items-center gap-0.5 shrink-0 w-12">
                         <div class="flex items-center justify-center w-10 md:w-15 h-10 md:h-15">
                             <UIcon name="devicon:nuxtjs" class="size-8 md:size-12 rounded-xl md:rounded-2xl" />
                         </div>
                         <span class="text-gray-400 text-center text-[8px] md:text-[10px]">Nuxt</span>
                     </div>
 
-                    <div class="flex flex-col items-center gap-1 shrink-0 w-12">
+                    <div class="flex flex-col items-center gap-0.5 shrink-0 w-12">
                         <div class="flex items-center justify-center w-10 md:w-15 h-10 md:h-15">
                             <UIcon name="hugeicons:shadcn" class="size-8 md:size-12 rounded-xl md:rounded-2xl" />
                         </div>
                         <span class="text-gray-400 text-center text-[8px] md:text-[10px]">Shadcn UI</span>
                     </div>
 
-                    <div class="flex flex-col items-center gap-1 shrink-0 w-12">
+                    <div class="flex flex-col items-center gap-0.5 shrink-0 w-12">
                         <div class="flex items-center justify-center w-10 md:w-15 h-10 md:h-15">
                             <UIcon name="devicon:tailwindcss" class="size-8 md:size-12 rounded-xl md:rounded-2xl" />
                         </div>
                         <span class="text-gray-400 text-center text-[8px] md:text-[10px]">Tailwind</span>
                     </div>
 
-                    <div class="flex flex-col items-center gap-1 shrink-0 w-12">
+                    <div class="flex flex-col items-center gap-0.5 shrink-0 w-12">
                         <div class="flex items-center justify-center w-10 md:w-15 h-10 md:h-15">
                             <UIcon name="devicon:bun" class="size-8 md:size-12 rounded-xl md:rounded-2xl" />
                         </div>

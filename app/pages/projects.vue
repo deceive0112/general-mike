@@ -372,7 +372,7 @@ const drag4 = useDragScroll()
               style="padding-top: 52.5%">
               <NuxtImg src="https://opengraph.githubassets.com/2/deceive0112/hubspot-project-1"
                 class="absolute inset-0 w-full h-full object-cover transition-opacity duration-300 group-hover:opacity-0" preload
-               @error="(e) => { const img = (e as Event).target as HTMLImageElement | null; if (img) img.src = '/fallback-thumbnail/project4-fallback.png' }" />
+               @error="(e) => { const img = (e as Event).target as HTMLImageElement | null; if (img) img.src = '/fallback-thumbnail/project44-fallback.png' }" />
               <img
                 src="https://api.microlink.io/?url=https://245531884.hs-sites-na2.com/test-page&screenshot=true&meta=false&embed=screenshot.url"
                 class="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 transition-opacity duration-300"

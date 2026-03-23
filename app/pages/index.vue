@@ -52,13 +52,13 @@ definePageMeta({
           <a class="text-blue-500 cursor-default px-1.5" @mouseenter="isHovered = true" @mouseleave="isHovered = false"
             @touchstart="isHovered = true" @touchend="isHovered = false">
             {{ title }}
-            <span class="px-2 md:px-3 inline-block animate-wave">
+            <span class="px-1 md:px-2 inline-block animate-wave">
               <UIcon name="twemoji:waving-hand-light-skin-tone" class="size-7" />
             </span>
           </a>
         </h1>
 
-        <div class="flex flex-nowrap items-center mt-1 gap-1.5 md:gap-3 overflow-hidden">
+        <div class="flex flex-nowrap items-center gap-1.5 md:gap-3 overflow-hidden">
           <UIcon name="svg-spinners:pulse" class="size-3.5 md:size-4 text-green-400 shrink-0" />
 
           <div
@@ -80,7 +80,7 @@ definePageMeta({
           <span class="text-xs md:text-[17px] truncate leading-none">Based in Cagayan de Oro City, Philippines.</span>
         </div>
 
-        <p class="text-base md:text-2xl mt-5 backdrop-blur-lg rounded-xl w-full p-3 text-justify">
+        <p class="text-base md:text-2xl mt-4 backdrop-blur-lg rounded-xl w-full p-2 text-justify">
           I'm a <span
             class="text-red-400 relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-current after:transition-all after:duration-300 hover:after:w-full cursor-default">developer</span>
           who takes great care in crafting detailed, intuitive <span
@@ -169,7 +169,7 @@ definePageMeta({
 
     <!-- Featured Project & Educational Background -->
     <div
-      class="grid grid-cols-1 lg:grid-cols-5 gap-6 lg:gap-x-20 lg:gap-y-15 mt-10 lg:mt-15 mb-10 lg:mb-15 justify-items-center lg:justify-items-stretch">
+      class="grid grid-cols-1 lg:grid-cols-5 gap-6 lg:gap-x-20 lg:gap-y-15 mt-5 lg:mt-10 mb-10 lg:mb-15 justify-items-center lg:justify-items-stretch">
       <FeaturedProject />
       <div class="w-full max-w-2xl lg:max-w-none lg:col-span-2">
         <EducationalBackground />
