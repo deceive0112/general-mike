@@ -168,7 +168,7 @@ definePageMeta({
 
     <!-- Featured Project & Educational Background -->
     <div
-      class="grid grid-cols-1 lg:grid-cols-5 gap-6 lg:gap-x-30 lg:gap-y-15 mt-10 lg:mt-15 mb-10 lg:mb-15 justify-items-center lg:justify-items-stretch">
+      class="grid grid-cols-1 lg:grid-cols-5 gap-6 lg:gap-x-20 lg:gap-y-15 mt-10 lg:mt-15 mb-10 lg:mb-15 justify-items-center lg:justify-items-stretch">
       <FeaturedProject />
       <div class="w-full max-w-2xl lg:max-w-none lg:col-span-2">
         <EducationalBackground />

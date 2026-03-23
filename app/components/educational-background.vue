@@ -58,7 +58,7 @@ const isHoveredEdu = ref(false)
               <p class="text-[11px] md:text-[13px] text-gray-400 mt-1 sm:ml-auto">2018 - 2020</p>
             </div>
             <div>
-            <p class="text-[11px] md:text-[12px] mt-1">Research:</p>
+              <p class="text-[11px] md:text-[12px] mt-1">Research:</p>
             </div>
             <ul class="list-disc ml-3 px-1">
               <li class="text-[11px] md:text-[12px] mt-0.5">Designer of the building model's structure.</li>
@@ -78,5 +78,16 @@ const isHoveredEdu = ref(false)
         </a>
       </div>
     </div>
+  </div>
+  <!-- GitHub Streak -->
+  <div class="mt-6">
+    <h2 class="flex text-2xl md:text-3xl uppercase font-bold items-center text-center justify-center mb-1">
+      Github Streak
+    </h2>
+    <a class="flex text-center items-center justify-center mx-10" href="https://github.com/deceive0112" target="_blank">
+      <img
+        src="https://github-readme-streak-stats-ecru-tau.vercel.app?user=deceive0112&theme=carbonfox&background=00000000&border=00000000&currStreakLabel=94A3B8&sideLabels=94A3B8"
+        alt="GitHub Streak" class="w-full rounded-lg backdrop-blur-2xl shadow-2xl" loading="lazy" />
+    </a>
   </div>
 </template>
