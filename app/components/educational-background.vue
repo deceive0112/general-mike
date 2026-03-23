@@ -84,7 +84,7 @@ const isHoveredEdu = ref(false)
     <h2 class="flex text-2xl md:text-3xl uppercase font-bold items-center text-center justify-center mb-1">
       Github Streak
     </h2>
-    <a class="flex text-center items-center justify-center mx-10" href="https://github.com/deceive0112" target="_blank">
+    <a class="flex text-center items-center justify-center md:mx-10" href="https://github.com/deceive0112" target="_blank">
       <img
         src="https://github-readme-streak-stats-ecru-tau.vercel.app?user=deceive0112&theme=carbonfox&background=00000000&border=00000000&currStreakLabel=94A3B8&sideLabels=94A3B8"
         alt="GitHub Streak" class="w-full rounded-lg backdrop-blur-2xl shadow-2xl" loading="lazy" />
