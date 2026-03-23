@@ -81,7 +81,7 @@ const isHoveredEdu = ref(false)
   </div>
   <!-- GitHub Streak -->
   <div class="mt-6">
-    <h2 class="flex text-2xl md:text-3xl uppercase font-bold items-center text-center justify-center mb-1">
+    <h2 class="flex text-2xl md:text-3xl uppercase font-bold items-center text-center justify-center">
       Github Streak
     </h2>
     <a class="flex text-center items-center justify-center md:mx-10" href="https://github.com/deceive0112" target="_blank">
