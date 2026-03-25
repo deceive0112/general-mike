@@ -42,7 +42,7 @@ onMounted(() => {
                             <!-- FRONT -->
                             <div class="absolute inset-0 rounded-2xl overflow-hidden shadow-xl"
                                 style="-webkit-backface-visibility: hidden; backface-visibility: hidden;">
-                                <NuxtImg src="/selfie-ghibli-style.png" loading="lazy"
+                                <NuxtImg src="/selfie-ghibli-style.png" preload
                                     class="w-full h-full object-cover" />
                             </div>
 

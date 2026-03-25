@@ -20,8 +20,8 @@ const drag4 = useDragScroll()
 
             <a href="https://general-mike.vercel.app/" target="_blank" class="relative block w-full"
               style="padding-top: 50%">
-              <NuxtImg src="https://opengraph.githubassets.com/2/deceive0112/general-mike"
-                class="absolute inset-0 w-full h-full object-cover transition-opacity duration-300 group-hover:opacity-0" preload
+              <img src="https://opengraph.githubassets.com/2/deceive0112/general-mike"
+                class="absolute inset-0 w-full h-full object-cover transition-opacity duration-300 group-hover:opacity-0"
                 @error="(e) => { const img = (e as Event).target as HTMLImageElement | null; if (img) img.src = '/fallback-thumbnail/project1-fallback.png' }" />
               <img
                 src="https://api.microlink.io/?url=https://general-mike.vercel.app&screenshot=true&meta=false&embed=screenshot.url"
@@ -129,8 +129,8 @@ const drag4 = useDragScroll()
             class="group flex flex-col rounded-xl overflow-hidden shadow-xl hover:scale-105 transition-all duration-300 cursor-pointer border border-white/10">
             <a href="https://deceive0112.github.io/Vanilla-Web-App-Notepad/" target="_blank"
               class="relative block w-full" style="padding-top: 50%">
-              <NuxtImg src="https://opengraph.githubassets.com/2/deceive0112/Vanilla-Web-App-Notepad"
-                class="absolute inset-0 w-full h-full object-cover transition-opacity duration-300 group-hover:opacity-0" preload
+              <img src="https://opengraph.githubassets.com/2/deceive0112/Vanilla-Web-App-Notepad"
+                class="absolute inset-0 w-full h-full object-cover transition-opacity duration-300 group-hover:opacity-0"
                 @error="(e) => { const img = (e as Event).target as HTMLImageElement | null; if (img) img.src = '/fallback-thumbnail/project2-fallback.png' }" />
               <img
                 src="https://api.microlink.io/?url=https://deceive0112.github.io/Vanilla-Web-App-Notepad&screenshot=true&meta=false&embed=screenshot.url"
@@ -192,8 +192,8 @@ const drag4 = useDragScroll()
             class="group flex flex-col rounded-xl overflow-hidden shadow-xl hover:scale-105 transition-all duration-300 cursor-pointer border border-white/10">
             <a href="/projects/TindaTrack/TindaTrack_Mock-up.pdf" target="_blank" class="relative block w-full"
               style="padding-top: 50%">
-              <NuxtImg src="https://opengraph.githubassets.com/2/deceive0112/TindaTrack"
-                class="absolute inset-0 w-full h-full object-cover transition-opacity duration-300 group-hover:opacity-0" preload
+              <img src="https://opengraph.githubassets.com/2/deceive0112/TindaTrack"
+                class="absolute inset-0 w-full h-full object-cover transition-opacity duration-300 group-hover:opacity-0"
                 @error="(e) => { const img = (e as Event).target as HTMLImageElement | null; if (img) img.src = '/fallback-thumbnail/project3-fallback.png' }" />
               <img src="/fallback-thumbnail/tindatrack-thumbnail.png"
                 loading="lazy" class="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
@@ -274,8 +274,8 @@ const drag4 = useDragScroll()
 
             <a href="https://groupad.vercel.app/" target="_blank" class="relative block w-full"
               style="padding-top: 50%">
-              <NuxtImg src="https://opengraph.githubassets.com/2/deceive0112/Groupad"
-                class="absolute inset-0 w-full h-full object-cover transition-opacity duration-300 group-hover:opacity-0" preload
+              <img src="https://opengraph.githubassets.com/2/deceive0112/Groupad"
+                class="absolute inset-0 w-full h-full object-cover transition-opacity duration-300 group-hover:opacity-0"
                 @error="(e) => { const img = (e as Event).target as HTMLImageElement | null; if (img) img.src = '/fallback-thumbnail/featured-fallback.png' }" />
               <img
                 src="https://api.microlink.io/?url=https://groupad.vercel.app&screenshot=true&meta=false&embed=screenshot.url"
@@ -370,8 +370,8 @@ const drag4 = useDragScroll()
 
             <a href="https://245531884.hs-sites-na2.com/test-page" target="_blank" class="relative block w-full"
               style="padding-top: 52.5%">
-              <NuxtImg src="https://opengraph.githubassets.com/2/deceive0112/hubspot-project-1"
-                class="absolute inset-0 w-full h-full object-cover transition-opacity duration-300 group-hover:opacity-0" preload
+              <img src="https://opengraph.githubassets.com/2/deceive0112/hubspot-project-1"
+                class="absolute inset-0 w-full h-full object-cover transition-opacity duration-300 group-hover:opacity-0"
                @error="(e) => { const img = (e as Event).target as HTMLImageElement | null; if (img) img.src = '/fallback-thumbnail/project44-fallback.png' }" />
               <img
                 src="https://api.microlink.io/?url=https://245531884.hs-sites-na2.com/test-page&screenshot=true&meta=false&embed=screenshot.url"
