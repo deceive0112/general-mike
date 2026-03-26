@@ -1,30 +1,32 @@
 <script setup lang="ts">
-const { 
-  scrollContainer: scrollContainerVertical, 
-  onMouseDown: onMouseDownV, 
-  onMouseLeave: onMouseLeaveV, 
-  onMouseUp: onMouseUpV, 
-  onMouseMove: onMouseMoveV 
+const {
+    scrollContainer: scrollContainerVertical,
+    onMouseDown: onMouseDownV,
+    onMouseLeave: onMouseLeaveV,
+    onMouseUp: onMouseUpV,
+    onMouseMove: onMouseMoveV
 } = useDragScrollVertical()
 
 const thumbnailRef = ref<HTMLElement | null>(null)
 const iconsHeight = ref(0)
 
 onMounted(async () => {
-  await nextTick()
-  if (thumbnailRef.value) {
-    iconsHeight.value = thumbnailRef.value.offsetHeight
-
-    const observer = new ResizeObserver(() => {
-      if (thumbnailRef.value) {
+    await nextTick()
+    if (thumbnailRef.value) {
         iconsHeight.value = thumbnailRef.value.offsetHeight
-      }
-    })
-    observer.observe(thumbnailRef.value)
 
-    onUnmounted(() => observer.disconnect())
-  }
+        const observer = new ResizeObserver(() => {
+            if (thumbnailRef.value) {
+                iconsHeight.value = thumbnailRef.value.offsetHeight
+            }
+        })
+        observer.observe(thumbnailRef.value)
+
+        onUnmounted(() => observer.disconnect())
+    }
 })
+
+const imgSrc = ref('https://opengraph.githubassets.com/2/deceive0112/Groupad')
 </script>
 
 <template>
@@ -40,9 +42,9 @@ onMounted(async () => {
 
                     <a href="https://groupad.vercel.app/" target="_blank" class="relative block w-full"
                         style="padding-top: 50%">
-                        <img src="https://opengraph.githubassets.com/2/deceive0112/Groupad"
+                        <NuxtImg :src="imgSrc"
                             class="absolute inset-0 w-full h-full object-cover transition-opacity duration-300 group-hover:opacity-0"
-                            @error="(e) => { const img = (e as Event).target as HTMLImageElement | null; if (img) img.src = '/fallback-thumbnail/featured-fallback.png' }" />
+                            @error="imgSrc = '/fallback-thumbnail/featured-fallback.png'" />
                         <img src="https://api.microlink.io/?url=https://groupad.vercel.app&screenshot=true&meta=false&embed=screenshot.url"
                             class="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 transition-opacity duration-300"
                             loading="lazy" style="object-position: top" />
@@ -58,8 +60,7 @@ onMounted(async () => {
 
                 </div>
 
-                <div ref="scrollContainerVertical"
-                    @mousedown="onMouseDownV" @mouseleave="onMouseLeaveV"
+                <div ref="scrollContainerVertical" @mousedown="onMouseDownV" @mouseleave="onMouseLeaveV"
                     @mouseup="onMouseUpV" @mousemove="onMouseMoveV"
                     class="flex flex-col overflow-y-auto cursor-grab active:cursor-grabbing select-none"
                     :style="{ scrollbarWidth: 'none', maxHeight: iconsHeight + 'px' }">
@@ -131,7 +132,9 @@ onMounted(async () => {
 
             </div>
 
-            <p class="px-2 pt-1 rounded-xl text-sm md:text-xl mt-1 text-gray-400 font-semibold uppercase tracking-widest">Group+pad (WIP)</p>
+            <p
+                class="px-2 pt-1 rounded-xl text-sm md:text-xl mt-1 text-gray-400 font-semibold uppercase tracking-widest">
+                Group+pad (WIP)</p>
             <p class="gap-2 px-2 rounded-xl text-sm md:text-lg mt-1 text-justify">Group+pad brings your people together
                 in one shared space,
                 collaborate on notes, assign and track tasks, plan upcoming events, and follow creators you love. Built

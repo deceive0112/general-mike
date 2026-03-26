@@ -3,6 +3,12 @@ const drag1 = useDragScroll()
 const drag2 = useDragScroll()
 const drag3 = useDragScroll()
 const drag4 = useDragScroll()
+
+const imgSrc1 = ref('https://opengraph.githubassets.com/2/deceive0112/general-mike')
+const imgSrc2 = ref('https://opengraph.githubassets.com/2/deceive0112/Vanilla-Web-App-Notepad')
+const imgSrc3 = ref('https://opengraph.githubassets.com/2/deceive0112/TindaTrack')
+const imgSrc4 = ref('https://opengraph.githubassets.com/2/deceive0112/Groupad')
+const imgSrc5 = ref('https://opengraph.githubassets.com/2/deceive0112/hubspot-project-1')
 </script>
 
 <template>
@@ -20,9 +26,9 @@ const drag4 = useDragScroll()
 
             <a href="https://general-mike.vercel.app/" target="_blank" class="relative block w-full"
               style="padding-top: 50%">
-              <img src="https://opengraph.githubassets.com/2/deceive0112/general-mike"
+              <NuxtImg :src="imgSrc1"
                 class="absolute inset-0 w-full h-full object-cover transition-opacity duration-300 group-hover:opacity-0"
-                @error="(e) => { const img = (e as Event).target as HTMLImageElement | null; if (img) img.src = '/fallback-thumbnail/project1-fallback.png' }" />
+                @error="imgSrc1 = '/fallback-thumbnail/project1-fallback.png'" />
               <img
                 src="https://api.microlink.io/?url=https://general-mike.vercel.app&screenshot=true&meta=false&embed=screenshot.url"
                 class="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 transition-opacity duration-300"
@@ -129,9 +135,9 @@ const drag4 = useDragScroll()
             class="group flex flex-col rounded-xl overflow-hidden shadow-xl hover:scale-105 transition-all duration-300 cursor-pointer border border-white/10">
             <a href="https://deceive0112.github.io/Vanilla-Web-App-Notepad/" target="_blank"
               class="relative block w-full" style="padding-top: 50%">
-              <img src="https://opengraph.githubassets.com/2/deceive0112/Vanilla-Web-App-Notepad"
+              <NuxtImg :src="imgSrc2"
                 class="absolute inset-0 w-full h-full object-cover transition-opacity duration-300 group-hover:opacity-0"
-                @error="(e) => { const img = (e as Event).target as HTMLImageElement | null; if (img) img.src = '/fallback-thumbnail/project2-fallback.png' }" />
+                @error="imgSrc2 = '/fallback-thumbnail/project2-fallback.png'" />
               <img
                 src="https://api.microlink.io/?url=https://deceive0112.github.io/Vanilla-Web-App-Notepad&screenshot=true&meta=false&embed=screenshot.url"
                 class="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 transition-opacity duration-300"
@@ -192,11 +198,11 @@ const drag4 = useDragScroll()
             class="group flex flex-col rounded-xl overflow-hidden shadow-xl hover:scale-105 transition-all duration-300 cursor-pointer border border-white/10">
             <a href="/projects/TindaTrack/TindaTrack_Mock-up.pdf" target="_blank" class="relative block w-full"
               style="padding-top: 50%">
-              <img src="https://opengraph.githubassets.com/2/deceive0112/TindaTrack"
+              <NuxtImg :src="imgSrc3"
                 class="absolute inset-0 w-full h-full object-cover transition-opacity duration-300 group-hover:opacity-0"
-                @error="(e) => { const img = (e as Event).target as HTMLImageElement | null; if (img) img.src = '/fallback-thumbnail/project3-fallback.png' }" />
-              <img src="/fallback-thumbnail/tindatrack-thumbnail.png"
-                loading="lazy" class="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                @error="imgSrc3 = '/fallback-thumbnail/project3-fallback.png'" />
+              <img src="/fallback-thumbnail/tindatrack-thumbnail.png" loading="lazy"
+                class="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             </a>
             <a href="https://github.com/deceive0112/TindaTrack" target="_blank"
               class="flex items-center gap-2 px-3 py-2 bg-white/5">
@@ -274,9 +280,9 @@ const drag4 = useDragScroll()
 
             <a href="https://groupad.vercel.app/" target="_blank" class="relative block w-full"
               style="padding-top: 50%">
-              <img src="https://opengraph.githubassets.com/2/deceive0112/Groupad"
+              <NuxtImg :src="imgSrc4"
                 class="absolute inset-0 w-full h-full object-cover transition-opacity duration-300 group-hover:opacity-0"
-                @error="(e) => { const img = (e as Event).target as HTMLImageElement | null; if (img) img.src = '/fallback-thumbnail/featured-fallback.png' }" />
+                @error="imgSrc4 = '/fallback-thumbnail/featured-fallback.png'" />
               <img
                 src="https://api.microlink.io/?url=https://groupad.vercel.app&screenshot=true&meta=false&embed=screenshot.url"
                 class="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 transition-opacity duration-300"
@@ -370,9 +376,9 @@ const drag4 = useDragScroll()
 
             <a href="https://245531884.hs-sites-na2.com/test-page" target="_blank" class="relative block w-full"
               style="padding-top: 52.5%">
-              <img src="https://opengraph.githubassets.com/2/deceive0112/hubspot-project-1"
+              <NuxtImg :src="imgSrc5"
                 class="absolute inset-0 w-full h-full object-cover transition-opacity duration-300 group-hover:opacity-0"
-               @error="(e) => { const img = (e as Event).target as HTMLImageElement | null; if (img) img.src = '/fallback-thumbnail/project4-fallback.png' }" />
+                @error="imgSrc5 = '/fallback-thumbnail/project4-fallback.png'" />
               <img
                 src="https://api.microlink.io/?url=https://245531884.hs-sites-na2.com/test-page&screenshot=true&meta=false&embed=screenshot.url"
                 class="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 transition-opacity duration-300"
@@ -407,21 +413,28 @@ const drag4 = useDragScroll()
           </div>
         </div>
         <div class="col-span-1 md:col-span-2">
-          <p class="text-md md:text-xl text-gray-400 font-semibold uppercase tracking-widest text-left mt-2">Hubspot Project-1</p>
+          <p class="text-md md:text-xl text-gray-400 font-semibold uppercase tracking-widest text-left mt-2">Hubspot
+            Project-1</p>
           <p class="p-2 rounded-xl text-sm md:text-base text-justify mb-2">
-            A custom HubSpot CMS theme built for local Philippine businesses, designed to explore a structured and scalable 
+            A custom HubSpot CMS theme built for local Philippine businesses, designed to explore a structured and
+            scalable
             approach to professional web development on the HubSpot platform. Features include:
           </p>
           <ul class="list-disc ml-5 text-sm md:text-base space-y-1">
-            <li>Custom page templates and module system built with HubL, HTML, CSS, and JavaScript — structured for reuse across multiple client builds</li>
-            <li>Drag-and-drop area configuration with editable fields, giving non-technical clients full control over content without breaking layout</li>
-            <li>Contact forms connected to HubSpot CRM — leads captured automatically into the client's contact database</li>
+            <li>Custom page templates and module system built with HubL, HTML, CSS, and JavaScript — structured for
+              reuse across multiple client builds</li>
+            <li>Drag-and-drop area configuration with editable fields, giving non-technical clients full control over
+              content without breaking layout</li>
+            <li>Contact forms connected to HubSpot CRM — leads captured automatically into the client's contact database
+            </li>
             <li>Mobile-first responsive design optimized for local business audiences on both desktop and mobile</li>
             <li>HubSpot sandbox environment used for development and testing before deploying to live portals</li>
-            <li>Clean theme architecture following HubSpot CLI conventions — built to scale into a multi-client agency template</li>
+            <li>Clean theme architecture following HubSpot CLI conventions — built to scale into a multi-client agency
+              template</li>
           </ul>
           <p class="p-2 rounded-xl text-sm md:text-base text-justify mt-2">
-            This project demonstrates HubSpot CMS theme development with reusable module design, CRM-connected lead capture, 
+            This project demonstrates HubSpot CMS theme development with reusable module design, CRM-connected lead
+            capture,
             and a client-ready content management structure built for small to medium local businesses.
           </p>
         </div>
