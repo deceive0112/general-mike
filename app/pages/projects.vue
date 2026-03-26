@@ -118,11 +118,10 @@ const imgSrc5 = ref('https://opengraph.githubassets.com/2/deceive0112/hubspot-pr
             <li>Blog section with Facebook-inspired post layout and Giscus-powered comments</li>
             <li>Embedded mini-games including Tic-Tac-Toe, typing speed test, and racing game</li>
           </ul>
-          <p class="p-2 rounded-xl text-sm md:text-base text-justify mt-2">
+          <p class="p-2 rounded-xl text-sm md:text-base text-justify mt-2 md:truncate md:hover:whitespace-normal md:hover:overflow-visible transition-all duration-300">
             This portfolio demonstrates frontend development with modern tooling, responsive design across all screen
-            sizes,
-            component-based architecture, and seamless integration of third-party services, built entirely without a
-            traditional backend.
+            sizes, component-based architecture, and seamless integration of third-party services, built entirely
+            without a traditional backend.
           </p>
         </div>
       </div>
@@ -263,10 +262,9 @@ const imgSrc5 = ref('https://opengraph.githubassets.com/2/deceive0112/hubspot-pr
             <li>Receipt generation and sharing via Expo Print and Expo Sharing</li>
             <li>Supabase-backed authentication with persistent sessions and Row Level Security</li>
           </ul>
-          <p class="p-2 rounded-xl text-sm md:text-base text-justify mt-2">
+          <p class="p-2 rounded-xl text-sm md:text-base text-justify mt-2 md:truncate md:hover:whitespace-normal md:hover:overflow-visible transition-all duration-300">
             This project demonstrates mobile development with React Native and Expo, utility-first styling with
-            NativeWind, form validation with
-            React Hook Form and Zod, and backend integration with Supabase, built and distributed using EAS Build.
+            NativeWind, form validation with React Hook Form and Zod, and backend integration with Supabase, built and distributed using EAS Build.
           </p>
         </div>
       </div>
@@ -359,10 +357,9 @@ const imgSrc5 = ref('https://opengraph.githubassets.com/2/deceive0112/hubspot-pr
             <li>Follow system with optional privacy to hide who you follow</li>
             <li>Text-and-link-only design to keep communities focused and healthy</li>
           </ul>
-          <p class="p-2 rounded-xl text-sm md:text-base text-justify mt-2">
+          <p class="p-2 rounded-xl text-sm md:text-base text-justify mt-2 md:truncate md:hover:whitespace-normal md:hover:overflow-visible transition-all duration-300">
             This project demonstrates group-based collaboration with role management, a shared calendar with
-            notification support,
-            and a lightweight social layer built around a text-first content policy.
+            notification support, and a lightweight social layer built around a text-first content policy.
           </p>
         </div>
       </div>
@@ -434,8 +431,7 @@ const imgSrc5 = ref('https://opengraph.githubassets.com/2/deceive0112/hubspot-pr
           </ul>
           <p class="p-2 rounded-xl text-sm md:text-base text-justify mt-2">
             This project demonstrates HubSpot CMS theme development with reusable module design, CRM-connected lead
-            capture,
-            and a client-ready content management structure built for small to medium local businesses.
+            capture, and a client-ready content management structure built for small to medium local businesses.
           </p>
         </div>
       </div>
