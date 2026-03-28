@@ -189,6 +189,12 @@ onMounted(() => {
                         sizes="sm:100vw md:50vw" class="w-full h-auto rounded-2xl shadow-lg object-cover" />
                 </div>
 
+                <div class="flex items-center p-4 rounded-xl border border-white/10 hover:border-gray-500/50 hover:bg-white/5 hover:scale-102
+          transition-all duration-300 backdrop-blur-xl shadow-lg">
+                    <NuxtImg src="" loading="lazy" quality="80" format="webp"
+                        sizes="sm:100vw md:50vw" class="w-full h-auto rounded-2xl shadow-lg object-cover" />
+                </div>
+
             </div>
         </div>
 
