@@ -47,22 +47,22 @@ definePageMeta({
     <div class="flex flex-col xl:flex-row gap-5">
 
       <div class="w-full xl:basis-3/5">
-        <h1 class="text-2xl sm:text-3xl md:text-4xl mt-10 md:mt-20 font-bold backdrop-blur-lg rounded-xl px-2 py-1">
+        <h1 class="text-2xl sm:text-3xl md:text-4xl mt-10 md:mt-20 font-bold backdrop-blur-lg rounded-xl px-1 py-1 inline-block">
           Hey! <span class="px-1">I'm</span>
           <a class="text-blue-500 cursor-default px-1.5" @mouseenter="isHovered = true" @mouseleave="isHovered = false"
             @touchstart="isHovered = true" @touchend="isHovered = false">
             {{ title }}
-            <span class="px-1 md:px-2 inline-block animate-wave">
+            <span class="pl-1 md:pl-2 inline-block animate-wave">
               <UIcon name="twemoji:waving-hand-light-skin-tone" class="size-7" />
             </span>
           </a>
         </h1>
 
-        <div class="flex flex-nowrap items-center gap-1.5 md:gap-3 overflow-hidden">
-          <UIcon name="svg-spinners:pulse" class="size-3.5 md:size-4 text-green-400 shrink-0" />
-
+        <div class="flex flex-nowrap items-center">
+          <UIcon name="svg-spinners:pulse" class="size-3.5 md:size-4 text-green-400 shrink-0 mr-1.5" />
+          <div class="flex gap-1.5 md:gap-3 overflow-hidden">
           <div
-            class="group flex flex-row cursor-pointer overflow-hidden h-5 md:h-6 relative w-25 md:w-36 shrink-0 mt-2">
+            class="group flex flex-row cursor-pointer h-5 md:h-6 relative w-25 md:w-36 shrink-0 mt-2">
             <div
               class="flex items-center absolute transition-all duration-300 group-hover:-translate-y-full group-hover:opacity-0">
               <span class="text-xs md:text-[17px] whitespace-nowrap leading-none">Available for work</span>
@@ -76,11 +76,12 @@ definePageMeta({
             </a>
           </div>
 
-          <span class="text-xs md:text-[17px] shrink-0 leading-none">|</span>
-          <span class="text-xs md:text-[17px] truncate leading-none">Based in Cagayan de Oro City, Philippines.</span>
+          <span class="text-xs md:text-[17px] shrink-0 leading-none mt-2">|</span>
+          <span class="text-xs md:text-[17px] truncate leading-none mt-2">Based in Cagayan de Oro City, Philippines.</span>
+          </div>
         </div>
 
-        <p class="text-base md:text-2xl mt-7 backdrop-blur-lg rounded-xl w-full px-2 py-1 text-justify">
+        <p class="text-base md:text-2xl mt-7 backdrop-blur-lg rounded-xl w-full px-1 py-1 text-justify inline-block">
           I'm a <span
             class="text-red-400 relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-current after:transition-all after:duration-300 hover:after:w-full cursor-default">developer</span>
           who takes great care in crafting detailed, intuitive <span
@@ -97,7 +98,7 @@ definePageMeta({
             class="text-yellow-400 relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-current after:transition-all after:duration-300 hover:after:w-full cursor-default">IoT</span>.
         </p>
 
-        <div class="flex flex-wrap mt-8 mb-5 xl:mb-25 gap-1 md:gap-3 backdrop-blur-lg rounded-xl px-2 py-1 items-center">
+        <div class="inline-flex flex-wrap mt-8 mb-5 xl:mb-25 gap-1 md:gap-3 backdrop-blur-lg rounded-xl px-1 py-1 items-center">
           <div class="group inline-flex items-center gap-1.5 transition-colors duration-200 cursor-pointer">
             <a href="https://github.com/deceive0112" target="_blank" class="inline-flex items-center">
               <UIcon name="mdi:github"
