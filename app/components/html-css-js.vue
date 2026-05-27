@@ -18,7 +18,7 @@
             <a href="/projects/to-do-list/to-do-source-code/HTML.txt" target="_blank">
               <UButton icon="material-symbols:folder-open-rounded"
                 class="rounded-lg shadow-2xl cursor-pointer bg-linear-to-r from-sky-400 to-blue-500 hover:from-sky-500 hover:to-blue-600 transition-all duration-200 border-0 p-2 text-xs md:text-sm">
-                Open Code
+                Source-Available
               </UButton>
             </a>
           </div>
@@ -39,7 +39,7 @@
             <a href="/projects/to-do-list/to-do-source-code/HTML-CSS.txt" target="_blank">
               <UButton icon="material-symbols:folder-open-rounded"
                 class="rounded-lg shadow-2xl cursor-pointer bg-linear-to-r from-sky-400 to-blue-500 hover:from-sky-500 hover:to-blue-600 transition-all duration-200 border-0 p-2 text-xs md:text-sm">
-                Open Code
+                Source-Available
               </UButton>
             </a>
           </div>
@@ -60,7 +60,7 @@
             <a href="/projects/to-do-list/to-do-source-code/HTML-CSS-JS.txt" target="_blank">
               <UButton icon="material-symbols:folder-open-rounded"
                 class="rounded-lg shadow-2xl cursor-pointer bg-linear-to-r from-sky-400 to-blue-500 hover:from-sky-500 hover:to-blue-600 transition-all duration-200 border-0 p-2 text-xs md:text-sm">
-                Open Code
+                Source-Available
               </UButton>
             </a>
           </div>
