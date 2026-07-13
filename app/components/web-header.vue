@@ -20,8 +20,7 @@ const menuOpen = ref(false)
       <a href="/projects"
         class="text-sm lg:text-lg font-bold font-mono hover:text-blue-500 transition-colors duration-200 cursor-pointer">Projects</a>
       <a href="/tech-stack"
-        class="text-sm lg:text-lg font-bold font-mono hover:text-blue-500 transition-colors duration-200 cursor-pointer">Tech
-        Stack</a>
+        class="text-sm lg:text-lg font-bold font-mono hover:text-blue-500 transition-colors duration-200 cursor-pointer">Tech Stack</a>
       <a href="/blog"
         class="text-sm lg:text-lg font-bold font-mono hover:text-blue-500 transition-colors duration-200 cursor-pointer">Blog</a>
       <span class="flex flex-row gap-2">

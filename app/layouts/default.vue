@@ -6,6 +6,6 @@
     <div>
       <slot />
     </div>
-    <web-footer class="bg-slate-800 p-3 shadow-xl rounded-md mb-3" />
+    <web-footer class="p-3 shadow-xl rounded-md mb-3" />
   </div>
 </template>
