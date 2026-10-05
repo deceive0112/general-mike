@@ -79,15 +79,16 @@ const isHoveredEdu = ref(false)
       </div>
     </div>
   </div>
-  <!-- GitHub Streak -->
+  <!-- GitHub Contributions -->
   <div class="mt-6">
     <h2 class="flex text-2xl md:text-3xl uppercase font-bold items-center text-center justify-center">
-      Github Streak
+      Github Contributions
     </h2>
-    <a class="flex text-center items-center justify-center md:mx-10" href="https://github.com/deceive0112" target="_blank">
+    <a class="flex text-center items-center justify-center md:mx-10" href="https://github.com/deceive0112"
+      target="_blank">
       <img
-        src="https://github-readme-streak-stats-ecru-tau.vercel.app?user=deceive0112&theme=carbonfox&background=00000000&border=00000000&currStreakLabel=94A3B8&sideLabels=94A3B8"
-        alt="GitHub Streak" class="w-full rounded-lg backdrop-blur-2xl shadow-2xl" loading="lazy" />
+        src="https://github-readme-activity-graph.vercel.app/graph?username=deceive0112&theme=react-dark&bg_color=00000000&color=94A3B8&line=22c55e&point=22c55e&hide_border=true"
+        alt="GitHub Contributions" class="w-full rounded-lg shadow-2xl" loading="lazy" />
     </a>
   </div>
 </template>
