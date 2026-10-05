@@ -293,13 +293,13 @@ onUnmounted(() => {
 
         <!-- Drag-to-Scroll Grid Container -->
         <div ref="scrollContainer"
-          class="overflow-x-auto custom-scrollbar select-none cursor-grab active:cursor-grabbing [&_*]:cursor-inherit pb-1"
+          class="overflow-x-auto custom-scrollbar select-none cursor-grab active:cursor-grabbing **:cursor-inherit pb-1"
           @mousedown="startDrag" @mouseleave="stopDrag" @mouseup="stopDrag" @mousemove="doDrag" @touchstart="startDrag"
           @touchend="stopDrag" @touchmove="doDrag">
           <!-- Main Grid -->
-          <div class="min-w-[670px] flex gap-2 items-start py-1">
+          <div class="min-w-167.5 flex gap-2 items-start py-1">
             <!-- Day Labels -->
-            <div class="flex flex-col justify-between h-[88px] text-[10px] text-gray-400 pt-[18px] pr-1 select-none">
+            <div class="flex flex-col justify-between h-22 text-[10px] text-gray-400 pt-4.5 pr-1 select-none">
               <span>Mon</span>
               <span>Wed</span>
               <span>Fri</span>
@@ -316,11 +316,11 @@ onUnmounted(() => {
               </div>
 
               <!-- Blocks Grid -->
-              <div class="flex gap-[3px]">
-                <div v-for="(week, weekIdx) in weeks" :key="weekIdx" class="flex flex-col gap-[3px]">
+              <div class="flex gap-0.75">
+                <div v-for="(week, weekIdx) in weeks" :key="weekIdx" class="flex flex-col gap-0.75">
                   <!-- AFTER -->
                   <div v-for="(day, dayIdx) in week" :key="dayIdx"
-                    class="contribution-block w-[10px] h-[10px] rounded-[2px] transition-transform duration-150 active:scale-125 md:hover:scale-125"
+                    class="contribution-block w-2.5 h-2.5 rounded-[2px] transition-transform duration-150 active:scale-125 md:hover:scale-125"
                     :style="{ backgroundColor: getColor(day.level) }" @mouseenter="handlePointerEnter($event, day)"
                     @mouseleave="handlePointerLeave" @touchstart.passive="handlePointerEnter($event, day)"></div>
                 </div>
