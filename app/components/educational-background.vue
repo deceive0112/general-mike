@@ -24,7 +24,7 @@ function startDrag(e: MouseEvent | TouchEvent) {
   if (!scrollContainer.value) return
   isDragging.value = true
 
-  const pageX = 'touches' in e ? e.touches[0].pageX : e.pageX
+  const pageX = e instanceof TouchEvent ? e.touches[0]?.pageX ?? 0 : e.pageX
   startX = pageX - scrollContainer.value.offsetLeft
   scrollLeft = scrollContainer.value.scrollLeft
 }
@@ -36,7 +36,7 @@ function stopDrag() {
 function doDrag(e: MouseEvent | TouchEvent) {
   if (!isDragging.value || !scrollContainer.value) return
 
-  const pageX = 'touches' in e ? e.touches[0].pageX : e.pageX
+  const pageX = e instanceof TouchEvent ? e.touches[0]?.pageX ?? 0 : e.pageX
   const x = pageX - scrollContainer.value.offsetLeft
   const walk = (x - startX) * 1.5
   scrollContainer.value.scrollLeft = scrollLeft - walk
